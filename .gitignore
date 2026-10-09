@@ -1,0 +1,25 @@
+# Secrets - ne jamais versionner
+.env
+.env.*
+*.pem
+*.key
+
+# Données personnelles / exports
+*.csv
+leads*
+exports/
+
+# Dépendances et builds
+node_modules/
+dist/
+build/
+.cache/
+
+# Logs
+*.log
+
+# Éditeur / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
