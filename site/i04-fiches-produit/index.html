@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rédiger des fiches produit pour votre site et votre catalogue – module I04</title>
+<meta name="description" content="Transformer les caractéristiques réelles d'un produit en fiche produit claire, puis en versions courtes pour votre catalogue.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header>
+<p><a href="../index.html">← Tous les modules</a></p>
+<h1>Rédiger des fiches produit pour votre site et votre catalogue</h1>
+<p class="lead">Transformer les caractéristiques réelles d'un produit en fiche produit claire, puis en versions courtes pour votre catalogue.</p>
+<ul class="meta"><li>Module I04</li><li>Durée : 48 min environ</li><li>5 étapes</li><li>Aucune compétence technique requise</li></ul>
+</header>
+<main id="contenu" data-module="I04">
+<section class="alerte" aria-labelledby="t-alerte">
+<h2 id="t-alerte">Ce qu'on ne colle jamais dans un assistant IA</h2>
+<ul><li>Les données personnelles de vos clients : noms, adresses, avis nominatifs, coordonnées.</li><li>Vos secrets commerciaux : recettes ou procédés non publics, coûts de revient, marges, noms de fournisseurs, tarifs négociés.</li><li>Vos mots de passe et accès à votre site ou à votre boutique en ligne.</li><li>Les informations que vous n'avez pas vérifiées : l'assistant n'invente rien dans ce module, il laisse un repère « [À VÉRIFIER] ».</li></ul>
+<p><strong>Relisez la fiche en entier avant de la publier : composition, allergènes, origine, labels, contenance et prix sont à contrôler un par un.</strong></p>
+</section>
+<section aria-labelledby="t-resultat">
+<h2 id="t-resultat">Ce que vous aurez à la fin</h2>
+<p>Une fiche produit complète, vérifiée ligne par ligne, avec une version courte pour catalogue et un titre pour votre site, et une consigne remplie que vous pouvez réutiliser pour vos autres produits.</p>
+<h3>Avant de commencer</h3>
+<ul><li>Un assistant IA grand public de votre choix, ouvert dans votre navigateur (ChatGPT, Claude, Copilot, Gemini ou un autre).</li><li>Un produit que vous connaissez bien, avec sa fiche technique, son étiquette ou son emballage sous la main.</li><li>Un document texte ou l'outil de votre site pour recopier le résultat.</li></ul>
+<p><a href="fiche.html">Version imprimable (fiche d'une à deux pages)</a> · <a href="consignes.md">Toutes les consignes (texte brut)</a></p>
+</section>
+<nav class="sommaire" aria-label="Sommaire"><h2>Les étapes</h2><ol><li><a href="#etape-1">Rassembler les faits sur un produit</a> (8 min)</li><li><a href="#etape-2">Obtenir la première fiche produit</a> (12 min)</li><li><a href="#etape-3">Vérifier chaque affirmation</a> (10 min)</li><li><a href="#etape-4">Créer les versions courtes et le titre</a> (10 min)</li><li><a href="#etape-5">Garder une consigne réutilisable</a> (8 min)</li></ol>
+<p id="progression" role="status" aria-live="polite"></p></nav>
+<section class="etape" id="etape-1" aria-labelledby="t-etape-1">
+<h2 id="t-etape-1"><span class="num">Étape 1 sur 5</span>Rassembler les faits sur un produit <span class="duree">8 min</span></h2>
+<p>Vous notez ce que vous savez avec certitude sur un produit, en vous appuyant sur ses documents.</p>
+<ul><li>Choisissez un produit représentatif, ni votre plus simple, ni votre plus complexe.</li><li>Notez les faits : nom, contenance ou taille, composition ou matériaux, origine ou fabrication, usages, particularités.</li><li>Ne notez que ce qui figure sur l'étiquette, la fiche technique ou ce que vous maîtrisez : pas de prix de revient, pas de recette secrète.</li><li>Repérez le client visé : qui l'achète et pour quel usage ?</li></ul>
+
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="8">Démarrer le minuteur (8 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e1"> <span>J'ai terminé l'étape 1</span></label>
+</section>
+<section class="etape" id="etape-2" aria-labelledby="t-etape-2">
+<h2 id="t-etape-2"><span class="num">Étape 2 sur 5</span>Obtenir la première fiche produit <span class="duree">12 min</span></h2>
+<p>L'assistant rédige la fiche à partir de vos seuls faits, sans rien ajouter.</p>
+<ul><li>Copiez la consigne ci-dessous dans une nouvelle conversation et complétez les champs avec vos notes.</li><li>Lisez la fiche : repérez chaque phrase qui ne vient pas de vos notes.</li><li>Demandez des corrections précises : « plus court », « sans cet adjectif », « phrase d'ouverture plus simple ».</li><li>Gardez les repères « [À VÉRIFIER] » : ce sont des points à contrôler vous-même.</li></ul>
+<div class="consigne">
+<h3>Rédiger la fiche produit</h3>
+<p>À coller dans une nouvelle conversation. Les faits viennent uniquement de vous.</p>
+<pre id="consigne-fiche" tabindex="0">Tu es mon assistant de rédaction. Mon activité : <span class="champ">[TYPE D'ACTIVITÉ]</span>.
+
+Produit : <span class="champ">[PRODUIT]</span>
+
+Faits vérifiés (ce sont les seules informations que tu peux utiliser) :
+<span class="champ">[FAITS VÉRIFIÉS]</span>
+
+Clientèle visée : <span class="champ">[CLIENTÈLE VISÉE]</span>
+Ton souhaité : <span class="champ">[TON SOUHAITÉ]</span>, avec le vouvoiement.
+Longueur : <span class="champ">[LONGUEUR]</span>
+
+Rédige une fiche produit avec : une phrase d'accroche, une description, une rubrique « Caractéristiques » en liste, et une rubrique « Conseils d'usage » seulement si mes faits en contiennent.
+
+Règles :
+- N'ajoute aucun fait : ni composition, ni origine, ni label, ni récompense, ni allergène, ni prix, ni propriété santé qui ne figurent pas dans mes faits.
+- Si une information utile manque, écris « <span class="champ">[À VÉRIFIER]</span> » à la place et liste-la à la fin sous « Questions pour le producteur ».
+- Évite les superlatifs (« le meilleur », « unique ») et les promesses.
+- Phrases courtes, mots simples.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="consigne-fiche">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="12">Démarrer le minuteur (12 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e2"> <span>J'ai terminé l'étape 2</span></label>
+</section>
+<section class="etape" id="etape-3" aria-labelledby="t-etape-3">
+<h2 id="t-etape-3"><span class="num">Étape 3 sur 5</span>Vérifier chaque affirmation <span class="duree">10 min</span></h2>
+<p>Vous contrôlez la fiche ligne par ligne, avec vos documents, avant toute publication.</p>
+<ul><li>Comparez chaque chiffre, composition, origine, label et contenance avec l'étiquette ou la fiche technique.</li><li>Pour l'alimentaire et les boissons, contrôlez vous-même les allergènes et les mentions qui doivent figurer. La réglementation dépend du produit : appuyez-vous sur votre organisation professionnelle, votre interprofession ou votre chambre consulaire. Ce module n'est pas un avis juridique.</li><li>Supprimez toute promesse que vous ne pouvez pas prouver (« le meilleur », « bon pour la santé », « garanti »).</li><li>Remplacez tous les « [À VÉRIFIER] » par des informations contrôlées, ou supprimez la phrase.</li></ul>
+
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="10">Démarrer le minuteur (10 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e3"> <span>J'ai terminé l'étape 3</span></label>
+</section>
+<section class="etape" id="etape-4" aria-labelledby="t-etape-4">
+<h2 id="t-etape-4"><span class="num">Étape 4 sur 5</span>Créer les versions courtes et le titre <span class="duree">10 min</span></h2>
+<p>L'assistant décline la fiche validée en titre, description courte et phrase d'accroche.</p>
+<ul><li>Dans la même conversation, copiez la consigne ci-dessous et complétez les champs.</li><li>Vérifiez que les versions courtes ne contiennent rien qui ne soit pas dans la fiche validée.</li><li>Copiez titre, description courte et fiche dans votre site ou votre catalogue, sans y ajouter de prix venant de l'assistant : saisissez-les vous-même.</li></ul>
+<div class="consigne">
+<h3>Décliner en titre et versions courtes</h3>
+<p>À coller dans la même conversation, une fois la fiche vérifiée et corrigée.</p>
+<pre id="consigne-declinaisons" tabindex="0">À partir de la fiche validée ci-dessus, et sans rien y ajouter, propose :
+1. Trois titres de produit de 60 caractères au maximum.
+2. Une description courte pour un catalogue ou une page de liste : <span class="champ">[LONGUEUR DE LA DESCRIPTION COURTE]</span>.
+3. Une phrase d'accroche de moins de 15 mots.
+
+Mots à placer naturellement s'ils collent au produit : <span class="champ">[MOTS À PLACER NATURELLEMENT]</span>. Ne force pas leur emploi.
+
+Règles : aucun prix, aucune promesse, aucun fait nouveau. Si un titre risque de suggérer une propriété que la fiche ne confirme pas, ne le propose pas.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="consigne-declinaisons">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="10">Démarrer le minuteur (10 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e4"> <span>J'ai terminé l'étape 4</span></label>
+</section>
+<section class="etape" id="etape-5" aria-labelledby="t-etape-5">
+<h2 id="t-etape-5"><span class="num">Étape 5 sur 5</span>Garder une consigne réutilisable <span class="duree">8 min</span></h2>
+<p>Vous enregistrez la consigne remplie comme gabarit pour vos autres produits.</p>
+<ul><li>Copiez la consigne de l'étape 2 dans un document, en effaçant les faits du produit mais en gardant votre ton, votre clientèle et vos règles.</li><li>Nommez-la « Gabarit fiche produit ».</li><li>Passez le contrôle qualité ci-dessous.</li><li>Prévoyez de traiter vos autres produits un par un, dans une conversation neuve à chaque fois.</li></ul>
+
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="8">Démarrer le minuteur (8 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e5"> <span>J'ai terminé l'étape 5</span></label>
+</section>
+<section aria-labelledby="t-exemples"><h2 id="t-exemples">Exemples par métier</h2>
+<p>Trois situations d'entreprises d'Occitanie pour vous inspirer. Ouvrez celle qui ressemble à la vôtre.</p>
+<details>
+<summary>Domaine viticole (Minervois, Aude)</summary>
+<p>Un domaine présente un vin rouge sur son site, pour des particuliers et des cavistes.</p>
+<div class="consigne">
+<h4>Consigne remplie : Rédiger la fiche produit</h4>
+<p>Exemple de consigne déjà personnalisée. Reprenez la structure, remplacez par vos propres informations.</p>
+<pre id="exemple-1" tabindex="0">Tu es mon assistant de rédaction. Mon activité : domaine viticole familial avec vente directe et vente aux cavistes.
+
+Produit : vin rouge du domaine, cuvée « Les Garrigues » (nom d'exemple)
+
+Faits vérifiés (ce sont les seules informations que tu peux utiliser) :
+vin rouge ; assemblage de syrah et de grenache ; élevage en cuve ; bouteille de 75 cl ; se boit à environ 16 °C ; accompagne les viandes grillées et les plats mijotés
+
+Clientèle visée : particuliers et cavistes
+Ton souhaité : chaleureux et sobre, avec le vouvoiement.
+Longueur : une description de 80 à 100 mots
+
+Rédige une fiche produit avec : une phrase d'accroche, une description, une rubrique « Caractéristiques » en liste, et une rubrique « Conseils d'usage » seulement si mes faits en contiennent.
+
+Règles :
+- N'ajoute aucun fait : ni composition, ni origine, ni label, ni récompense, ni allergène, ni prix, ni propriété santé qui ne figurent pas dans mes faits.
+- Si une information utile manque, écris « <span class="champ">[À VÉRIFIER]</span> » à la place et liste-la à la fin sous « Questions pour le producteur ».
+- Évite les superlatifs (« le meilleur », « unique ») et les promesses.
+- Phrases courtes, mots simples.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="exemple-1">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<h4>Résultat attendu (exemple illustratif)</h4>
+<pre tabindex="0">Accroche : Un rouge de repas, simple et généreux.
+Description : Cet assemblage de syrah et de grenache est élevé en cuve. Il se sert autour de 16 °C et accompagne volontiers viandes grillées et plats mijotés.
+Caractéristiques : vin rouge · syrah et grenache · élevage en cuve · bouteille de 75 cl.
+Questions pour le producteur : millésime [À VÉRIFIER] ; degré d'alcool [À VÉRIFIER].
+(Rappel : la communication sur le vin est encadrée ; vérifiez-la auprès de votre interprofession.)</pre>
+</details>
+<details>
+<summary>Fromagerie (Aveyron)</summary>
+<p>Une petite fromagerie fermière met en ligne sa tomme pour la vente à la ferme et en épicerie fine.</p>
+<div class="consigne">
+<h4>Consigne remplie : Rédiger la fiche produit</h4>
+<p>Exemple de consigne déjà personnalisée. Reprenez la structure, remplacez par vos propres informations.</p>
+<pre id="exemple-2" tabindex="0">Tu es mon assistant de rédaction. Mon activité : fromagerie fermière avec vente à la ferme et en épiceries.
+
+Produit : tomme de brebis (nom d'exemple : « Tomme du causse »)
+
+Faits vérifiés (ce sont les seules informations que tu peux utiliser) :
+fromage au lait de brebis ; pâte pressée non cuite ; affinage de 3 mois ; croûte naturelle ; pièce d'environ 1,5 kg ; vendue entière ou au détail
+
+Clientèle visée : particuliers et épiciers fins
+Ton souhaité : simple et authentique, avec le vouvoiement.
+Longueur : une description de 60 à 80 mots
+
+Rédige une fiche produit avec : une phrase d'accroche, une description, une rubrique « Caractéristiques » en liste, et une rubrique « Conseils d'usage » seulement si mes faits en contiennent.
+
+Règles :
+- N'ajoute aucun fait : ni composition, ni origine, ni label, ni récompense, ni allergène, ni prix, ni propriété santé qui ne figurent pas dans mes faits.
+- Si une information utile manque, écris « <span class="champ">[À VÉRIFIER]</span> » à la place et liste-la à la fin sous « Questions pour le producteur ».
+- Évite les superlatifs (« le meilleur », « unique ») et les promesses.
+- Phrases courtes, mots simples.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="exemple-2">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<h4>Résultat attendu (exemple illustratif)</h4>
+<pre tabindex="0">Accroche : Une tomme de brebis affinée trois mois.
+Description : Fabriquée au lait de brebis, cette tomme à pâte pressée non cuite développe une croûte naturelle pendant son affinage de trois mois. Elle est vendue entière ou au détail.
+Caractéristiques : lait de brebis · pâte pressée non cuite · affinage 3 mois · pièce d'environ 1,5 kg.
+Questions pour le producteur : lait cru ou pasteurisé [À VÉRIFIER] ; conservation conseillée [À VÉRIFIER].</pre>
+</details>
+<details>
+<summary>Coutellerie artisanale (Laguiole, Aveyron)</summary>
+<p>Un artisan vend ses couteaux de poche sur son site et dans un catalogue papier.</p>
+<div class="consigne">
+<h4>Consigne remplie : Rédiger la fiche produit</h4>
+<p>Exemple de consigne déjà personnalisée. Reprenez la structure, remplacez par vos propres informations.</p>
+<pre id="exemple-3" tabindex="0">Tu es mon assistant de rédaction. Mon activité : coutellerie artisanale avec vente en atelier et en ligne.
+
+Produit : couteau de poche, modèle d'exemple « Le Randonneur »
+
+Faits vérifiés (ce sont les seules informations que tu peux utiliser) :
+lame en acier inoxydable de 9 cm ; manche en bois d'olivier ; fabriqué à la main en atelier ; livré avec un étui en cuir
+
+Clientèle visée : particuliers amateurs de randonnée et acheteurs de cadeaux
+Ton souhaité : fier du savoir-faire, sans emphase, avec le vouvoiement.
+Longueur : une description de 60 à 80 mots
+
+Rédige une fiche produit avec : une phrase d'accroche, une description, une rubrique « Caractéristiques » en liste, et une rubrique « Conseils d'usage » seulement si mes faits en contiennent.
+
+Règles :
+- N'ajoute aucun fait : ni composition, ni origine, ni label, ni récompense, ni allergène, ni prix, ni propriété santé qui ne figurent pas dans mes faits.
+- Si une information utile manque, écris « <span class="champ">[À VÉRIFIER]</span> » à la place et liste-la à la fin sous « Questions pour le producteur ».
+- Évite les superlatifs (« le meilleur », « unique ») et les promesses.
+- Phrases courtes, mots simples.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="exemple-3">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<h4>Résultat attendu (exemple illustratif)</h4>
+<pre tabindex="0">Accroche : Un couteau de poche fabriqué à la main.
+Description : Ce couteau de poche allie une lame en acier inoxydable de 9 cm et un manche en bois d'olivier. Il est fabriqué à la main en atelier et livré avec un étui en cuir.
+Caractéristiques : lame 9 cm · acier inoxydable · manche en bois d'olivier · étui en cuir.
+Questions pour l'artisan : poids [À VÉRIFIER] ; entretien conseillé [À VÉRIFIER].</pre>
+</details>
+</section>
+<section aria-labelledby="t-pieges"><h2 id="t-pieges">Erreurs fréquentes</h2>
+<div class="piege"><strong>Laisser l'assistant ajouter des qualités ou une origine qu'il a devinées.</strong>Comparez chaque phrase avec vos faits. Supprimez ce qui n'y figure pas ou remplacez-le par une information que vous avez contrôlée.</div>
+<div class="piege"><strong>Oublier de contrôler allergènes, composition et mentions obligatoires.</strong>Contrôlez-les vous-même avec l'étiquette et vos documents. Pour l'alimentaire et les boissons, vérifiez les règles qui s'appliquent auprès de votre organisation professionnelle ou de votre chambre consulaire.</div>
+<div class="piege"><strong>Coller une recette, un coût de revient ou le nom d'un fournisseur.</strong>Ne décrivez que ce que vous montrez déjà au client sur l'étiquette ou en vitrine.</div>
+<div class="piege"><strong>Publier des promesses de santé ou de performance (« bon pour… », « garanti »).</strong>Retirez-les, sauf si vous pouvez les justifier et que la réglementation vous le permet ; dans le doute, supprimez.</div>
+<div class="piege"><strong>Utiliser le même texte pour tous les produits.</strong>Traitez chaque produit dans une conversation neuve avec ses propres faits, en gardant seulement votre gabarit.</div>
+</section>
+<section aria-labelledby="t-qc"><h2 id="t-qc">Contrôle qualité avant tout envoi</h2>
+<label class="case"><input type="checkbox" class="controle" data-id="q1"> <span>Aucune donnée de client, recette secrète, coût ou marge n'a été collé dans l'assistant.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q2"> <span>Chaque fait de la fiche est confirmé par l'étiquette, la fiche technique ou ma connaissance directe du produit.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q3"> <span>Les allergènes, la composition, l'origine, les labels et les contenances ont été contrôlés par moi, ligne par ligne.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q4"> <span>Aucun « [À VÉRIFIER] » ne reste dans la fiche publiée.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q5"> <span>Aucune promesse (santé, performance, garantie, « le meilleur ») que je ne peux pas prouver.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q6"> <span>Les prix sont saisis par moi, jamais repris de l'assistant.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q7"> <span>J'ai relu la fiche en entier et enregistré mon gabarit pour mes autres produits.</span></label>
+</section>
+<section aria-labelledby="t-eval"><h2 id="t-eval">Votre bilan</h2>
+<form id="autoeval">
+<fieldset><legend>J'ai obtenu mon résultat : une fiche produit vérifiée, avec titre et description courte, prête à être publiée.</legend>
+<label><input type="radio" name="resultat" value="oui"> <span>Oui, j'ai obtenu mon résultat</span></label>
+<label><input type="radio" name="resultat" value="non"> <span>Non, pas encore</span></label>
+</fieldset>
+<button type="submit">Enregistrer ma réponse</button>
+<p id="autoeval-retour" role="status" aria-live="polite">Votre réponse est mémorisée uniquement dans ce navigateur.</p>
+</form>
+</section>
+<section id="aller-plus-loin" hidden aria-labelledby="t-plus"><h2 id="t-plus">Aller plus loin</h2>
+<p><a id="lien-offre" class="bouton" href="#">Découvrir l'offre de formation</a></p></section>
+</main>
+<footer><p>Contenu gratuit fourni à titre pédagogique. Les consignes sont des brouillons à adapter ; vous restez responsable des documents que vous envoyez. Votre progression est enregistrée uniquement dans votre navigateur ; ce site n'utilise ni cookie ni traqueur.</p></footer>
+<script src="../assets/app.js" defer></script>
+</body>
+</html>
