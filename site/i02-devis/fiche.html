@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fiche I02 – Préparer un devis à partir d'une description de chantier ou de prestation</title>
+<style>
+@page{size:A4;margin:11mm 12mm}
+*{box-sizing:border-box}
+body{font:9.6pt/1.4 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#111;margin:0 auto;max-width:190mm;padding:8px}
+h1{font-size:15pt;margin:0 0 2px}h2{font-size:11pt;margin:10px 0 3px;color:#0b4f8a}
+.sous{margin:0 0 4px;color:#333}
+.alerte{border:1.5px solid #9a4a00;background:#fff4e5;padding:4px 9px;margin:6px 0;break-inside:avoid}
+.alerte h2{color:#7a3a00;margin-top:2px}.alerte ul{margin:2px 0;padding-left:16px}.alerte p{margin:2px 0}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #777;padding:2px 6px;text-align:left;vertical-align:top}
+td:first-child,th:first-child{white-space:nowrap}
+pre{white-space:pre-wrap;font:8.6pt/1.35 ui-monospace,Menlo,Consolas,monospace;border:1px solid #777;padding:5px 7px;margin:3px 0;break-inside:avoid}
+.champ{font-weight:700;background:#ffe9a8}
+ul{margin:2px 0;padding-left:16px}li{margin:1px 0}
+.bas{margin-top:8px;font-size:8pt;color:#333}
+section{break-inside:avoid}
+</style>
+</head>
+<body>
+<h1>Préparer un devis à partir d'une description de chantier ou de prestation</h1>
+<p class="sous">Module I02 · 50 minutes · Transformer la description d'un chantier ou d'une prestation en brouillon de devis structuré, dont vous saisissez vous-même les prix.</p>
+<div class="alerte"><h2>Ce qu'on ne colle jamais dans un assistant IA</h2>
+<ul><li>Les données personnelles de vos clients : nom, adresse du chantier, téléphone, e-mail. Écrivez « le client » ou « [ADRESSE DU CHANTIER] ».</li><li>Vos secrets commerciaux : marges, coûts d'achat, tarifs négociés avec un fournisseur ou un client, liste de vos clients.</li><li>Vos mots de passe et accès à votre logiciel de facturation.</li><li>Les prix : l'assistant n'en invente aucun dans ce module. Vous les saisissez vous-même, hors de l'assistant.</li></ul>
+<p><strong>Relisez le brouillon en entier avant tout envoi à un client : un devis accepté vous engage.</strong></p></div>
+<section><h2>Les étapes</h2>
+<table><tr><th>Durée</th><th>Étape</th><th>À faire</th></tr>
+<tr><td>10 min</td><td>1. Rassembler les faits du chantier ou de la prestation</td><td>Noter les faits sans prix ni donnée client.</td></tr>
+<tr><td>12 min</td><td>2. Obtenir la structure du devis</td><td>Faire produire les lignes du devis, prix toujours laissés vides.</td></tr>
+<tr><td>10 min</td><td>3. Compléter les prix et corriger les lignes</td><td>Reporter dans votre modèle et saisir vous-même les prix.</td></tr>
+<tr><td>10 min</td><td>4. Rédiger la lettre d'accompagnement</td><td>Faire rédiger un message d'accompagnement sobre.</td></tr>
+<tr><td>8 min</td><td>5. Vérifier les mentions et relire</td><td>Contrôler mentions, totaux et conditions, puis relire.</td></tr>
+</table></section>
+<section><h2>Consigne principale : Structurer un devis sans prix</h2>
+<p>À coller dans une nouvelle conversation. Ne mettez aucun prix ni donnée client dans les champs.</p>
+<pre>Tu es un assistant qui m'aide à préparer le brouillon d'un devis. Mon activité : <span class="champ">[ACTIVITÉ]</span>. Type de client : <span class="champ">[TYPE DE CLIENT]</span>.
+
+Description du chantier ou de la prestation :
+<span class="champ">[DESCRIPTION DU CHANTIER OU DE LA PRESTATION]</span>
+
+Quantités et dimensions que je connais : <span class="champ">[QUANTITÉS ET DIMENSIONS CONNUES]</span>
+Délai souhaité par le client : <span class="champ">[DÉLAI SOUHAITÉ]</span>
+Ce qui est exclu : <span class="champ">[CE QUI EST EXCLU]</span>
+
+Ta mission :
+1. Présente un tableau de devis avec les colonnes : désignation, unité, quantité, prix unitaire HT, total HT. Regroupe les lignes par grandes étapes.
+2. RÈGLE ABSOLUE : n'invente aucun prix, aucun taux de TVA, aucune remise. Écris « <span class="champ">[PRIX À COMPLÉTER]</span> » dans chaque case de prix.
+3. Si une quantité n'est pas donnée, écris « <span class="champ">[QUANTITÉ À CONFIRMER]</span> » au lieu de l'estimer.
+4. Ajoute une rubrique « Hypothèses » (ce que tu as supposé) et une rubrique « Exclusions ».
+5. Termine par la liste des informations manquantes sous forme de questions courtes.
+
+Ne donne aucun conseil juridique. Je vérifie moi-même les mentions obligatoires.</pre></section>
+<section><h2>Erreurs fréquentes</h2>
+<ul><li><strong>Laisser l'assistant proposer des prix.</strong> Interdisez-le (c'est déjà dans la consigne) et supprimez tout chiffre de prix apparu. Saisissez vos prix vous-même, à partir de vos tarifs.</li><li><strong>Coller le nom ou l'adresse du client, ou vos coûts d'achat.</strong> Écrivez « le client » et laissez les coordonnées à ajouter à la main dans votre modèle. Gardez marges et coûts hors de l'assistant.</li><li><strong>Oublier une prestation ou une exclusion.</strong> Relisez la rubrique « Hypothèses » et « Exclusions », et comparez ligne par ligne avec vos notes de chantier.</li><li><strong>Se fier aux quantités estimées par l'assistant.</strong> Remplacez chaque « [QUANTITÉ À CONFIRMER] » par une mesure que vous avez vérifiée vous-même.</li><li><strong>Croire que la liste des mentions de la consigne est complète.</strong> L'assistant n'est pas une source juridique. Vérifiez les mentions obligatoires de votre devis auprès de votre organisation professionnelle, de votre chambre consulaire ou de votre expert-comptable.</li></ul></section>
+<section><h2>Contrôle qualité avant envoi</h2>
+<ul><li>☐ Aucun nom, adresse ou coordonnée de client, ni aucun coût d'achat ou marge, n'a été collé dans l'assistant.</li><li>☐ Tous les prix sont de moi : aucun ne vient de l'assistant.</li><li>☐ Chaque ligne du devis correspond à un vrai travail ou à une vraie prestation, avec la bonne unité et une quantité vérifiée.</li><li>☐ Les hypothèses et les exclusions sont écrites et correspondent à ce qui a été convenu avec le client.</li><li>☐ Les mentions obligatoires de mon devis ont été vérifiées auprès d'une source fiable pour mon activité (organisation professionnelle, chambre consulaire ou expert-comptable).</li><li>☐ Les totaux, la durée de validité de l'offre, les délais et les conditions de paiement ont été relus.</li><li>☐ J'ai relu tout le devis et le message d'accompagnement avant de les envoyer.</li></ul></section>
+<p class="bas">Pas à pas complet, exemples par métier et toutes les consignes : voir le site du module I02. Les consignes sont des brouillons à adapter à votre activité.</p>
+</body>
+</html>
