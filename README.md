@@ -12,7 +12,8 @@ modules/
     module.json        # SOURCE UNIQUE (à modifier à la main)
     README.md          # généré : statut, points à tester
     script-video.md    # généré : script vidéo minuté
-  i02-devis/           # idem ; à venir : i04, i05, i06, i08
+  i02-devis/           # idem
+  i04-fiches-produit/, i05-reseaux-sociaux/  # idem ; à venir : i06, i08
 scripts/build.mjs      # générateur Node, sans dépendance
 tests/                 # tests node:test
 site/                  # servi par GitHub Pages (sortie générée, versionnée)
@@ -52,6 +53,8 @@ Les deux valeurs doivent être des URL en `https://`. Aucune donnée personnelle
 |---|---|
 | I01 Réponses aux mails clients | brouillon, consignes à tester |
 | I02 Devis et propositions | brouillon, consignes à tester |
+| I04 Fiches produit | brouillon, consignes à tester |
+| I05 Réseaux sociaux et Google Business | brouillon, consignes à tester |
 
 ## Ce dépôt est public
 

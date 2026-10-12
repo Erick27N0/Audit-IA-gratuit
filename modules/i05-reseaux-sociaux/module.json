@@ -1,0 +1,275 @@
+{
+  "id": "I05",
+  "titre": "Préparer un mois de publications pour les réseaux sociaux et Google Business",
+  "statut": "brouillon, consignes à tester",
+  "public": "Restaurateurs, acteurs du tourisme et commerçants qui animent eux-mêmes leurs pages",
+  "objectif": "Obtenir un calendrier de contenu pour un mois, avec les premières publications rédigées et un message pour votre fiche Google Business.",
+  "resultat": "Un calendrier d'un mois (une douzaine d'idées avec les photos à prendre), quatre publications rédigées et relues, un message pour Google Business, le tout planifié dans votre agenda.",
+  "prerequis": [
+    "Un assistant IA grand public de votre choix, ouvert dans votre navigateur (ChatGPT, Claude, Copilot, Gemini ou un autre).",
+    "L'accès à votre page de réseau social et, si vous l'avez, à votre fiche Google Business.",
+    "Votre agenda du mois à venir : événements, saisons, fermetures, nouveautés.",
+    "Quelques photos récentes de votre activité, dont vous avez les droits."
+  ],
+  "avertissement": {
+    "titre": "Ce qu'on ne colle jamais dans un assistant IA",
+    "points": [
+      "Les données personnelles de vos clients : noms, avis nominatifs, réservations, photos de personnes reconnaissables.",
+      "Vos secrets commerciaux : recettes non publiques, marges, fournisseurs, chiffre d'affaires, tarifs négociés.",
+      "Vos mots de passe et accès à vos comptes de réseaux sociaux ou à Google Business.",
+      "Les informations non confirmées : horaires, prix, offres et événements sont à fournir par vous. L'assistant n'en invente aucun."
+    ],
+    "relecture": "Relisez chaque publication avant de la mettre en ligne : une date, un horaire ou une offre erronés se voient tout de suite."
+  },
+  "etapes": [
+    {
+      "titre": "Cadrer votre mois",
+      "minutes": 8,
+      "description": "Vous décidez de ce que vous voulez obtenir et de ce que vous pouvez montrer.",
+      "actions": [
+        "Choisissez un objectif simple pour le mois : faire connaître une nouveauté, remplir un créneau creux, rappeler vos horaires, etc.",
+        "Listez les événements et informations certains du mois : dates, fermetures, produits de saison, animations.",
+        "Notez ce que vous pouvez photographier facilement : plats, vitrine, ateliers, paysages, équipe (avec accord).",
+        "Choisissez un rythme réaliste : mieux vaut peu de publications régulières que beaucoup abandonnées."
+      ],
+      "fiche": "Fixer objectif, événements certains, photos possibles, rythme."
+    },
+    {
+      "titre": "Obtenir le calendrier du mois",
+      "minutes": 12,
+      "description": "L'assistant propose un calendrier d'idées de publications à partir de vos seules informations.",
+      "actions": [
+        "Copiez la consigne ci-dessous dans une nouvelle conversation et complétez les champs.",
+        "Lisez le calendrier : supprimez les idées qui ne vous ressemblent pas ou que vous ne pourrez pas photographier.",
+        "Demandez des ajustements : « moins de promotions », « une idée pour la fermeture du 15 », « plus de coulisses ».",
+        "Gardez le calendrier dans un document."
+      ],
+      "consignes": [
+        "calendrier"
+      ],
+      "fiche": "Faire proposer un calendrier d'idées, supprimer ce qui ne vous va pas."
+    },
+    {
+      "titre": "Rédiger les premières publications",
+      "minutes": 12,
+      "description": "Vous choisissez quatre idées et l'assistant rédige les textes, avec des repères à vérifier.",
+      "actions": [
+        "Choisissez quatre idées du calendrier, de préférence pour les deux premières semaines.",
+        "Copiez la consigne ci-dessous dans la même conversation et complétez les champs.",
+        "Lisez chaque texte : remplacez les « [À VÉRIFIER] » par des informations exactes (horaires, prix, dates).",
+        "Demandez une version plus courte ou plus chaleureuse si besoin, puis copiez les textes définitifs."
+      ],
+      "consignes": [
+        "publications"
+      ],
+      "fiche": "Faire rédiger 4 publications, compléter les repères à vérifier."
+    },
+    {
+      "titre": "Écrire le message Google Business",
+      "minutes": 8,
+      "description": "L'assistant rédige un message court pour votre fiche Google Business, à partir d'une information certaine.",
+      "actions": [
+        "Choisissez une information utile à vos clients : nouveauté, horaires d'une période, animation.",
+        "Copiez la consigne ci-dessous dans la même conversation et complétez les champs.",
+        "Relisez et vérifiez dates, horaires et conditions avant de publier sur votre fiche."
+      ],
+      "consignes": [
+        "google"
+      ],
+      "fiche": "Faire rédiger un message court pour Google Business."
+    },
+    {
+      "titre": "Planifier et relire",
+      "minutes": 10,
+      "description": "Vous rangez tout dans votre agenda et vous contrôlez chaque publication avant la mise en ligne.",
+      "actions": [
+        "Associez chaque publication à une date et à une photo, dans un tableau ou votre agenda.",
+        "Si vous publiez des photos de personnes, assurez-vous de leur accord ; en cas de doute, ne les publiez pas.",
+        "Passez la liste de contrôle qualité en bas de page.",
+        "Publiez la première publication aujourd'hui et programmez les autres si votre outil le permet."
+      ],
+      "fiche": "Planifier dates et photos, contrôle qualité, publier la première."
+    }
+  ],
+  "consignes": [
+    {
+      "id": "calendrier",
+      "titre": "Construire le calendrier du mois",
+      "aide": "À coller dans une nouvelle conversation. Seules les informations que vous donnez peuvent être utilisées.",
+      "fiche": true,
+      "champs": [
+        "ACTIVITÉ ET LIEU",
+        "MOIS",
+        "OBJECTIF DU MOIS",
+        "RÉSEAUX UTILISÉS",
+        "NOMBRE DE PUBLICATIONS",
+        "ÉVÉNEMENTS ET INFORMATIONS CERTAINS",
+        "TON SOUHAITÉ"
+      ],
+      "texte": "Tu es mon assistant pour les réseaux sociaux. Mon activité : [ACTIVITÉ ET LIEU].\n\nMois concerné : [MOIS]\nObjectif du mois : [OBJECTIF DU MOIS]\nRéseaux utilisés : [RÉSEAUX UTILISÉS]\nNombre de publications souhaité : [NOMBRE DE PUBLICATIONS]\nTon : [TON SOUHAITÉ], avec le vouvoiement.\n\nÉvénements et informations certains (seules informations que tu peux utiliser) :\n[ÉVÉNEMENTS ET INFORMATIONS CERTAINS]\n\nPropose un calendrier sous forme de tableau avec les colonnes : semaine, réseau, thème, idée de la publication, photo ou vidéo à prendre.\n\nRègles :\n- N'invente aucun événement, horaire, prix, promotion ni fait sur mon entreprise : si une information manque, écris « [À VÉRIFIER] ».\n- Varie les thèmes : coulisses, produits ou plats, informations pratiques, saison, équipe, valorisation du territoire.\n- Ne propose que des photos que je peux prendre facilement moi-même.\n- Ne cite aucun client et ne suggère aucun témoignage inventé."
+    },
+    {
+      "id": "publications",
+      "titre": "Rédiger les publications",
+      "aide": "À coller dans la même conversation, après avoir choisi quatre idées du calendrier.",
+      "champs": [
+        "NUMÉROS DES IDÉES CHOISIES",
+        "APPEL À L'ACTION SOUHAITÉ"
+      ],
+      "texte": "Rédige les publications correspondant aux idées numéro [NUMÉROS DES IDÉES CHOISIES] du calendrier.\n\nPour chacune :\n- un texte de 3 à 6 lignes, dans le ton défini plus haut ;\n- un appel à l'action : [APPEL À L'ACTION SOUHAITÉ] ;\n- trois à cinq mots-clics (hashtags) simples, liés au lieu et à l'activité ;\n- une description de la photo à prendre, en une phrase.\n\nRègles :\n- N'invente aucun horaire, prix, promotion, date ni information pratique : écris « [À VÉRIFIER] » à la place.\n- Pas de superlatifs ni de promesses (« le meilleur », « garanti »).\n- Pas d'émojis en excès : deux au maximum par publication.\n- Présente chaque publication sous un titre clair."
+    },
+    {
+      "id": "google",
+      "titre": "Écrire un message Google Business",
+      "aide": "À coller dans la même conversation. Le message doit rester court et factuel.",
+      "champs": [
+        "INFORMATION À COMMUNIQUER",
+        "DATES ET HORAIRES CERTAINS"
+      ],
+      "texte": "Rédige un message court (60 à 100 mots) pour la fiche Google Business de mon entreprise, à partir de cette information : [INFORMATION À COMMUNIQUER].\n\nDates et horaires certains : [DATES ET HORAIRES CERTAINS]\n\nRègles : ton factuel et accueillant, vouvoiement, sans émojis ; commence par l'information la plus utile au client ; n'invente aucune date, aucun horaire ni aucun prix ; si un élément manque, écris « [À VÉRIFIER] ». Propose aussi un intitulé de bouton d'action adapté (par exemple « En savoir plus » ou « Réserver ») sans inventer de lien."
+    }
+  ],
+  "exemples": [
+    {
+      "metier": "Restaurant",
+      "lieu": "Montpellier, Hérault",
+      "contexte": "Un restaurant de cuisine de saison veut remplir ses services du mardi et du mercredi.",
+      "consigne": "calendrier",
+      "valeurs": {
+        "ACTIVITÉ ET LIEU": "restaurant de cuisine de saison, centre de Montpellier",
+        "MOIS": "octobre",
+        "OBJECTIF DU MOIS": "faire connaître le menu d'automne et remplir les services du mardi et du mercredi",
+        "RÉSEAUX UTILISÉS": "Facebook, Instagram et Google Business",
+        "NOMBRE DE PUBLICATIONS": "12 sur le mois",
+        "ÉVÉNEMENTS ET INFORMATIONS CERTAINS": "nouveau menu d'automne à partir du 1er octobre ; fermeture le dimanche et le lundi ; soirée avec un vigneron du Languedoc un mercredi (date [À VÉRIFIER])",
+        "TON SOUHAITÉ": "chaleureux et gourmand sans exagération"
+      },
+      "resultat": "Semaine 1 | Instagram | Nouveau menu | Présentation du menu d'automne | Photo du plat principal, lumière naturelle\nSemaine 1 | Google Business | Information pratique | Rappel des jours de fermeture | Photo de la salle prête pour le service\nSemaine 2 | Facebook | Coulisses | Le cuisinier prépare une base du menu | Photo des mains au travail (accord de la personne)\nSemaine 3 | Instagram | Rencontre | Annonce de la soirée avec un vigneron | Photo des bouteilles sur table — date [À VÉRIFIER]"
+    },
+    {
+      "metier": "Chambres d'hôtes et visites",
+      "lieu": "Cahors, Lot",
+      "contexte": "Une maison d'hôtes veut remplir l'arrière-saison avec des week-ends de découverte.",
+      "consigne": "calendrier",
+      "valeurs": {
+        "ACTIVITÉ ET LIEU": "chambres d'hôtes dans une maison de caractère près de Cahors",
+        "MOIS": "septembre",
+        "OBJECTIF DU MOIS": "attirer des visiteurs pour des week-ends d'arrière-saison",
+        "RÉSEAUX UTILISÉS": "Facebook et Google Business",
+        "NOMBRE DE PUBLICATIONS": "8 sur le mois",
+        "ÉVÉNEMENTS ET INFORMATIONS CERTAINS": "vendanges chez un vigneron voisin (dates [À VÉRIFIER]) ; petit-déjeuner avec confitures maison ; piscine fermée à partir du 20 septembre",
+        "TON SOUHAITÉ": "accueillant et paisible"
+      },
+      "resultat": "Semaine 1 | Facebook | Le lieu | Le jardin au petit matin | Photo du jardin avant le petit-déjeuner\nSemaine 2 | Google Business | Information pratique | Fermeture de la piscine le 20 septembre | Photo de la terrasse\nSemaine 3 | Facebook | Territoire | Les vendanges du voisin (dates [À VÉRIFIER]) | Photo des vignes\nSemaine 4 | Facebook | Table | Le petit-déjeuner et les confitures maison | Photo de la table dressée"
+    },
+    {
+      "metier": "Boulangerie",
+      "lieu": "Nîmes, Gard",
+      "contexte": "Une boulangerie de quartier veut faire connaître ses nouveautés et ses horaires de fin d'année.",
+      "consigne": "calendrier",
+      "valeurs": {
+        "ACTIVITÉ ET LIEU": "boulangerie-pâtisserie de quartier à Nîmes",
+        "MOIS": "décembre",
+        "OBJECTIF DU MOIS": "présenter les pâtisseries de fin d'année et les horaires de fermeture",
+        "RÉSEAUX UTILISÉS": "Instagram et Google Business",
+        "NOMBRE DE PUBLICATIONS": "10 sur le mois",
+        "ÉVÉNEMENTS ET INFORMATIONS CERTAINS": "commandes de bûches ouvertes jusqu'au 20 décembre ; horaires particuliers du 24 et du 31 décembre [À VÉRIFIER] ; pain au levain tous les jours",
+        "TON SOUHAITÉ": "familial et simple"
+      },
+      "resultat": "Semaine 1 | Instagram | Produits | Ouverture des commandes de bûches | Photo d'une bûche sur le comptoir\nSemaine 2 | Instagram | Coulisses | La fabrication du pain au levain | Photo des pâtons avant cuisson\nSemaine 3 | Google Business | Information pratique | Horaires du 24 et du 31 décembre [À VÉRIFIER] | Photo de la vitrine\nSemaine 3 | Instagram | Rappel | Dernier jour pour les commandes de bûches | Photo de l'affichette en boutique"
+    }
+  ],
+  "pieges": [
+    {
+      "piege": "Publier un horaire, un prix ou une date inventés par l'assistant.",
+      "solution": "Cherchez chaque « [À VÉRIFIER] » et chaque chiffre, puis remplacez-les par une information que vous avez contrôlée."
+    },
+    {
+      "piege": "Publier des photos de clients ou de salariés sans leur accord.",
+      "solution": "Demandez l'accord de chaque personne reconnaissable ; en cas de doute, choisissez une photo sans visage."
+    },
+    {
+      "piege": "Vouloir trop publier.",
+      "solution": "Partez sur un rythme tenable, par exemple deux publications par semaine. Mieux vaut moins mais régulièrement."
+    },
+    {
+      "piege": "Garder des textes qui ne sonnent pas comme vous.",
+      "solution": "Reformulez à voix haute. Demandez à l'assistant des phrases plus courtes ou un ton plus simple, ou retouchez à la main."
+    },
+    {
+      "piege": "Faire dire à l'assistant des témoignages ou des avis de clients.",
+      "solution": "N'en inventez jamais. Si vous citez un client, reprenez un avis réel avec son accord, sans l'envoyer à l'assistant."
+    }
+  ],
+  "controleQualite": [
+    "Aucun nom de client, réservation, recette secrète ou chiffre confidentiel n'a été collé dans l'assistant.",
+    "Chaque date, horaire, prix et offre cités ont été vérifiés par moi.",
+    "Aucun « [À VÉRIFIER] » ne reste dans les textes à publier.",
+    "Chaque publication a une photo que j'ai le droit d'utiliser, avec l'accord des personnes reconnaissables.",
+    "Les textes ne contiennent ni promesse excessive ni avis ou témoignage inventé.",
+    "Le rythme choisi est réaliste pour moi.",
+    "J'ai relu chaque texte en entier et placé les dates dans mon agenda."
+  ],
+  "autoevaluation": {
+    "question": "J'ai obtenu mon résultat : un calendrier d'un mois, quatre publications relues et un message Google Business prêts à être mis en ligne.",
+    "oui": "Oui, j'ai obtenu mon résultat",
+    "non": "Non, pas encore"
+  },
+  "aTester": [
+    "Consigne « calendrier » : le tableau sort-il bien en colonnes avec des idées réalistes et sans événement, horaire ou prix inventé ? Tester avec ChatGPT, Claude, Copilot et Gemini.",
+    "Consigne « publications » : longueur de 3 à 6 lignes, 3 à 5 mots-clics, deux émojis maximum, « [À VÉRIFIER] » utilisé à la place des informations manquantes.",
+    "Consigne « google » : message de 60 à 100 mots ; vérifier que la formulation de l'intitulé de bouton ne présuppose pas une option absente de la fiche Google.",
+    "Faire vérifier par un professionnel que les noms d'options Google Business cités restent d'actualité.",
+    "Durées des étapes chronométrées avec une personne non technique (total 50 minutes annoncé)."
+  ],
+  "video": [
+    {
+      "secondes": 45,
+      "titre": "Accueil et promesse",
+      "texte": "Bonjour et bienvenue. Dans cette vidéo, nous allons préparer ensemble un mois de publications pour vos réseaux sociaux et pour votre fiche Google Business. Vous gardez la main sur les informations, l'assistant vous aide à les mettre en forme. En cinquante minutes environ, vous aurez un calendrier, quatre publications rédigées et relues, et un message pour Google Business. Aucune compétence technique n'est nécessaire, et la méthode est la même quel que soit l'assistant que vous choisissez. Rien n'est à installer : un navigateur et quelques minutes suffisent.",
+      "ecran": "Présentateur face caméra, puis page d'accueil du module et exemples de pages (restaurant, boulangerie, maison d'hôtes)."
+    },
+    {
+      "secondes": 50,
+      "titre": "Ce qu'on ne colle jamais",
+      "texte": "Avant de commencer, les règles. On ne colle jamais dans un assistant IA les données personnelles de vos clients : noms, réservations, avis nominatifs. Ni vos secrets commerciaux : recettes non publiques, marges, fournisseurs. Ni vos mots de passe, notamment ceux de vos comptes de réseaux sociaux. Les horaires, les prix et les événements, c'est vous qui les donnez, et l'assistant n'en invente aucun. Et relisez toujours avant de publier. Prenez ce réflexe dès maintenant : dans le doute sur une information, ne la collez pas. Il est toujours plus simple de l'ajouter à la main à la fin.",
+      "ecran": "Encadré orange du site, lu lentement."
+    },
+    {
+      "secondes": 45,
+      "titre": "Étape 1 : cadrer votre mois",
+      "texte": "Première étape, huit minutes. Choisissez un objectif simple pour le mois : présenter une nouveauté, remplir un créneau creux, rappeler vos horaires. Listez les événements et les informations dont vous êtes certain : dates, fermetures, produits de saison. Notez les photos que vous pouvez prendre facilement. Et choisissez un rythme réaliste. Mieux vaut peu de publications régulières que beaucoup abandonnées au bout de dix jours. Pas besoin d'un grand projet : une seule bonne idée par semaine suffit. Pensez à ce que vos clients vous demandent le plus souvent, c'est souvent le meilleur sujet.",
+      "ecran": "Agenda du mois, notes dans un document, quelques photos prises en situation (plat, vitrine, atelier)."
+    },
+    {
+      "secondes": 50,
+      "titre": "Étape 2 : le calendrier",
+      "texte": "Deuxième étape, douze minutes. Ouvrez votre assistant et copiez la première consigne avec le bouton Copier. Complétez les champs entre crochets : votre activité, le mois, l'objectif, vos réseaux, vos informations certaines. L'assistant renvoie un tableau avec la semaine, le réseau, le thème, l'idée et la photo à prendre. Lisez-le. Supprimez ce qui ne vous ressemble pas, demandez des ajustements, puis gardez le tableau dans un document. Si une idée vous paraît forcée, ne la gardez pas. Le calendrier est une base de travail, que vous pouvez modifier à tout moment, même en cours de mois.",
+      "ecran": "Bouton Copier sur mobile ; assistant : collage, remplissage des champs, tableau affiché ; suppression de lignes."
+    },
+    {
+      "secondes": 45,
+      "titre": "Étape 3 : les publications",
+      "texte": "Troisième étape, douze minutes. Choisissez quatre idées pour les deux premières semaines. Collez la deuxième consigne, avec les numéros des idées choisies. L'assistant rédige les textes, propose quelques mots-clics et décrit la photo à prendre. Là où une information manque, il écrit « à vérifier ». C'est à vous de la compléter : horaire, prix, date. Relisez, retouchez pour que cela sonne comme vous, et copiez les textes définitifs. Prenez ce temps de relecture : une erreur d'horaire se voit tout de suite et peut décevoir un client qui se déplace pour rien.",
+      "ecran": "Consigne 2 collée, quatre publications affichées, remplacement d'un « [À VÉRIFIER] » par un horaire exact."
+    },
+    {
+      "secondes": 35,
+      "titre": "Étape 4 : Google Business",
+      "texte": "Quatrième étape, huit minutes. Pour votre fiche Google Business, un message court suffit : une nouveauté, des horaires de période, une animation. La troisième consigne le rédige, en commençant par l'information la plus utile. Vérifiez dates et horaires avant de le publier sur votre fiche. Ce message n'a pas besoin d'être long. Un client qui consulte votre fiche cherche d'abord une information pratique, donnez-la sans détour.",
+      "ecran": "Consigne 3, message de 60 à 100 mots, puis fiche Google Business à l'écran (page de test, sans données réelles)."
+    },
+    {
+      "secondes": 40,
+      "titre": "Étape 5 : planifier et relire",
+      "texte": "Dernière étape, dix minutes. Associez chaque publication à une date et à une photo. Si une photo montre des personnes reconnaissables, assurez-vous de leur accord. Passez la liste de contrôle du site : rien de confidentiel collé, tout vérifié, aucun avis inventé. Publiez la première publication aujourd'hui, et programmez les autres si votre outil le permet. Si votre outil ne permet pas de programmer, un simple rappel dans votre agenda fait très bien l'affaire. L'important est de tenir le rythme que vous avez choisi.",
+      "ecran": "Tableau de planification, liste de contrôle cochée, publication de la première publication."
+    },
+    {
+      "secondes": 35,
+      "titre": "Bilan et suite",
+      "texte": "Pour finir, répondez à la question du bilan : avez-vous obtenu votre résultat ? La réponse est enregistrée uniquement dans votre navigateur. Si ce n'est pas encore le cas, relisez les erreurs fréquentes en bas de page. Merci de votre attention, et bonne publication. Vous pouvez refaire l'exercice le mois suivant, en repartant du calendrier précédent. La deuxième fois, tout ira beaucoup plus vite.",
+      "ecran": "Section « Votre bilan », clic sur Oui, message de confirmation. Présentateur face caméra."
+    }
+  ]
+}
