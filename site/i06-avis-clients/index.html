@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Répondre aux avis clients, y compris en plusieurs langues – module I06</title>
+<meta name="description" content="Rédiger des réponses sobres et personnalisées à des avis positifs, mitigés et négatifs, puis les adapter dans la langue de vos clients.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header>
+<p><a href="../index.html">← Tous les modules</a></p>
+<h1>Répondre aux avis clients, y compris en plusieurs langues</h1>
+<p class="lead">Rédiger des réponses sobres et personnalisées à des avis positifs, mitigés et négatifs, puis les adapter dans la langue de vos clients.</p>
+<ul class="meta"><li>Module I06</li><li>Durée : 48 min environ</li><li>5 étapes</li><li>Aucune compétence technique requise</li></ul>
+</header>
+<main id="contenu" data-module="I06">
+<section class="alerte" aria-labelledby="t-alerte">
+<h2 id="t-alerte">Ce qu'on ne colle jamais dans un assistant IA</h2>
+<ul><li>Les données personnelles de vos clients : même si l'avis est public, retirez le nom, le pseudo, les dates de séjour ou de visite, les numéros de réservation ou de commande.</li><li>Les informations internes sur un client : fichier de réservation, historique d'achats, échanges privés, coordonnées.</li><li>Vos secrets commerciaux : chiffres, tarifs négociés, noms de fournisseurs, procédures internes.</li><li>Vos mots de passe et accès aux plateformes d'avis.</li></ul>
+<p><strong>Relisez chaque réponse avant de la publier : elle est publique, lue par tous vos futurs clients, et ne peut pas toujours être modifiée facilement.</strong></p>
+</section>
+<section aria-labelledby="t-resultat">
+<h2 id="t-resultat">Ce que vous aurez à la fin</h2>
+<p>Une ligne de réponse écrite pour votre établissement, trois réponses relues à des avis réels (un positif, un mitigé, un négatif), une version dans une autre langue relue, et des modèles à réutiliser.</p>
+<h3>Avant de commencer</h3>
+<ul><li>Un assistant IA grand public de votre choix, ouvert dans votre navigateur (ChatGPT, Claude, Copilot, Gemini ou un autre).</li><li>Trois avis récents déjà publiés sur votre fiche : un positif, un mitigé, un négatif.</li><li>Un éditeur de texte pour anonymiser les avis avant de les copier dans l'assistant.</li><li>Pour la version multilingue : si possible une personne qui lit la langue visée et peut relire.</li></ul>
+<p><a href="fiche.html">Version imprimable (fiche d'une à deux pages)</a> · <a href="consignes.md">Toutes les consignes (texte brut)</a></p>
+</section>
+<nav class="sommaire" aria-label="Sommaire"><h2>Les étapes</h2><ol><li><a href="#etape-1">Choisir et anonymiser trois avis</a> (8 min)</li><li><a href="#etape-2">Fixer votre ligne de réponse</a> (8 min)</li><li><a href="#etape-3">Répondre aux trois avis</a> (12 min)</li><li><a href="#etape-4">Adapter dans une autre langue</a> (10 min)</li><li><a href="#etape-5">Relire, publier et garder vos modèles</a> (10 min)</li></ol>
+<p id="progression" role="status" aria-live="polite"></p></nav>
+<section class="etape" id="etape-1" aria-labelledby="t-etape-1">
+<h2 id="t-etape-1"><span class="num">Étape 1 sur 5</span>Choisir et anonymiser trois avis <span class="duree">8 min</span></h2>
+<p>Vous préparez un avis positif, un avis mitigé et un avis négatif, débarrassés de toute information sur la personne.</p>
+<ul><li>Ouvrez votre fiche d'avis et choisissez trois avis récents de tonalités différentes.</li><li>Copiez chaque avis dans un éditeur de texte, pas encore dans l'assistant.</li><li>Remplacez le nom, le pseudo, les dates précises et tout détail identifiant par « le client » ou « [DATE] ».</li><li>Notez à part, pour chaque avis, ce que vous savez être vrai ou faux, et ce que vous pouvez proposer.</li></ul>
+
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="8">Démarrer le minuteur (8 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e1"> <span>J'ai terminé l'étape 1</span></label>
+</section>
+<section class="etape" id="etape-2" aria-labelledby="t-etape-2">
+<h2 id="t-etape-2"><span class="num">Étape 2 sur 5</span>Fixer votre ligne de réponse <span class="duree">8 min</span></h2>
+<p>L'assistant écrit une règle de réponse à partir de votre ton et de vos limites, que vous corrigez.</p>
+<ul><li>Ouvrez une nouvelle conversation dans votre assistant.</li><li>Copiez la consigne ci-dessous, complétez les champs et collez-la.</li><li>Lisez la ligne de réponse obtenue et corrigez-la jusqu'à ce qu'elle vous ressemble.</li><li>Gardez cette conversation ouverte pour l'étape suivante.</li></ul>
+<div class="consigne">
+<h3>Définir ma ligne de réponse aux avis</h3>
+<p>À coller en début de conversation. Ne donnez aucun nom de client.</p>
+<pre id="consigne-ligne" tabindex="0">Tu es mon assistant pour répondre aux avis clients publiés en ligne. Mon activité : <span class="champ">[ACTIVITÉ ET LIEU]</span>.
+
+Ton : <span class="champ">[TON SOUHAITÉ]</span>, avec le vouvoiement. Signature : <span class="champ">[SIGNATURE]</span>.
+Ce que je ne promets jamais : <span class="champ">[CE QUE JE NE PROMETS JAMAIS]</span>.
+
+Écris ma « ligne de réponse » en 8 points maximum, qui s'appliquera à toutes mes réponses : longueur, façon de remercier, façon de répondre à une critique, ce qu'on ne dit jamais (accusation du client, détails privés, promesse de compensation, discussion de chiffres), et la façon d'inviter à poursuivre en privé.
+
+Règles : n'invente aucune information sur mon établissement ; reste factuel et courtois ; pas de polémique.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="consigne-ligne">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="8">Démarrer le minuteur (8 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e2"> <span>J'ai terminé l'étape 2</span></label>
+</section>
+<section class="etape" id="etape-3" aria-labelledby="t-etape-3">
+<h2 id="t-etape-3"><span class="num">Étape 3 sur 5</span>Répondre aux trois avis <span class="duree">12 min</span></h2>
+<p>L'assistant rédige un brouillon de réponse pour chaque avis, à partir des faits que vous confirmez.</p>
+<ul><li>Pour chaque avis, copiez la consigne ci-dessous, collez l'avis anonymisé et indiquez ce que vous confirmez.</li><li>Lisez la réponse : retirez toute excuse excessive, toute promesse ou toute justification agressive.</li><li>Pour l'avis négatif, vérifiez que la réponse reste calme, factuelle et propose de poursuivre en privé.</li><li>Copiez les réponses définitives dans un document.</li></ul>
+<div class="consigne">
+<h3>Répondre à un avis</h3>
+<p>À coller dans la même conversation, une fois pour chaque avis anonymisé.</p>
+<pre id="consigne-reponses" tabindex="0">Rédige une réponse publique à cet avis, dans le respect de ma ligne de réponse.
+
+Avis (anonymisé) :
+---
+<span class="champ">[AVIS REÇU ANONYMISÉ]</span>
+---
+
+Faits que je confirme (tu ne peux t'appuyer que sur eux) : <span class="champ">[FAITS CONFIRMÉS PAR MOI]</span>
+Suite que je propose, le cas échéant : <span class="champ">[SUITE QUE JE PROPOSE]</span>
+
+Règles :
+- 4 à 7 lignes, avec le vouvoiement.
+- Remercie, reprends un point précis de l'avis, réponds sans te justifier longuement.
+- N'invente aucun fait : si un élément manque, écris « <span class="champ">[À VÉRIFIER]</span> ».
+- N'accuse pas le client, ne donne aucun détail privé sur son séjour, sa visite ou sa commande.
+- Ne promets aucun geste commercial, remboursement ou compensation, sauf s'il figure dans « Suite que je propose ».
+- Pour une critique, reconnais le ressenti sans admettre ce que je n'ai pas confirmé.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="consigne-reponses">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="12">Démarrer le minuteur (12 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e3"> <span>J'ai terminé l'étape 3</span></label>
+</section>
+<section class="etape" id="etape-4" aria-labelledby="t-etape-4">
+<h2 id="t-etape-4"><span class="num">Étape 4 sur 5</span>Adapter dans une autre langue <span class="duree">10 min</span></h2>
+<p>L'assistant adapte une réponse validée dans la langue de l'avis, sur des phrases simples.</p>
+<ul><li>Choisissez la réponse validée de l'étape 3 qui correspond à un client étranger.</li><li>Copiez la consigne ci-dessous et complétez les champs.</li><li>Si vous ne lisez pas la langue, faites relire par une personne qui la maîtrise, ou gardez des phrases très simples.</li><li>Vérifiez que le sens est identique au texte français : aucune promesse ni excuse supplémentaire.</li></ul>
+<div class="consigne">
+<h3>Adapter la réponse dans une autre langue</h3>
+<p>À coller dans la même conversation, avec une réponse déjà validée en français.</p>
+<pre id="consigne-langues" tabindex="0">Adapte la réponse ci-dessous en <span class="champ">[LANGUE DE L'AVIS]</span>, pour un client qui a écrit son avis dans cette langue.
+
+Réponse française validée :
+---
+<span class="champ">[RÉPONSE FRANÇAISE VALIDÉE]</span>
+---
+
+Règles :
+- Garde exactement le même sens : n'ajoute ni excuse, ni promesse, ni information.
+- Phrases simples et naturelles, ton courtois.
+- Garde les noms de lieux et de plats en français, avec une explication brève si utile.
+- Ajoute, après la réponse, un petit tableau de 3 à 5 expressions clés avec leur sens en français, pour que je puisse vérifier le texte.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="consigne-langues">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="10">Démarrer le minuteur (10 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e4"> <span>J'ai terminé l'étape 4</span></label>
+</section>
+<section class="etape" id="etape-5" aria-labelledby="t-etape-5">
+<h2 id="t-etape-5"><span class="num">Étape 5 sur 5</span>Relire, publier et garder vos modèles <span class="duree">10 min</span></h2>
+<p>Vous contrôlez chaque réponse, vous la publiez, puis vous gardez une trame pour les prochains avis.</p>
+<ul><li>Passez la liste de contrôle qualité ci-dessous pour chaque réponse.</li><li>Publiez les réponses sur la plateforme concernée, en vous connectant vous-même.</li><li>Enregistrez les trois réponses comme modèles : « avis positif », « avis mitigé », « avis négatif ».</li><li>Prévoyez un créneau régulier, par exemple dix minutes par semaine, pour traiter les nouveaux avis.</li></ul>
+
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="10">Démarrer le minuteur (10 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e5"> <span>J'ai terminé l'étape 5</span></label>
+</section>
+<section aria-labelledby="t-exemples"><h2 id="t-exemples">Exemples par métier</h2>
+<p>Trois situations d'entreprises d'Occitanie pour vous inspirer. Ouvrez celle qui ressemble à la vôtre.</p>
+<details>
+<summary>Hôtel (Carcassonne, Aude)</summary>
+<p>Un hôtel familial répond à un avis mitigé d'un client étranger : chambre appréciée, bruit dans la nuit.</p>
+<div class="consigne">
+<h4>Consigne remplie : Répondre à un avis</h4>
+<p>Exemple de consigne déjà personnalisée. Reprenez la structure, remplacez par vos propres informations.</p>
+<pre id="exemple-1" tabindex="0">Rédige une réponse publique à cet avis, dans le respect de ma ligne de réponse.
+
+Avis (anonymisé) :
+---
+Nice room, very friendly staff, great breakfast. But we could hear noise from the street until late. 3 stars.
+---
+
+Faits que je confirme (tu ne peux t'appuyer que sur eux) : les chambres sur rue peuvent être bruyantes le week-end ; des chambres sur cour existent ; je peux le signaler à la réservation
+Suite que je propose, le cas échéant : inviter à demander une chambre sur cour lors d'un prochain séjour
+
+Règles :
+- 4 à 7 lignes, avec le vouvoiement.
+- Remercie, reprends un point précis de l'avis, réponds sans te justifier longuement.
+- N'invente aucun fait : si un élément manque, écris « <span class="champ">[À VÉRIFIER]</span> ».
+- N'accuse pas le client, ne donne aucun détail privé sur son séjour, sa visite ou sa commande.
+- Ne promets aucun geste commercial, remboursement ou compensation, sauf s'il figure dans « Suite que je propose ».
+- Pour une critique, reconnais le ressenti sans admettre ce que je n'ai pas confirmé.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="exemple-1">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<h4>Résultat attendu (exemple illustratif)</h4>
+<pre tabindex="0">Merci pour votre avis et pour vos mots sur l'accueil et le petit-déjeuner. Nous comprenons que le bruit de la rue ait gêné votre nuit : les chambres sur rue peuvent en effet être animées le week-end. Lors d'un prochain séjour, n'hésitez pas à demander une chambre sur cour au moment de la réservation. Nous serions heureux de vous accueillir de nouveau.
+L'équipe de l'hôtel
+(Variante en anglais à produire avec la consigne « Adapter dans une autre langue ».)</pre>
+</details>
+<details>
+<summary>Restaurant (Perpignan, Pyrénées-Orientales)</summary>
+<p>Un restaurant répond à un avis négatif sur l'attente en salle un soir de forte affluence.</p>
+<div class="consigne">
+<h4>Consigne remplie : Répondre à un avis</h4>
+<p>Exemple de consigne déjà personnalisée. Reprenez la structure, remplacez par vos propres informations.</p>
+<pre id="exemple-2" tabindex="0">Rédige une réponse publique à cet avis, dans le respect de ma ligne de réponse.
+
+Avis (anonymisé) :
+---
+Cuisine correcte mais une heure d'attente avant d'avoir notre plat. Personnel débordé. Déçus.
+---
+
+Faits que je confirme (tu ne peux t'appuyer que sur eux) : le service était plein ce soir-là ; une absence imprévue en cuisine a ralenti le service ; nous ne pouvons pas détailler la table concernée dans une réponse publique
+Suite que je propose, le cas échéant : inviter à nous écrire en privé pour échanger
+
+Règles :
+- 4 à 7 lignes, avec le vouvoiement.
+- Remercie, reprends un point précis de l'avis, réponds sans te justifier longuement.
+- N'invente aucun fait : si un élément manque, écris « <span class="champ">[À VÉRIFIER]</span> ».
+- N'accuse pas le client, ne donne aucun détail privé sur son séjour, sa visite ou sa commande.
+- Ne promets aucun geste commercial, remboursement ou compensation, sauf s'il figure dans « Suite que je propose ».
+- Pour une critique, reconnais le ressenti sans admettre ce que je n'ai pas confirmé.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="exemple-2">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<h4>Résultat attendu (exemple illustratif)</h4>
+<pre tabindex="0">Merci d'avoir pris le temps de nous écrire. Nous regrettons que l'attente ait gâché votre soirée : le service était complet ce soir-là et notre cuisine a été ralentie par un imprévu. Ce n'est pas le niveau que nous souhaitons offrir. Nous serions heureux d'échanger avec vous directement : vous pouvez nous écrire en message privé.
+L'équipe du restaurant</pre>
+</details>
+<details>
+<summary>Commerce de proximité (Sète, Hérault)</summary>
+<p>Une épicerie fine répond à un avis très positif et propose une version en espagnol.</p>
+<div class="consigne">
+<h4>Consigne remplie : Répondre à un avis</h4>
+<p>Exemple de consigne déjà personnalisée. Reprenez la structure, remplacez par vos propres informations.</p>
+<pre id="exemple-3" tabindex="0">Rédige une réponse publique à cet avis, dans le respect de ma ligne de réponse.
+
+Avis (anonymisé) :
+---
+Una tienda preciosa, productos locales y una atención muy amable. Volveremos. 5 estrellas.
+---
+
+Faits que je confirme (tu ne peux t'appuyer que sur eux) : épicerie avec produits de producteurs de la région ; ouverte toute l'année ; accueil de visiteurs en été
+Suite que je propose, le cas échéant : dire que nous serions heureux de les revoir
+
+Règles :
+- 4 à 7 lignes, avec le vouvoiement.
+- Remercie, reprends un point précis de l'avis, réponds sans te justifier longuement.
+- N'invente aucun fait : si un élément manque, écris « <span class="champ">[À VÉRIFIER]</span> ».
+- N'accuse pas le client, ne donne aucun détail privé sur son séjour, sa visite ou sa commande.
+- Ne promets aucun geste commercial, remboursement ou compensation, sauf s'il figure dans « Suite que je propose ».
+- Pour une critique, reconnais le ressenti sans admettre ce que je n'ai pas confirmé.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="exemple-3">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<h4>Résultat attendu (exemple illustratif)</h4>
+<pre tabindex="0">Merci beaucoup pour votre message et vos mots chaleureux ! Nous sommes ravis que les produits de nos producteurs de la région vous aient plu. Nous serions heureux de vous revoir lors de votre prochain passage.
+L'équipe de l'épicerie
+(Une version en espagnol sera produite avec la consigne « Adapter dans une autre langue » puis relue.)</pre>
+</details>
+</section>
+<section aria-labelledby="t-pieges"><h2 id="t-pieges">Erreurs fréquentes</h2>
+<div class="piege"><strong>Répondre trop vite et sur un ton agacé à un avis injuste.</strong>Laissez passer un moment, faites écrire un brouillon calme, puis relisez-le. En cas d'avis qui vous paraît faux ou injurieux, signalez-le à la plateforme au lieu de polémiquer.</div>
+<div class="piege"><strong>Donner des détails sur le client ou sa venue dans une réponse publique.</strong>Restez général et proposez de poursuivre en privé. Ne citez ni dates précises, ni composition de la table, ni historique du client.</div>
+<div class="piege"><strong>Promettre un remboursement ou un geste commercial sans l'avoir décidé.</strong>Supprimez toute promesse que vous n'avez pas validée vous-même. Précisez-la dans « Suite que je propose » seulement si vous la confirmez.</div>
+<div class="piege"><strong>Publier une traduction que vous ne comprenez pas.</strong>Faites relire par une personne qui lit la langue, ou gardez des phrases très simples et vérifiez le tableau d'expressions clés. En cas de doute, répondez en français.</div>
+<div class="piege"><strong>Répondre toujours avec la même formule.</strong>Reprenez au moins un détail précis de chaque avis, pour montrer que vous l'avez lu.</div>
+</section>
+<section aria-labelledby="t-qc"><h2 id="t-qc">Contrôle qualité avant tout envoi</h2>
+<label class="case"><input type="checkbox" class="controle" data-id="q1"> <span>Aucun nom, pseudo, date précise ou information privée sur un client n'a été collé dans l'assistant.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q2"> <span>La réponse reprend un point précis de l'avis et reste courtoise, même face à une critique.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q3"> <span>Elle ne contient aucune accusation, aucun détail privé et aucune promesse que je n'ai pas décidée.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q4"> <span>Tous les faits cités sont vrais ; aucun « [À VÉRIFIER] » ne reste.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q5"> <span>Pour la version dans une autre langue : le sens est identique au français et elle a été relue par moi ou par une personne qui lit la langue.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q6"> <span>Je publie moi-même, depuis mon propre compte, après relecture complète.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q7"> <span>J'ai enregistré mes trois modèles et prévu un créneau régulier.</span></label>
+</section>
+<section aria-labelledby="t-eval"><h2 id="t-eval">Votre bilan</h2>
+<form id="autoeval">
+<fieldset><legend>J'ai obtenu mon résultat : trois réponses d'avis relues, une version dans une autre langue relue, et des modèles enregistrés.</legend>
+<label><input type="radio" name="resultat" value="oui"> <span>Oui, j'ai obtenu mon résultat</span></label>
+<label><input type="radio" name="resultat" value="non"> <span>Non, pas encore</span></label>
+</fieldset>
+<button type="submit">Enregistrer ma réponse</button>
+<p id="autoeval-retour" role="status" aria-live="polite">Votre réponse est mémorisée uniquement dans ce navigateur.</p>
+</form>
+</section>
+<section id="aller-plus-loin" hidden aria-labelledby="t-plus"><h2 id="t-plus">Aller plus loin</h2>
+<p><a id="lien-offre" class="bouton" href="#">Découvrir l'offre de formation</a></p></section>
+</main>
+<footer><p>Contenu gratuit fourni à titre pédagogique. Les consignes sont des brouillons à adapter ; vous restez responsable des documents que vous envoyez. Votre progression est enregistrée uniquement dans votre navigateur ; ce site n'utilise ni cookie ni traqueur.</p></footer>
+<script src="../assets/app.js" defer></script>
+</body>
+</html>
