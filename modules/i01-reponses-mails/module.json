@@ -1,0 +1,270 @@
+{
+  "id": "I01",
+  "titre": "Répondre aux mails clients avec des modèles personnalisés",
+  "statut": "brouillon, consignes à tester",
+  "public": "Dirigeants et salariés de TPE/PME qui répondent eux-mêmes à leurs mails clients",
+  "objectif": "Créer cinq modèles de réponse dans le ton de votre entreprise et les utiliser sur un vrai mail.",
+  "resultat": "Cinq modèles de mails prêts à réutiliser (demande de prix ou de disponibilité, réclamation, relance, remerciement, refus poli), écrits dans le ton de votre entreprise, enregistrés dans votre messagerie, et une première réponse réelle rédigée avec l'un d'eux.",
+  "prerequis": [
+    "Un assistant IA grand public de votre choix, ouvert dans votre navigateur (ChatGPT, Claude, Copilot, Gemini ou un autre).",
+    "Deux ou trois anciens mails que vous avez écrits à des clients, dont vous êtes satisfait.",
+    "Un éditeur de texte ou le gestionnaire de modèles de votre messagerie."
+  ],
+  "avertissement": {
+    "titre": "Ce qu'on ne colle jamais dans un assistant IA",
+    "points": [
+      "Les données personnelles de vos clients : noms, adresses, téléphones, adresses e-mail, numéros de commande. Remplacez-les par « Madame X », « Client A », « [ADRESSE] ».",
+      "Vos secrets commerciaux : marges, tarifs négociés, conditions réservées à un client, liste de clients.",
+      "Vos mots de passe, codes d'accès et coordonnées bancaires."
+    ],
+    "relecture": "Relisez toujours le texte produit avant tout envoi : l'assistant peut se tromper ou inventer."
+  },
+  "etapes": [
+    {
+      "titre": "Préparer vos exemples sans données personnelles",
+      "minutes": 7,
+      "description": "Vous choisissez deux ou trois mails que vous avez déjà écrits et vous les rendez anonymes.",
+      "actions": [
+        "Ouvrez deux ou trois anciens mails envoyés à des clients, de préférence des mails dont le ton vous plaît.",
+        "Copiez chacun dans un éditeur de texte, pas encore dans l'assistant.",
+        "Effacez ou remplacez tout ce qui identifie une personne (nom, adresse, téléphone, e-mail, numéro de dossier) et tout chiffre confidentiel.",
+        "Gardez la façon d'écrire : début, fin, formules de politesse."
+      ],
+      "fiche": "Choisir 2 ou 3 anciens mails et les rendre anonymes."
+    },
+    {
+      "titre": "Décrire le ton de votre entreprise",
+      "minutes": 8,
+      "description": "L'assistant résume votre façon d'écrire dans un profil de ton, que vous corrigez.",
+      "actions": [
+        "Ouvrez une nouvelle conversation dans votre assistant.",
+        "Copiez la consigne ci-dessous, remplacez les champs entre crochets, puis collez-la avec vos mails anonymisés à la fin.",
+        "Lisez le profil obtenu et corrigez-le : demandez de changer ce qui ne vous ressemble pas.",
+        "Gardez cette conversation ouverte pour l'étape suivante."
+      ],
+      "consignes": [
+        "profil"
+      ],
+      "fiche": "Faire décrire votre ton par l'assistant et le corriger."
+    },
+    {
+      "titre": "Créer vos cinq modèles de mail",
+      "minutes": 12,
+      "description": "Dans la même conversation, l'assistant rédige les cinq modèles avec des champs à compléter.",
+      "actions": [
+        "Copiez la consigne ci-dessous dans la même conversation et complétez les deux champs.",
+        "Lisez chaque modèle : est-ce que vous l'enverriez tel quel à un client ? Sinon, demandez une correction précise (« plus court », « moins formel », « ajoutez une phrase d'excuse »).",
+        "Vérifiez que les champs à compléter sont bien indiqués entre crochets et qu'aucune information inventée n'y figure.",
+        "Copiez les cinq modèles définitifs dans un document."
+      ],
+      "consignes": [
+        "modeles"
+      ],
+      "fiche": "Faire rédiger les 5 modèles, les corriger un par un."
+    },
+    {
+      "titre": "Répondre à un vrai mail avec un modèle",
+      "minutes": 10,
+      "description": "Vous testez un modèle sur un mail réel (rendu anonyme) pour juger du résultat concret.",
+      "actions": [
+        "Choisissez un mail client reçu récemment, sans enjeu important.",
+        "Rendez-le anonyme, puis complétez la consigne ci-dessous.",
+        "Relisez la réponse proposée, corrigez les faits, remettez les vrais noms et les vraies informations à la main.",
+        "Envoyez-la seulement si elle vous convient entièrement."
+      ],
+      "consignes": [
+        "reponse"
+      ],
+      "fiche": "Tester un modèle sur un vrai mail anonymisé, relire, corriger."
+    },
+    {
+      "titre": "Enregistrer vos modèles pour la suite",
+      "minutes": 8,
+      "description": "Vous rangez les cinq modèles là où vous les retrouverez en deux clics.",
+      "actions": [
+        "Dans votre messagerie, créez des modèles ou des réponses rapides (selon votre logiciel) ou un document « Modèles de mails ».",
+        "Nommez-les clairement : « Réponse prix », « Réclamation », « Relance », « Remerciement », « Refus poli ».",
+        "Passez la liste du contrôle qualité ci-dessous.",
+        "Notez la date : revoyez vos modèles dans quelques mois."
+      ],
+      "fiche": "Enregistrer les 5 modèles dans la messagerie, contrôle qualité."
+    }
+  ],
+  "consignes": [
+    {
+      "id": "profil",
+      "titre": "Décrire le ton de mon entreprise",
+      "aide": "À coller en tout début de conversation, suivie de vos mails anonymisés.",
+      "fiche": true,
+      "champs": [
+        "ACTIVITÉ",
+        "TYPE DE CLIENTS",
+        "TON SOUHAITÉ",
+        "FORMULE D'OUVERTURE",
+        "FORMULE DE FIN",
+        "SIGNATURE"
+      ],
+      "texte": "Tu es mon assistant de rédaction. Je dirige une entreprise : [ACTIVITÉ]. Mes clients sont : [TYPE DE CLIENTS].\n\nJe veux des mails au ton [TON SOUHAITÉ], avec le vouvoiement. Je commence habituellement par « [FORMULE D'OUVERTURE] » et je termine par « [FORMULE DE FIN] », signé « [SIGNATURE] ».\n\nVoici deux ou trois mails que j'ai écrits (les noms et coordonnées ont été retirés) :\n\n---\n[COLLEZ ICI VOS MAILS ANONYMISÉS]\n---\n\nTa mission : décris en 8 lignes maximum le ton de mon entreprise (longueur des phrases, niveau de formalité, mots que j'utilise, mots à éviter). N'invente rien qui ne figure pas dans mes mails ou dans mes indications. Termine par deux questions si quelque chose n'est pas clair."
+    },
+    {
+      "id": "modeles",
+      "titre": "Rédiger mes cinq modèles de mail",
+      "aide": "À coller dans la même conversation, juste après le profil de ton validé.",
+      "champs": [
+        "DÉLAI DE RÉPONSE HABITUEL",
+        "COORDONNÉES À INDIQUER"
+      ],
+      "texte": "Avec le ton que nous venons de définir, rédige cinq modèles de mails de réponse à un client :\n1. Réponse à une demande de prix ou de disponibilité\n2. Réponse à une réclamation\n3. Relance d'un client qui n'a pas répondu\n4. Remerciement après une commande ou une prestation\n5. Refus poli (demande que je ne peux pas satisfaire)\n\nRègles :\n- Chaque modèle fait 6 à 10 lignes, avec un objet de mail.\n- Les informations à compléter sont écrites entre crochets, par exemple [PRÉNOM DU CLIENT], [DATE], [MONTANT], [PRODUIT OU PRESTATION].\n- N'invente aucun prix, délai, date, garantie ni engagement : utilise un crochet à la place.\n- Mon délai de réponse habituel est : [DÉLAI DE RÉPONSE HABITUEL].\n- Les coordonnées à indiquer en fin de mail sont : [COORDONNÉES À INDIQUER].\n- Pour la réclamation : reconnais le problème sans admettre de faute précise et propose de revenir vers le client après vérification.\n\nPrésente les cinq modèles les uns sous les autres, avec un titre pour chacun."
+    },
+    {
+      "id": "reponse",
+      "titre": "Répondre à un mail reçu avec un modèle",
+      "aide": "À coller dans la même conversation. Le mail reçu doit être anonymisé.",
+      "champs": [
+        "NUMÉRO DU MODÈLE",
+        "MAIL REÇU ANONYMISÉ",
+        "INFORMATIONS À CONFIRMER"
+      ],
+      "texte": "Utilise le modèle numéro [NUMÉRO DU MODÈLE] pour répondre au mail ci-dessous, dans le même ton.\n\nMail reçu (anonymisé) :\n---\n[MAIL REÇU ANONYMISÉ]\n---\n\nInformations que je confirme pour cette réponse : [INFORMATIONS À CONFIRMER]\n\nRègles : réponds uniquement à ce que le client demande. N'invente aucune information : si une donnée manque, laisse un crochet. Après la réponse, liste en trois points ce que je dois vérifier avant d'envoyer."
+    }
+  ],
+  "exemples": [
+    {
+      "metier": "Plombier chauffagiste",
+      "lieu": "Toulouse, Haute-Garonne",
+      "contexte": "Entreprise de dépannage et d'entretien chez des particuliers, qui reçoit beaucoup de demandes de disponibilité.",
+      "consigne": "profil",
+      "valeurs": {
+        "ACTIVITÉ": "plomberie et entretien de chaudières chez des particuliers, à Toulouse et alentours",
+        "TYPE DE CLIENTS": "des particuliers propriétaires, souvent pressés",
+        "TON SOUHAITÉ": "direct, rassurant et simple",
+        "FORMULE D'OUVERTURE": "Bonjour Madame, Bonjour Monsieur",
+        "FORMULE DE FIN": "Cordialement",
+        "SIGNATURE": "L'équipe de l'entreprise"
+      },
+      "resultat": "Ton : phrases courtes, vocabulaire du quotidien, pas de termes techniques sans explication. Formel mais chaleureux. Toujours une prochaine étape claire (appel, créneau). À éviter : promesses de délai ferme, jargon de chantier."
+    },
+    {
+      "metier": "Vigneronne ou vigneron",
+      "lieu": "Gaillac, Tarn",
+      "contexte": "Domaine viticole qui répond à des particuliers, des cavistes et des restaurateurs pour les commandes et les visites.",
+      "consigne": "profil",
+      "valeurs": {
+        "ACTIVITÉ": "domaine viticole avec vente directe et vente aux cavistes",
+        "TYPE DE CLIENTS": "des particuliers de passage, des cavistes et des restaurateurs",
+        "TON SOUHAITÉ": "chaleureux, passionné mais sobre",
+        "FORMULE D'OUVERTURE": "Bonjour",
+        "FORMULE DE FIN": "Bien cordialement, et à bientôt au domaine",
+        "SIGNATURE": "Le domaine"
+      },
+      "resultat": "Ton : accueillant et sincère, phrases de longueur moyenne, un mot sur le vin ou le domaine sans enthousiasme excessif. Vouvoiement constant. À éviter : superlatifs, formules commerciales appuyées."
+    },
+    {
+      "metier": "Gîte ou chambres d'hôtes",
+      "lieu": "Aubrac, Aveyron",
+      "contexte": "Hébergement saisonnier qui reçoit des demandes de disponibilité, parfois en anglais, et quelques réclamations.",
+      "consigne": "profil",
+      "valeurs": {
+        "ACTIVITÉ": "gîte et chambres d'hôtes en Aubrac",
+        "TYPE DE CLIENTS": "des familles et des randonneurs, français et étrangers",
+        "TON SOUHAITÉ": "accueillant, précis et sans fioritures",
+        "FORMULE D'OUVERTURE": "Bonjour",
+        "FORMULE DE FIN": "Au plaisir de vous accueillir",
+        "SIGNATURE": "Votre hôte"
+      },
+      "resultat": "Ton : accueil personnel, informations pratiques en premier (dates, capacité, conditions), phrases courtes. Excuses sobres en cas de souci. À éviter : promesses de météo ou d'équipements non confirmés."
+    }
+  ],
+  "pieges": [
+    {
+      "piege": "Coller un vrai mail avec le nom et les coordonnées du client.",
+      "solution": "Anonymisez toujours avant de coller : « Madame X », « [ADRESSE] ». Remettez les vraies informations à la main à la fin."
+    },
+    {
+      "piege": "Envoyer la réponse sans la relire.",
+      "solution": "Relisez à voix haute. Vérifiez chaque date, chaque prix et chaque engagement : l'assistant peut en inventer."
+    },
+    {
+      "piege": "Obtenir un ton qui ne vous ressemble pas.",
+      "solution": "Corrigez précisément : « moins formel », « phrases plus courtes », « sans cette formule ». Revenez à vos propres mails comme référence."
+    },
+    {
+      "piege": "Laisser l'assistant promettre un remboursement, un délai ou une garantie.",
+      "solution": "Dans la consigne, interdisez-le (c'est déjà prévu) et supprimez toute promesse que vous n'avez pas décidée."
+    },
+    {
+      "piege": "Mélanger plusieurs demandes dans une seule conversation.",
+      "solution": "Ouvrez une nouvelle conversation pour chaque mail client, en gardant vos modèles sous la main."
+    }
+  ],
+  "controleQualite": [
+    "Aucun nom, adresse, téléphone ou information confidentielle de client n'a été collé dans l'assistant.",
+    "Le ton ressemble à celui de mes propres mails.",
+    "Chaque modèle contient des champs entre crochets plutôt que des informations inventées.",
+    "Aucune promesse (prix, délai, remboursement, garantie) que je n'ai pas décidée moi-même.",
+    "J'ai relu les cinq modèles en entier et corrigé les fautes ou les tournures étranges.",
+    "Les cinq modèles sont enregistrés dans ma messagerie ou dans un document que je retrouve facilement."
+  ],
+  "autoevaluation": {
+    "question": "J'ai obtenu mon résultat : cinq modèles de mails utilisables, enregistrés, et une première réponse rédigée.",
+    "oui": "Oui, j'ai obtenu mon résultat",
+    "non": "Non, pas encore"
+  },
+  "aTester": [
+    "Consigne « profil » : l'assistant respecte-t-il la limite de 8 lignes et ne rajoute-t-il rien d'inventé ? Tester avec ChatGPT, Claude, Copilot et Gemini.",
+    "Consigne « modeles » : les 5 modèles sortent-ils bien en 6 à 10 lignes avec des crochets, sans prix ni délai inventés ?",
+    "Consigne « reponse » : le modèle choisi est-il bien suivi, et la liste de vérification finale apparaît-elle ?",
+    "Durées des étapes chronométrées avec une personne non technique (total 45 minutes annoncé).",
+    "Relecture par un professionnel du ton des exemples d'Occitanie."
+  ],
+  "video": [
+    {
+      "secondes": 45,
+      "titre": "Accueil et promesse",
+      "texte": "Bonjour et bienvenue. Dans cette vidéo, nous allons créer ensemble cinq modèles de mails pour répondre à vos clients, dans le ton de votre entreprise. Vous n'avez pas besoin d'être technicien. En trois quarts d'heure environ, vous aurez des modèles prêts à servir, et une première réponse réelle rédigée. Rien n'est à installer : il vous suffit d'un assistant IA grand public ouvert dans votre navigateur et de quelques anciens mails. Le choix de l'assistant vous appartient : la méthode est la même pour tous.",
+      "ecran": "Présentateur face caméra, puis page d'accueil du module sur mobile et sur ordinateur."
+    },
+    {
+      "secondes": 60,
+      "titre": "Ce qu'on ne colle jamais",
+      "texte": "Avant de commencer, une règle essentielle. On ne colle jamais dans un assistant IA les données personnelles de vos clients : noms, adresses, téléphones, adresses mail. Ni vos secrets commerciaux, comme vos marges ou vos tarifs négociés. Ni vos mots de passe. Quand vous reprenez un ancien mail, remplacez ces informations par « Madame X » ou par des crochets. Et dernière règle : relisez toujours avant d'envoyer. L'assistant peut se tromper, ou inventer. Prenez ce réflexe dès maintenant, car il vaut pour tous les modules : en cas de doute sur une information, ne la collez pas. Il est toujours plus simple d'ajouter un détail à la main à la fin que de retirer une donnée déjà envoyée.",
+      "ecran": "Encadré orange du site, lu lentement. Exemple d'un mail avant et après anonymisation dans un éditeur de texte."
+    },
+    {
+      "secondes": 45,
+      "titre": "Étape 1 : préparer vos exemples",
+      "texte": "Première étape, sept minutes. Ouvrez deux ou trois anciens mails que vous avez envoyés et dont vous êtes content. Copiez-les dans un éditeur de texte et effacez tout ce qui identifie une personne. Gardez bien la façon d'écrire : votre début de mail, votre fin, vos formules de politesse. C'est cela qui donnera le ton de votre entreprise. Ne cherchez pas des mails parfaits. Choisissez simplement des mails qui sonnent comme vous. Si vous n'en avez que deux, c'est suffisant pour commencer, et vous pourrez ajouter d'autres exemples plus tard.",
+      "ecran": "Boîte d'envoi de la messagerie, sélection d'un mail, copie dans un éditeur, surlignage des noms remplacés."
+    },
+    {
+      "secondes": 50,
+      "titre": "Étape 2 : le ton de votre entreprise",
+      "texte": "Deuxième étape, huit minutes. Ouvrez votre assistant, au choix. Sur le site, copiez la consigne avec le bouton Copier. Vous voyez des champs entre crochets : votre activité, vos clients, le ton souhaité. Complétez-les avec vos mots, puis collez vos mails anonymisés à la fin. L'assistant vous propose une description de votre ton. Lisez-la. Si quelque chose ne vous ressemble pas, dites-le-lui simplement et demandez une correction. N'hésitez pas à discuter avec l'assistant : demander une correction n'est pas un échec, c'est le fonctionnement normal. Deux ou trois échanges suffisent généralement pour obtenir un profil qui vous convient.",
+      "ecran": "Site sur téléphone : bouton Copier. Puis assistant dans le navigateur : collage, remplissage des crochets, réponse affichée, demande de correction."
+    },
+    {
+      "secondes": 55,
+      "titre": "Étape 3 : les cinq modèles",
+      "texte": "Troisième étape, douze minutes. Dans la même conversation, collez la deuxième consigne. Elle demande cinq modèles : demande de prix ou de disponibilité, réclamation, relance, remerciement et refus poli. Notez que la consigne interdit à l'assistant d'inventer un prix ou un délai : à la place, il laisse un champ entre crochets. Relisez chaque modèle. Vous l'enverriez tel quel ? Sinon, demandez une correction précise : plus court, moins formel, avec une phrase d'excuse. Si un modèle ne vous plaît pas, ne recommencez pas tout : corrigez seulement celui-là. Un modèle est un point de départ que vous adapterez ensuite à chaque situation, avec vos mots.",
+      "ecran": "Collage de la consigne 2, défilement des cinq modèles, mise en évidence des crochets, une demande de correction et la nouvelle version."
+    },
+    {
+      "secondes": 45,
+      "titre": "Étape 4 : un vrai mail",
+      "texte": "Quatrième étape, dix minutes. Choisissez un vrai mail reçu récemment, sans gros enjeu, et rendez-le anonyme. Utilisez la troisième consigne : elle choisit le modèle, répond dans votre ton et vous donne trois points à vérifier. Puis vous remettez à la main les vrais noms et les vraies informations. Vous relisez, et vous n'envoyez que si cela vous convient entièrement. Avec un peu d'habitude, vous reprendrez ce geste en quelques minutes pour chaque mail. L'important, aujourd'hui, est de constater que la réponse obtenue est utilisable après vos corrections.",
+      "ecran": "Mail reçu anonymisé, consigne 3 remplie, réponse affichée, réécriture à la main dans la messagerie avec les vrais éléments."
+    },
+    {
+      "secondes": 40,
+      "titre": "Étape 5 et contrôle qualité",
+      "texte": "Dernière étape, huit minutes. Enregistrez vos cinq modèles dans votre messagerie, sous forme de modèles ou de réponses rapides, ou dans un simple document bien nommé. Puis passez la liste de contrôle du site : pas de donnée personnelle collée, un ton qui vous ressemble, aucune promesse inventée, tout relu. Si vous n'êtes pas à l'aise avec les modèles de votre messagerie, un document texte bien rangé fait très bien l'affaire. L'essentiel est de retrouver vos modèles en deux clics.",
+      "ecran": "Création d'un modèle dans une messagerie (exemple), puis liste de contrôle du site avec cases cochées."
+    },
+    {
+      "secondes": 40,
+      "titre": "Bilan et suite",
+      "texte": "Pour finir, répondez à la question du bilan : avez-vous obtenu votre résultat ? Oui ou non, c'est enregistré uniquement dans votre navigateur. Si ce n'est pas encore le cas, relisez les erreurs fréquentes en bas de page. Merci de votre attention, et bonne rédaction. Vous pouvez revenir à ce module autant de fois que nécessaire, et refaire l'exercice avec un autre type de mail. Chaque tentative vous rendra plus à l'aise avec votre assistant.",
+      "ecran": "Section « Votre bilan » du site, clic sur Oui, message de confirmation. Présentateur face caméra pour conclure."
+    }
+  ]
+}
