@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Préparer un devis à partir d'une description de chantier ou de prestation – module I02</title>
+<meta name="description" content="Transformer la description d'un chantier ou d'une prestation en brouillon de devis structuré, dont vous saisissez vous-même les prix.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header>
+<p><a href="../index.html">← Tous les modules</a></p>
+<h1>Préparer un devis à partir d'une description de chantier ou de prestation</h1>
+<p class="lead">Transformer la description d'un chantier ou d'une prestation en brouillon de devis structuré, dont vous saisissez vous-même les prix.</p>
+<ul class="meta"><li>Module I02</li><li>Durée : 50 min environ</li><li>5 étapes</li><li>Aucune compétence technique requise</li></ul>
+</header>
+<main id="contenu" data-module="I02">
+<section class="alerte" aria-labelledby="t-alerte">
+<h2 id="t-alerte">Ce qu'on ne colle jamais dans un assistant IA</h2>
+<ul><li>Les données personnelles de vos clients : nom, adresse du chantier, téléphone, e-mail. Écrivez « le client » ou « [ADRESSE DU CHANTIER] ».</li><li>Vos secrets commerciaux : marges, coûts d'achat, tarifs négociés avec un fournisseur ou un client, liste de vos clients.</li><li>Vos mots de passe et accès à votre logiciel de facturation.</li><li>Les prix : l'assistant n'en invente aucun dans ce module. Vous les saisissez vous-même, hors de l'assistant.</li></ul>
+<p><strong>Relisez le brouillon en entier avant tout envoi à un client : un devis accepté vous engage.</strong></p>
+</section>
+<section aria-labelledby="t-resultat">
+<h2 id="t-resultat">Ce que vous aurez à la fin</h2>
+<p>Un brouillon de devis clair (lignes détaillées, quantités, hypothèses, exclusions) avec une lettre d'accompagnement, dont les prix et les mentions ont été complétés et vérifiés par vous.</p>
+<h3>Avant de commencer</h3>
+<ul><li>Un assistant IA grand public de votre choix, ouvert dans votre navigateur (ChatGPT, Claude, Copilot, Gemini ou un autre).</li><li>Les notes d'un chantier ou d'une prestation récente (visite, échange avec le client, croquis).</li><li>Votre modèle de devis habituel ou votre logiciel de facturation, pour y reporter le résultat.</li><li>Vos propres tarifs sous la main : c'est vous, et vous seul, qui saisirez les prix.</li></ul>
+<p><a href="fiche.html">Version imprimable (fiche d'une à deux pages)</a> · <a href="consignes.md">Toutes les consignes (texte brut)</a></p>
+</section>
+<nav class="sommaire" aria-label="Sommaire"><h2>Les étapes</h2><ol><li><a href="#etape-1">Rassembler les faits du chantier ou de la prestation</a> (10 min)</li><li><a href="#etape-2">Obtenir la structure du devis</a> (12 min)</li><li><a href="#etape-3">Compléter les prix et corriger les lignes</a> (10 min)</li><li><a href="#etape-4">Rédiger la lettre d'accompagnement</a> (10 min)</li><li><a href="#etape-5">Vérifier les mentions et relire</a> (8 min)</li></ol>
+<p id="progression" role="status" aria-live="polite"></p></nav>
+<section class="etape" id="etape-1" aria-labelledby="t-etape-1">
+<h2 id="t-etape-1"><span class="num">Étape 1 sur 5</span>Rassembler les faits du chantier ou de la prestation <span class="duree">10 min</span></h2>
+<p>Vous notez, en vos propres mots et sans prix, ce que le client demande et ce que vous avez constaté.</p>
+<ul><li>Ouvrez vos notes et listez ce qui est demandé, ce qui est inclus et ce qui est exclu.</li><li>Relevez les quantités et dimensions que vous connaissez avec certitude ; notez aussi ce que vous ignorez encore.</li><li>Retirez le nom du client, l'adresse et tout détail permettant de l'identifier.</li><li>N'écrivez aucun prix, aucun coût d'achat, aucune marge.</li></ul>
+
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="10">Démarrer le minuteur (10 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e1"> <span>J'ai terminé l'étape 1</span></label>
+</section>
+<section class="etape" id="etape-2" aria-labelledby="t-etape-2">
+<h2 id="t-etape-2"><span class="num">Étape 2 sur 5</span>Obtenir la structure du devis <span class="duree">12 min</span></h2>
+<p>L'assistant transforme vos notes en lignes de devis claires, avec une zone prix laissée vide.</p>
+<ul><li>Copiez la consigne ci-dessous, complétez les champs entre crochets avec vos notes de l'étape 1.</li><li>Lisez le tableau obtenu : chaque ligne correspond-elle à un vrai travail ou à une vraie prestation de votre métier ?</li><li>Répondez aux questions que l'assistant vous pose sur les informations manquantes, puis demandez une version corrigée.</li><li>Vérifiez qu'aucun prix n'apparaît : chaque prix doit rester « [PRIX À COMPLÉTER] ».</li></ul>
+<div class="consigne">
+<h3>Structurer un devis sans prix</h3>
+<p>À coller dans une nouvelle conversation. Ne mettez aucun prix ni donnée client dans les champs.</p>
+<pre id="consigne-structure" tabindex="0">Tu es un assistant qui m'aide à préparer le brouillon d'un devis. Mon activité : <span class="champ">[ACTIVITÉ]</span>. Type de client : <span class="champ">[TYPE DE CLIENT]</span>.
+
+Description du chantier ou de la prestation :
+<span class="champ">[DESCRIPTION DU CHANTIER OU DE LA PRESTATION]</span>
+
+Quantités et dimensions que je connais : <span class="champ">[QUANTITÉS ET DIMENSIONS CONNUES]</span>
+Délai souhaité par le client : <span class="champ">[DÉLAI SOUHAITÉ]</span>
+Ce qui est exclu : <span class="champ">[CE QUI EST EXCLU]</span>
+
+Ta mission :
+1. Présente un tableau de devis avec les colonnes : désignation, unité, quantité, prix unitaire HT, total HT. Regroupe les lignes par grandes étapes.
+2. RÈGLE ABSOLUE : n'invente aucun prix, aucun taux de TVA, aucune remise. Écris « <span class="champ">[PRIX À COMPLÉTER]</span> » dans chaque case de prix.
+3. Si une quantité n'est pas donnée, écris « <span class="champ">[QUANTITÉ À CONFIRMER]</span> » au lieu de l'estimer.
+4. Ajoute une rubrique « Hypothèses » (ce que tu as supposé) et une rubrique « Exclusions ».
+5. Termine par la liste des informations manquantes sous forme de questions courtes.
+
+Ne donne aucun conseil juridique. Je vérifie moi-même les mentions obligatoires.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="consigne-structure">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="12">Démarrer le minuteur (12 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e2"> <span>J'ai terminé l'étape 2</span></label>
+</section>
+<section class="etape" id="etape-3" aria-labelledby="t-etape-3">
+<h2 id="t-etape-3"><span class="num">Étape 3 sur 5</span>Compléter les prix et corriger les lignes <span class="duree">10 min</span></h2>
+<p>Vous reportez le brouillon dans votre modèle de devis ou votre logiciel et vous saisissez vous-même les prix.</p>
+<ul><li>Copiez le tableau dans votre modèle de devis ou votre logiciel de facturation habituel.</li><li>Saisissez les prix à partir de vos propres tarifs et de vos calculs, jamais à partir d'une suggestion de l'assistant.</li><li>Supprimez les lignes inutiles, corrigez les quantités et les unités, ajoutez ce que l'assistant a oublié.</li><li>Ne revenez pas dans l'assistant avec vos prix : gardez-les hors de la conversation.</li></ul>
+
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="10">Démarrer le minuteur (10 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e3"> <span>J'ai terminé l'étape 3</span></label>
+</section>
+<section class="etape" id="etape-4" aria-labelledby="t-etape-4">
+<h2 id="t-etape-4"><span class="num">Étape 4 sur 5</span>Rédiger la lettre d'accompagnement <span class="duree">10 min</span></h2>
+<p>L'assistant rédige un court message de présentation à joindre au devis, sans chiffre ni engagement inventé.</p>
+<ul><li>Copiez la consigne ci-dessous et complétez les trois champs.</li><li>Lisez le message : retirez toute promesse de délai ou de résultat que vous n'avez pas décidée.</li><li>Ajoutez à la main le nom du client, la date et vos coordonnées.</li></ul>
+<div class="consigne">
+<h3>Rédiger la lettre d'accompagnement</h3>
+<p>À coller dans la même conversation, une fois les lignes du devis validées.</p>
+<pre id="consigne-lettre" tabindex="0">Rédige un message d'accompagnement de 8 à 12 lignes pour joindre à mon devis. Ton : professionnel, simple, vouvoiement. Mon activité : <span class="champ">[ACTIVITÉ]</span>.
+
+Résumé de la prestation : <span class="champ">[RÉSUMÉ DE LA PRESTATION]</span>
+Durée de validité de l'offre : <span class="champ">[DURÉE DE VALIDITÉ DE L'OFFRE]</span>
+
+Règles :
+- Ne cite aucun prix ni total.
+- N'invente aucun délai, garantie ou engagement : utilise <span class="champ">[À COMPLÉTER]</span> si une information manque.
+- Laisse <span class="champ">[NOM DU CLIENT]</span>, <span class="champ">[DATE]</span> et <span class="champ">[MES COORDONNÉES]</span> entre crochets.
+- Termine en proposant un échange pour répondre aux questions.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="consigne-lettre">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="10">Démarrer le minuteur (10 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e4"> <span>J'ai terminé l'étape 4</span></label>
+</section>
+<section class="etape" id="etape-5" aria-labelledby="t-etape-5">
+<h2 id="t-etape-5"><span class="num">Étape 5 sur 5</span>Vérifier les mentions et relire <span class="duree">8 min</span></h2>
+<p>Vous contrôlez le devis complet avec la liste ci-dessous, avant tout envoi.</p>
+<ul><li>Passez la liste de contrôle qualité en bas de page, ligne par ligne.</li><li>Vérifiez les mentions obligatoires de votre devis : la liste dépend de votre activité et de votre statut. Appuyez-vous sur votre organisation professionnelle, votre chambre consulaire ou votre expert-comptable. Ce module ne constitue pas un avis juridique.</li><li>Relisez les quantités, les unités, les totaux, la durée de validité et les conditions de paiement.</li><li>Envoyez le devis seulement quand tout est vérifié.</li></ul>
+
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="8">Démarrer le minuteur (8 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e5"> <span>J'ai terminé l'étape 5</span></label>
+</section>
+<section aria-labelledby="t-exemples"><h2 id="t-exemples">Exemples par métier</h2>
+<p>Trois situations d'entreprises d'Occitanie pour vous inspirer. Ouvrez celle qui ressemble à la vôtre.</p>
+<details>
+<summary>Maçon, rénovation (Albi, Tarn)</summary>
+<p>Rénovation d'une salle de bain dans une maison ancienne. Le chef d'entreprise a fait la visite et pris des notes.</p>
+<div class="consigne">
+<h4>Consigne remplie : Structurer un devis sans prix</h4>
+<p>Exemple de consigne déjà personnalisée. Reprenez la structure, remplacez par vos propres informations.</p>
+<pre id="exemple-1" tabindex="0">Tu es un assistant qui m'aide à préparer le brouillon d'un devis. Mon activité : maçonnerie et rénovation de l'habitat. Type de client : particulier, propriétaire d'une maison ancienne.
+
+Description du chantier ou de la prestation :
+dépose de l'ancienne douche et du carrelage mural, reprise des supports, pose d'un receveur extra-plat, carrelage mural et au sol, joints
+
+Quantités et dimensions que je connais : pièce de 6 m², murs carrelés sur 2 mètres de haut, carrelage choisi par le client
+Délai souhaité par le client : travaux en septembre
+Ce qui est exclu : plomberie, électricité, peinture du plafond
+
+Ta mission :
+1. Présente un tableau de devis avec les colonnes : désignation, unité, quantité, prix unitaire HT, total HT. Regroupe les lignes par grandes étapes.
+2. RÈGLE ABSOLUE : n'invente aucun prix, aucun taux de TVA, aucune remise. Écris « <span class="champ">[PRIX À COMPLÉTER]</span> » dans chaque case de prix.
+3. Si une quantité n'est pas donnée, écris « <span class="champ">[QUANTITÉ À CONFIRMER]</span> » au lieu de l'estimer.
+4. Ajoute une rubrique « Hypothèses » (ce que tu as supposé) et une rubrique « Exclusions ».
+5. Termine par la liste des informations manquantes sous forme de questions courtes.
+
+Ne donne aucun conseil juridique. Je vérifie moi-même les mentions obligatoires.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="exemple-1">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<h4>Résultat attendu (exemple illustratif)</h4>
+<pre tabindex="0">1. Préparation : dépose de la douche et du carrelage mural | forfait | 1 | [PRIX À COMPLÉTER]
+2. Reprise des supports | m² | [QUANTITÉ À CONFIRMER] | [PRIX À COMPLÉTER]
+3. Pose du receveur extra-plat | unité | 1 | [PRIX À COMPLÉTER]
+4. Carrelage sol et murs | m² | [QUANTITÉ À CONFIRMER] | [PRIX À COMPLÉTER]
+Hypothèses : carrelage fourni par le client. Exclusions : plomberie, électricité, peinture du plafond. Questions : la surface murale exacte ? Accès au chantier pour l'évacuation des gravats ?</pre>
+</details>
+<details>
+<summary>Menuisier-ébéniste (Rodez, Aveyron)</summary>
+<p>Fabrication et pose d'un escalier en bois sur mesure et d'un garde-corps pour un particulier.</p>
+<div class="consigne">
+<h4>Consigne remplie : Structurer un devis sans prix</h4>
+<p>Exemple de consigne déjà personnalisée. Reprenez la structure, remplacez par vos propres informations.</p>
+<pre id="exemple-2" tabindex="0">Tu es un assistant qui m'aide à préparer le brouillon d'un devis. Mon activité : menuiserie et ébénisterie sur mesure. Type de client : particulier.
+
+Description du chantier ou de la prestation :
+fabrication et pose d'un escalier droit en chêne avec garde-corps, finition huilée
+
+Quantités et dimensions que je connais : hauteur à franchir 2,70 m, 14 marches, largeur 90 cm
+Délai souhaité par le client : pose avant la fin de l'année
+Ce qui est exclu : travaux de maçonnerie et de peinture, dépose de l'ancien escalier
+
+Ta mission :
+1. Présente un tableau de devis avec les colonnes : désignation, unité, quantité, prix unitaire HT, total HT. Regroupe les lignes par grandes étapes.
+2. RÈGLE ABSOLUE : n'invente aucun prix, aucun taux de TVA, aucune remise. Écris « <span class="champ">[PRIX À COMPLÉTER]</span> » dans chaque case de prix.
+3. Si une quantité n'est pas donnée, écris « <span class="champ">[QUANTITÉ À CONFIRMER]</span> » au lieu de l'estimer.
+4. Ajoute une rubrique « Hypothèses » (ce que tu as supposé) et une rubrique « Exclusions ».
+5. Termine par la liste des informations manquantes sous forme de questions courtes.
+
+Ne donne aucun conseil juridique. Je vérifie moi-même les mentions obligatoires.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="exemple-2">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<h4>Résultat attendu (exemple illustratif)</h4>
+<pre tabindex="0">1. Étude et relevé de cotes | forfait | 1 | [PRIX À COMPLÉTER]
+2. Fabrication de l'escalier droit en chêne | unité | 1 | [PRIX À COMPLÉTER]
+3. Garde-corps | ml | [QUANTITÉ À CONFIRMER] | [PRIX À COMPLÉTER]
+4. Finition huilée | forfait | 1 | [PRIX À COMPLÉTER]
+5. Pose | forfait | 1 | [PRIX À COMPLÉTER]
+Hypothèses : cotes à confirmer après relevé. Exclusions : maçonnerie, peinture, dépose de l'ancien escalier.</pre>
+</details>
+<details>
+<summary>Consultante ou consultant indépendant (Toulouse, Haute-Garonne)</summary>
+<p>Mission d'accompagnement d'une PME pour réorganiser son suivi de commandes.</p>
+<div class="consigne">
+<h4>Consigne remplie : Structurer un devis sans prix</h4>
+<p>Exemple de consigne déjà personnalisée. Reprenez la structure, remplacez par vos propres informations.</p>
+<pre id="exemple-3" tabindex="0">Tu es un assistant qui m'aide à préparer le brouillon d'un devis. Mon activité : conseil en organisation pour les PME. Type de client : PME industrielle de moins de 50 salariés.
+
+Description du chantier ou de la prestation :
+diagnostic du suivi des commandes, atelier avec l'équipe, plan d'actions écrit, suivi à un mois
+
+Quantités et dimensions que je connais : un atelier d'une demi-journée, un rapport de 10 pages environ, un point de suivi
+Délai souhaité par le client : démarrage dans le mois, mission sur deux mois
+Ce qui est exclu : mise en place d'un logiciel, formation des équipes
+
+Ta mission :
+1. Présente un tableau de devis avec les colonnes : désignation, unité, quantité, prix unitaire HT, total HT. Regroupe les lignes par grandes étapes.
+2. RÈGLE ABSOLUE : n'invente aucun prix, aucun taux de TVA, aucune remise. Écris « <span class="champ">[PRIX À COMPLÉTER]</span> » dans chaque case de prix.
+3. Si une quantité n'est pas donnée, écris « <span class="champ">[QUANTITÉ À CONFIRMER]</span> » au lieu de l'estimer.
+4. Ajoute une rubrique « Hypothèses » (ce que tu as supposé) et une rubrique « Exclusions ».
+5. Termine par la liste des informations manquantes sous forme de questions courtes.
+
+Ne donne aucun conseil juridique. Je vérifie moi-même les mentions obligatoires.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="exemple-3">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<h4>Résultat attendu (exemple illustratif)</h4>
+<pre tabindex="0">1. Diagnostic du suivi des commandes | journée | [QUANTITÉ À CONFIRMER] | [PRIX À COMPLÉTER]
+2. Atelier avec l'équipe | demi-journée | 1 | [PRIX À COMPLÉTER]
+3. Rédaction du plan d'actions | forfait | 1 | [PRIX À COMPLÉTER]
+4. Point de suivi à un mois | séance | 1 | [PRIX À COMPLÉTER]
+Hypothèses : accès aux données de commandes fourni par le client. Exclusions : logiciel, formation.</pre>
+</details>
+</section>
+<section aria-labelledby="t-pieges"><h2 id="t-pieges">Erreurs fréquentes</h2>
+<div class="piege"><strong>Laisser l'assistant proposer des prix.</strong>Interdisez-le (c'est déjà dans la consigne) et supprimez tout chiffre de prix apparu. Saisissez vos prix vous-même, à partir de vos tarifs.</div>
+<div class="piege"><strong>Coller le nom ou l'adresse du client, ou vos coûts d'achat.</strong>Écrivez « le client » et laissez les coordonnées à ajouter à la main dans votre modèle. Gardez marges et coûts hors de l'assistant.</div>
+<div class="piege"><strong>Oublier une prestation ou une exclusion.</strong>Relisez la rubrique « Hypothèses » et « Exclusions », et comparez ligne par ligne avec vos notes de chantier.</div>
+<div class="piege"><strong>Se fier aux quantités estimées par l'assistant.</strong>Remplacez chaque « [QUANTITÉ À CONFIRMER] » par une mesure que vous avez vérifiée vous-même.</div>
+<div class="piege"><strong>Croire que la liste des mentions de la consigne est complète.</strong>L'assistant n'est pas une source juridique. Vérifiez les mentions obligatoires de votre devis auprès de votre organisation professionnelle, de votre chambre consulaire ou de votre expert-comptable.</div>
+</section>
+<section aria-labelledby="t-qc"><h2 id="t-qc">Contrôle qualité avant tout envoi</h2>
+<label class="case"><input type="checkbox" class="controle" data-id="q1"> <span>Aucun nom, adresse ou coordonnée de client, ni aucun coût d'achat ou marge, n'a été collé dans l'assistant.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q2"> <span>Tous les prix sont de moi : aucun ne vient de l'assistant.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q3"> <span>Chaque ligne du devis correspond à un vrai travail ou à une vraie prestation, avec la bonne unité et une quantité vérifiée.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q4"> <span>Les hypothèses et les exclusions sont écrites et correspondent à ce qui a été convenu avec le client.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q5"> <span>Les mentions obligatoires de mon devis ont été vérifiées auprès d'une source fiable pour mon activité (organisation professionnelle, chambre consulaire ou expert-comptable).</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q6"> <span>Les totaux, la durée de validité de l'offre, les délais et les conditions de paiement ont été relus.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q7"> <span>J'ai relu tout le devis et le message d'accompagnement avant de les envoyer.</span></label>
+</section>
+<section aria-labelledby="t-eval"><h2 id="t-eval">Votre bilan</h2>
+<form id="autoeval">
+<fieldset><legend>J'ai obtenu mon résultat : un brouillon de devis complet, dont j'ai saisi et vérifié moi-même les prix.</legend>
+<label><input type="radio" name="resultat" value="oui"> <span>Oui, j'ai obtenu mon résultat</span></label>
+<label><input type="radio" name="resultat" value="non"> <span>Non, pas encore</span></label>
+</fieldset>
+<button type="submit">Enregistrer ma réponse</button>
+<p id="autoeval-retour" role="status" aria-live="polite">Votre réponse est mémorisée uniquement dans ce navigateur.</p>
+</form>
+</section>
+<section id="aller-plus-loin" hidden aria-labelledby="t-plus"><h2 id="t-plus">Aller plus loin</h2>
+<p><a id="lien-offre" class="bouton" href="#">Découvrir l'offre de formation</a></p></section>
+</main>
+<footer><p>Contenu gratuit fourni à titre pédagogique. Les consignes sont des brouillons à adapter ; vous restez responsable des documents que vous envoyez. Votre progression est enregistrée uniquement dans votre navigateur ; ce site n'utilise ni cookie ni traqueur.</p></footer>
+<script src="../assets/app.js" defer></script>
+</body>
+</html>

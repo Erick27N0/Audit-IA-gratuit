@@ -1,0 +1,251 @@
+{
+  "id": "I08",
+  "titre": "Trier et résumer votre boîte mail et vos demandes entrantes",
+  "statut": "brouillon, consignes à tester",
+  "public": "Dirigeants de TPE/PME et personnes en charge du secrétariat",
+  "objectif": "Classer un lot de mails par priorité, obtenir un résumé clair et installer une routine courte pour traiter votre boîte mail.",
+  "resultat": "Vos catégories de tri, un lot de dix mails classés et résumés, une synthèse du jour avec les actions à mener, et une routine quotidienne courte que vous pouvez refaire sans effort.",
+  "prerequis": [
+    "Un assistant IA grand public de votre choix, ouvert dans votre navigateur (ChatGPT, Claude, Copilot, Gemini ou un autre).",
+    "Votre boîte mail ouverte dans un autre onglet, pour retrouver les mails d'origine.",
+    "Un éditeur de texte pour préparer et anonymiser les mails avant de les copier.",
+    "Une dizaine de mails récents, dont aucun ne relève des catégories à ne jamais envoyer (voir encadré)."
+  ],
+  "avertissement": {
+    "titre": "Ce qu'on ne colle jamais dans un assistant IA",
+    "points": [
+      "Les données personnelles de vos clients, salariés, patients ou usagers : noms, adresses, téléphones, adresses mail, numéros de dossier.",
+      "Les mails sensibles : santé, ressources humaines, banque et paiement, contrats, litiges. Ne les confiez jamais à l'assistant, traitez-les vous-même.",
+      "Vos secrets commerciaux : tarifs négociés, marges, offres confidentielles, listes de clients.",
+      "Vos mots de passe et codes d'accès. Ne connectez jamais votre boîte mail à un assistant sans y avoir réfléchi : dans ce module, vous copiez seulement quelques mails préparés à la main."
+    ],
+    "relecture": "Relisez toujours avant d'envoyer ou d'agir : le tri de l'assistant est une aide, pas une décision. Parcourez toujours vous-même l'objet des mails, et ne supprimez rien sur sa seule indication."
+  },
+  "etapes": [
+    {
+      "titre": "Définir vos catégories et vos priorités",
+      "minutes": 8,
+      "description": "Vous écrivez comment vous voulez classer vos mails, avant de demander quoi que ce soit à l'assistant.",
+      "actions": [
+        "Choisissez quatre ou cinq catégories, par exemple : urgent aujourd'hui, à traiter cette semaine, à transmettre à un collègue, pour information, à ignorer.",
+        "Écrivez vos règles de priorité en clair : « un mail d'un client en attente de réponse passe avant tout », « une facture à payer est à traiter cette semaine ».",
+        "Dressez la liste des types de mails que vous ne confiez jamais à l'assistant : santé, RH, banque, contrats, litiges.",
+        "Notez qui, dans votre entourage professionnel, peut traiter quoi."
+      ],
+      "fiche": "Écrire vos catégories, règles de priorité et exclusions."
+    },
+    {
+      "titre": "Préparer un lot de dix mails",
+      "minutes": 10,
+      "description": "Vous choisissez dix mails récents et vous les rendez anonymes à la main.",
+      "actions": [
+        "Parcourez votre boîte mail et choisissez dix mails récents, sauf ceux de la liste d'exclusion.",
+        "Copiez dans un éditeur de texte uniquement l'objet, l'expéditeur sous forme de rôle (« client », « fournisseur », « administration ») et les premières lignes utiles.",
+        "Remplacez noms, adresses, numéros et montants confidentiels par des repères : « Client A », « [NUMÉRO] », « [MONTANT] ».",
+        "Numérotez les mails de 1 à 10."
+      ],
+      "fiche": "Choisir 10 mails, ne garder que l'utile, tout anonymiser."
+    },
+    {
+      "titre": "Obtenir le tri et les résumés",
+      "minutes": 12,
+      "description": "L'assistant classe chaque mail, le résume en une ligne et propose une action, selon vos règles.",
+      "actions": [
+        "Copiez la consigne ci-dessous dans une nouvelle conversation.",
+        "Complétez vos catégories et vos règles, puis collez vos dix mails à la fin.",
+        "Comparez le tableau avec votre propre jugement : qu'auriez-vous classé autrement ? Demandez des corrections.",
+        "Repérez les mails où l'assistant a un doute : ce sont ceux que vous lisez en premier."
+      ],
+      "consignes": [
+        "tri"
+      ],
+      "fiche": "Faire classer et résumer les 10 mails, comparer à votre avis."
+    },
+    {
+      "titre": "Obtenir la synthèse du jour",
+      "minutes": 10,
+      "description": "L'assistant rédige une courte synthèse à partir du tableau validé, pour vous ou pour un collègue.",
+      "actions": [
+        "Dans la même conversation, copiez la consigne ci-dessous et complétez les champs.",
+        "Lisez la synthèse : vérifiez que chaque action correspond à un vrai mail du lot.",
+        "Si vous la destinez à une autre personne, retirez ce qui n'est pas à partager.",
+        "Copiez la synthèse dans votre outil de suivi ou votre agenda."
+      ],
+      "consignes": [
+        "synthese"
+      ],
+      "fiche": "Faire rédiger la synthèse du jour et la vérifier."
+    },
+    {
+      "titre": "Contrôler et installer votre routine",
+      "minutes": 10,
+      "description": "Vous vérifiez les résultats, puis vous fixez un rythme court que vous pouvez tenir.",
+      "actions": [
+        "Passez la liste de contrôle qualité ci-dessous.",
+        "Dans votre vraie boîte mail, traitez les trois mails les plus importants du tri, en les retrouvant à la main.",
+        "Si votre messagerie le permet, créez des dossiers ou des étiquettes à partir de vos catégories.",
+        "Prévoyez un créneau de dix minutes, une ou deux fois par jour, pour refaire la routine avec de nouveaux mails."
+      ],
+      "fiche": "Contrôler, traiter 3 mails importants, fixer une routine courte."
+    }
+  ],
+  "consignes": [
+    {
+      "id": "tri",
+      "titre": "Classer et résumer un lot de mails",
+      "aide": "À coller dans une nouvelle conversation, avec vos mails anonymisés à la fin.",
+      "fiche": true,
+      "champs": [
+        "MON RÔLE",
+        "MES CATÉGORIES",
+        "MES RÈGLES DE PRIORITÉ",
+        "MAILS ANONYMISÉS"
+      ],
+      "texte": "Tu es mon assistant pour trier ma boîte mail. Mon rôle : [MON RÔLE].\n\nMes catégories : [MES CATÉGORIES]\nMes règles de priorité : [MES RÈGLES DE PRIORITÉ]\n\nVoici dix mails numérotés (noms et coordonnées retirés) :\n---\n[MAILS ANONYMISÉS]\n---\n\nPrésente un tableau avec les colonnes : numéro, catégorie, résumé en une ligne, action proposée, niveau de confiance (élevé, moyen, faible).\n\nRègles :\n- Utilise uniquement mes catégories.\n- Ne résume que ce qui est écrit ; n'invente aucune date, aucun montant, aucune intention de l'expéditeur.\n- Si un mail est ambigu, mets un niveau de confiance faible et explique pourquoi en quelques mots.\n- Ne propose pas de supprimer un mail : propose seulement « à ignorer » ou « pour information ».\n- Ne rédige pas de réponse à ce stade."
+    },
+    {
+      "id": "synthese",
+      "titre": "Rédiger la synthèse du jour",
+      "aide": "À coller dans la même conversation, après avoir validé le tableau.",
+      "champs": [
+        "DESTINATAIRE DE LA SYNTHÈSE",
+        "FORMAT SOUHAITÉ"
+      ],
+      "texte": "À partir du tableau validé ci-dessus, rédige une synthèse pour : [DESTINATAIRE DE LA SYNTHÈSE].\n\nFormat souhaité : [FORMAT SOUHAITÉ]\n\nRègles :\n- Commence par les actions urgentes, puis celles de la semaine.\n- Pour chaque action : le numéro du mail, une phrase, et la personne qui s'en occupe, ou « [À DÉCIDER] ».\n- N'ajoute aucune information absente du tableau ; n'invente aucun délai.\n- Termine par une rubrique « Mails à relire moi-même » pour ceux à confiance faible.\n- Ne cite aucun nom : utilise les repères du tableau."
+    }
+  ],
+  "exemples": [
+    {
+      "metier": "Dirigeant d'entreprise du bâtiment",
+      "lieu": "Castres, Tarn",
+      "contexte": "Un dirigeant de PME de maçonnerie reçoit beaucoup de mails de clients, de fournisseurs et d'administrations.",
+      "consigne": "tri",
+      "valeurs": {
+        "MON RÔLE": "dirigeant d'une PME de maçonnerie de 12 salariés",
+        "MES CATÉGORIES": "urgent aujourd'hui ; à traiter cette semaine ; à transmettre au conducteur de travaux ; pour information ; à ignorer",
+        "MES RÈGLES DE PRIORITÉ": "un client qui attend une réponse sur un chantier en cours passe avant tout ; une demande de devis se traite sous deux jours ; les publicités sont à ignorer",
+        "MAILS ANONYMISÉS": "1. Client A : le planning du chantier de la maison est-il confirmé pour lundi ?\n2. Fournisseur B : livraison de ciment décalée de deux jours.\n3. Administration : rappel de déclaration à effectuer ce mois.\n4. Publicité : -20 % sur un outillage.\n5. Particulier C : demande de devis pour une terrasse."
+      },
+      "resultat": "1 | Urgent aujourd'hui | Le client demande de confirmer le planning de lundi | Répondre | élevé\n2 | À transmettre au conducteur de travaux | Livraison de ciment décalée de deux jours | Prévenir l'équipe du chantier | élevé\n3 | À traiter cette semaine | Rappel de déclaration à effectuer ce mois | Vérifier l'échéance moi-même | moyen\n4 | À ignorer | Publicité outillage | Aucune | élevé\n5 | À traiter cette semaine | Demande de devis pour une terrasse | Répondre sous deux jours | élevé"
+    },
+    {
+      "metier": "Secrétariat d'une cave coopérative",
+      "lieu": "Pézenas, Hérault",
+      "contexte": "Une secrétaire traite les demandes de commande, de visite et de livraison pour plusieurs responsables.",
+      "consigne": "tri",
+      "valeurs": {
+        "MON RÔLE": "secrétaire d'une cave coopérative qui gère la boîte mail commune",
+        "MES CATÉGORIES": "urgent aujourd'hui ; à transmettre à la responsable commerciale ; à transmettre au maître de chai ; à traiter par moi ; pour information",
+        "MES RÈGLES DE PRIORITÉ": "une commande de professionnel avec date de livraison est urgente ; une demande de visite se traite sous trois jours ; les newsletters sont pour information",
+        "MAILS ANONYMISÉS": "1. Restaurateur A : commande à livrer jeudi.\n2. Particulier B : souhaite visiter la cave pendant les vacances.\n3. Transporteur : créneau de collecte à confirmer pour demain.\n4. Newsletter d'un salon professionnel.\n5. Caviste C : question sur la disponibilité d'une cuvée."
+      },
+      "resultat": "1 | Urgent aujourd'hui | Commande à livrer jeudi | Transmettre à la responsable commerciale | élevé\n2 | À traiter par moi | Demande de visite pendant les vacances | Répondre sous trois jours | élevé\n3 | Urgent aujourd'hui | Créneau de collecte à confirmer pour demain | Confirmer le créneau | élevé\n4 | Pour information | Newsletter d'un salon professionnel | Lire plus tard | élevé\n5 | À transmettre à la responsable commerciale | Disponibilité d'une cuvée | Transmettre | moyen"
+    },
+    {
+      "metier": "Hôtel-restaurant",
+      "lieu": "Mende, Lozère",
+      "contexte": "La responsable d'un hôtel-restaurant veut trier les demandes de réservation et les mails des fournisseurs.",
+      "consigne": "tri",
+      "valeurs": {
+        "MON RÔLE": "responsable d'un hôtel-restaurant de 20 chambres",
+        "MES CATÉGORIES": "urgent aujourd'hui ; réservations à traiter ; à transmettre au chef de cuisine ; pour information ; à ignorer",
+        "MES RÈGLES DE PRIORITÉ": "une demande de réservation pour moins de sept jours est urgente ; une question d'un fournisseur sur une commande en cours passe avant le reste",
+        "MAILS ANONYMISÉS": "1. Client A : demande une chambre pour ce week-end.\n2. Groupe B : demande de devis pour un repas de 25 personnes en octobre.\n3. Fournisseur C : produit manquant sur la commande de demain.\n4. Plateforme de réservation : mise à jour des conditions d'utilisation.\n5. Publicité pour du matériel de cuisine."
+      },
+      "resultat": "1 | Urgent aujourd'hui | Demande de chambre pour ce week-end | Répondre aujourd'hui | élevé\n2 | Réservations à traiter | Devis pour un repas de 25 personnes en octobre | Préparer un devis | élevé\n3 | À transmettre au chef de cuisine | Produit manquant sur la commande de demain | Prévenir le chef | élevé\n4 | Pour information | Mise à jour des conditions d'utilisation | Lire plus tard | moyen\n5 | À ignorer | Publicité matériel de cuisine | Aucune | élevé"
+    }
+  ],
+  "pieges": [
+    {
+      "piege": "Confier à l'assistant des mails sensibles (santé, ressources humaines, banque, litiges).",
+      "solution": "Définissez dès l'étape 1 la liste des mails qui ne sortent jamais de votre boîte, et traitez-les vous-même."
+    },
+    {
+      "piege": "Coller des mails entiers avec signatures, historiques et coordonnées.",
+      "solution": "Ne gardez que l'objet, le rôle de l'expéditeur et les premières lignes utiles, après anonymisation."
+    },
+    {
+      "piege": "Faire entièrement confiance au tri.",
+      "solution": "Parcourez toujours vous-même les objets des mails, et lisez en premier ceux où l'assistant a un doute. Ne supprimez rien sur sa seule indication."
+    },
+    {
+      "piege": "Laisser l'assistant deviner une date limite ou une intention.",
+      "solution": "Vérifiez dans le mail d'origine : le résumé ne remplace pas la lecture quand il y a un enjeu."
+    },
+    {
+      "piege": "Trop de catégories.",
+      "solution": "Restez à quatre ou cinq catégories. Au-delà, le tri devient plus lent à vérifier qu'à faire."
+    }
+  ],
+  "controleQualite": [
+    "Aucun mail de santé, de ressources humaines, de banque, de contrat ou de litige n'a été collé dans l'assistant.",
+    "Les noms, adresses, numéros et montants confidentiels ont été remplacés par des repères.",
+    "Chaque ligne du tableau correspond à un vrai mail du lot, et j'ai comparé avec mon propre jugement.",
+    "Les mails à confiance faible ont été relus par moi dans la boîte mail d'origine.",
+    "Aucune date, aucun montant ni aucune intention n'a été inventé dans les résumés.",
+    "Je n'ai rien supprimé sur la seule indication de l'assistant.",
+    "J'ai fixé un créneau court et régulier pour refaire la routine."
+  ],
+  "autoevaluation": {
+    "question": "J'ai obtenu mon résultat : un lot de mails classés et résumés, une synthèse du jour vérifiée et une routine fixée.",
+    "oui": "Oui, j'ai obtenu mon résultat",
+    "non": "Non, pas encore"
+  },
+  "aTester": [
+    "Consigne « tri » : le tableau respecte-t-il les catégories données, sans ajouter de catégorie ni proposer de suppression ? Tester avec ChatGPT, Claude, Copilot et Gemini, avec un lot comprenant un mail ambigu.",
+    "Consigne « tri » : les niveaux de confiance sont-ils renseignés et cohérents ? L'assistant invente-t-il une date ou un montant absents du mail ?",
+    "Consigne « synthese » : rubrique « Mails à relire moi-même » présente et aucun nom cité.",
+    "Vérifier que l'étape d'anonymisation est réaliste en 10 minutes pour une personne non technique.",
+    "Durées des étapes chronométrées avec une personne non technique (total 50 minutes annoncé)."
+  ],
+  "video": [
+    {
+      "secondes": 40,
+      "titre": "Accueil et promesse",
+      "texte": "Bonjour et bienvenue. Dans cette vidéo, nous allons trier et résumer ensemble un lot de mails, avec l'aide d'un assistant IA. Vous gardez la main sur ce qui est partagé et sur les décisions. En cinquante minutes environ, vous aurez dix mails classés, une synthèse claire et une routine courte pour la suite. Aucune compétence technique n'est nécessaire, et la méthode est la même quel que soit l'assistant que vous choisissez. Rien n'est à installer : un navigateur et quelques minutes suffisent.",
+      "ecran": "Présentateur face caméra, puis page d'accueil du module et boîte mail de démonstration."
+    },
+    {
+      "secondes": 60,
+      "titre": "Ce qu'on ne colle jamais",
+      "texte": "Avant de commencer, les règles, particulièrement importantes pour une boîte mail. On ne colle jamais dans un assistant IA les données personnelles de vos clients ou de vos salariés. Les mails sensibles, santé, ressources humaines, banque, contrats, litiges, ne lui sont jamais confiés. Ni vos secrets commerciaux, ni vos mots de passe. Dans ce module, vous ne connectez pas votre boîte mail à l'assistant : vous copiez seulement quelques mails que vous avez préparés. Et le tri de l'assistant est une aide, pas une décision. Prenez ce réflexe dès maintenant : dans le doute sur un mail, ne le copiez pas. Il est toujours plus simple de le traiter vous-même que de retirer une donnée déjà envoyée.",
+      "ecran": "Encadré orange du site, lu lentement."
+    },
+    {
+      "secondes": 40,
+      "titre": "Étape 1 : vos catégories",
+      "texte": "Première étape, huit minutes. Choisissez quatre ou cinq catégories : urgent aujourd'hui, à traiter cette semaine, à transmettre, pour information, à ignorer. Écrivez vos règles de priorité en clair, avec vos mots. Dressez aussi la liste des mails que vous ne confierez jamais à l'assistant. Cette étape se fait sans assistant : c'est vous qui décidez comment trier. Ne cherchez pas des catégories parfaites. Elles évolueront avec l'usage, et vous pourrez les ajuster après quelques jours.",
+      "ecran": "Document texte avec catégories et règles de priorité, rédigés à l'écran."
+    },
+    {
+      "secondes": 45,
+      "titre": "Étape 2 : préparer dix mails",
+      "texte": "Deuxième étape, dix minutes. Choisissez dix mails récents, en écartant ceux de la liste d'exclusion. Pour chacun, ne copiez que l'objet, l'expéditeur sous forme de rôle, client, fournisseur ou administration, et les premières lignes utiles. Remplacez les noms, les adresses et les montants confidentiels par des repères. Numérotez de un à dix. Prenez le temps : c'est ce qui protège vos clients. Si le tri ne vous convient pas, ne recommencez pas tout : corrigez les lignes qui posent problème et expliquez à l'assistant pourquoi, avec vos mots.",
+      "ecran": "Boîte mail de démonstration, copie sélective dans un éditeur, remplacement de noms par « Client A »."
+    },
+    {
+      "secondes": 50,
+      "titre": "Étape 3 : le tri",
+      "texte": "Troisième étape, douze minutes. Ouvrez votre assistant et copiez la première consigne avec le bouton Copier. Complétez votre rôle, vos catégories et vos règles, puis collez vos dix mails à la fin. L'assistant renvoie un tableau : catégorie, résumé en une ligne, action proposée, et un niveau de confiance. Comparez avec votre propre jugement. Lisez en premier les mails où la confiance est faible. Demandez des corrections si besoin. Une synthèse n'a d'intérêt que si elle est exacte. Gardez l'habitude de retourner au mail d'origine dès qu'une action engage un délai, un paiement ou un client.",
+      "ecran": "Bouton Copier sur mobile ; assistant : champs remplis, tableau affiché, ligne à confiance faible surlignée."
+    },
+    {
+      "secondes": 45,
+      "titre": "Étape 4 : la synthèse du jour",
+      "texte": "Quatrième étape, dix minutes. Avec la seconde consigne, l'assistant rédige une synthèse : d'abord les actions urgentes, puis celles de la semaine, avec la personne qui s'en occupe. Il termine par la liste des mails que vous devez relire vous-même. Vérifiez que chaque action correspond à un vrai mail, et retirez ce qui ne doit pas être partagé avec un collègue. Quelques mails bien traités valent mieux qu'une boîte entièrement vidée à la va-vite. Commencez petit, et allongez le lot quand vous êtes à l'aise.",
+      "ecran": "Consigne 2 collée, synthèse affichée, copie dans un outil de suivi ou un agenda."
+    },
+    {
+      "secondes": 45,
+      "titre": "Étape 5 : contrôle et routine",
+      "texte": "Dernière étape, dix minutes. Passez la liste de contrôle du site. Retrouvez à la main, dans votre vraie boîte mail, les trois mails les plus importants du tri, et traitez-les. Créez, si votre messagerie le permet, des dossiers à partir de vos catégories. Puis fixez un créneau de dix minutes, une ou deux fois par jour, pour refaire la routine avec de nouveaux mails. Si vous partagez la boîte avec un collègue, convenez avec lui de vos catégories : un tri commun évite les doublons.",
+      "ecran": "Liste de contrôle cochée, création d'étiquettes dans une messagerie de démonstration, agenda avec le créneau."
+    },
+    {
+      "secondes": 30,
+      "titre": "Bilan et suite",
+      "texte": "Pour finir, répondez à la question du bilan : avez-vous obtenu votre résultat ? La réponse est enregistrée uniquement dans votre navigateur. Si ce n'est pas encore le cas, relisez les erreurs fréquentes en bas de page. Merci de votre attention, et bon tri. Vous pouvez refaire l'exercice avec un nouveau lot, quand vous voulez.",
+      "ecran": "Section « Votre bilan », clic sur Oui, message de confirmation. Présentateur face caméra."
+    }
+  ]
+}

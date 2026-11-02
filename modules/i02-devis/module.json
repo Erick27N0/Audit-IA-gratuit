@@ -1,0 +1,259 @@
+{
+  "id": "I02",
+  "titre": "Préparer un devis à partir d'une description de chantier ou de prestation",
+  "statut": "brouillon, consignes à tester",
+  "public": "Artisans, entreprises du bâtiment et indépendants du conseil qui rédigent eux-mêmes leurs devis",
+  "objectif": "Transformer la description d'un chantier ou d'une prestation en brouillon de devis structuré, dont vous saisissez vous-même les prix.",
+  "resultat": "Un brouillon de devis clair (lignes détaillées, quantités, hypothèses, exclusions) avec une lettre d'accompagnement, dont les prix et les mentions ont été complétés et vérifiés par vous.",
+  "prerequis": [
+    "Un assistant IA grand public de votre choix, ouvert dans votre navigateur (ChatGPT, Claude, Copilot, Gemini ou un autre).",
+    "Les notes d'un chantier ou d'une prestation récente (visite, échange avec le client, croquis).",
+    "Votre modèle de devis habituel ou votre logiciel de facturation, pour y reporter le résultat.",
+    "Vos propres tarifs sous la main : c'est vous, et vous seul, qui saisirez les prix."
+  ],
+  "avertissement": {
+    "titre": "Ce qu'on ne colle jamais dans un assistant IA",
+    "points": [
+      "Les données personnelles de vos clients : nom, adresse du chantier, téléphone, e-mail. Écrivez « le client » ou « [ADRESSE DU CHANTIER] ».",
+      "Vos secrets commerciaux : marges, coûts d'achat, tarifs négociés avec un fournisseur ou un client, liste de vos clients.",
+      "Vos mots de passe et accès à votre logiciel de facturation.",
+      "Les prix : l'assistant n'en invente aucun dans ce module. Vous les saisissez vous-même, hors de l'assistant."
+    ],
+    "relecture": "Relisez le brouillon en entier avant tout envoi à un client : un devis accepté vous engage."
+  },
+  "etapes": [
+    {
+      "titre": "Rassembler les faits du chantier ou de la prestation",
+      "minutes": 10,
+      "description": "Vous notez, en vos propres mots et sans prix, ce que le client demande et ce que vous avez constaté.",
+      "actions": [
+        "Ouvrez vos notes et listez ce qui est demandé, ce qui est inclus et ce qui est exclu.",
+        "Relevez les quantités et dimensions que vous connaissez avec certitude ; notez aussi ce que vous ignorez encore.",
+        "Retirez le nom du client, l'adresse et tout détail permettant de l'identifier.",
+        "N'écrivez aucun prix, aucun coût d'achat, aucune marge."
+      ],
+      "fiche": "Noter les faits sans prix ni donnée client."
+    },
+    {
+      "titre": "Obtenir la structure du devis",
+      "minutes": 12,
+      "description": "L'assistant transforme vos notes en lignes de devis claires, avec une zone prix laissée vide.",
+      "actions": [
+        "Copiez la consigne ci-dessous, complétez les champs entre crochets avec vos notes de l'étape 1.",
+        "Lisez le tableau obtenu : chaque ligne correspond-elle à un vrai travail ou à une vraie prestation de votre métier ?",
+        "Répondez aux questions que l'assistant vous pose sur les informations manquantes, puis demandez une version corrigée.",
+        "Vérifiez qu'aucun prix n'apparaît : chaque prix doit rester « [PRIX À COMPLÉTER] »."
+      ],
+      "consignes": [
+        "structure"
+      ],
+      "fiche": "Faire produire les lignes du devis, prix toujours laissés vides."
+    },
+    {
+      "titre": "Compléter les prix et corriger les lignes",
+      "minutes": 10,
+      "description": "Vous reportez le brouillon dans votre modèle de devis ou votre logiciel et vous saisissez vous-même les prix.",
+      "actions": [
+        "Copiez le tableau dans votre modèle de devis ou votre logiciel de facturation habituel.",
+        "Saisissez les prix à partir de vos propres tarifs et de vos calculs, jamais à partir d'une suggestion de l'assistant.",
+        "Supprimez les lignes inutiles, corrigez les quantités et les unités, ajoutez ce que l'assistant a oublié.",
+        "Ne revenez pas dans l'assistant avec vos prix : gardez-les hors de la conversation."
+      ],
+      "fiche": "Reporter dans votre modèle et saisir vous-même les prix."
+    },
+    {
+      "titre": "Rédiger la lettre d'accompagnement",
+      "minutes": 10,
+      "description": "L'assistant rédige un court message de présentation à joindre au devis, sans chiffre ni engagement inventé.",
+      "actions": [
+        "Copiez la consigne ci-dessous et complétez les trois champs.",
+        "Lisez le message : retirez toute promesse de délai ou de résultat que vous n'avez pas décidée.",
+        "Ajoutez à la main le nom du client, la date et vos coordonnées."
+      ],
+      "consignes": [
+        "lettre"
+      ],
+      "fiche": "Faire rédiger un message d'accompagnement sobre."
+    },
+    {
+      "titre": "Vérifier les mentions et relire",
+      "minutes": 8,
+      "description": "Vous contrôlez le devis complet avec la liste ci-dessous, avant tout envoi.",
+      "actions": [
+        "Passez la liste de contrôle qualité en bas de page, ligne par ligne.",
+        "Vérifiez les mentions obligatoires de votre devis : la liste dépend de votre activité et de votre statut. Appuyez-vous sur votre organisation professionnelle, votre chambre consulaire ou votre expert-comptable. Ce module ne constitue pas un avis juridique.",
+        "Relisez les quantités, les unités, les totaux, la durée de validité et les conditions de paiement.",
+        "Envoyez le devis seulement quand tout est vérifié."
+      ],
+      "fiche": "Contrôler mentions, totaux et conditions, puis relire."
+    }
+  ],
+  "consignes": [
+    {
+      "id": "structure",
+      "titre": "Structurer un devis sans prix",
+      "aide": "À coller dans une nouvelle conversation. Ne mettez aucun prix ni donnée client dans les champs.",
+      "fiche": true,
+      "champs": [
+        "ACTIVITÉ",
+        "TYPE DE CLIENT",
+        "DESCRIPTION DU CHANTIER OU DE LA PRESTATION",
+        "QUANTITÉS ET DIMENSIONS CONNUES",
+        "DÉLAI SOUHAITÉ",
+        "CE QUI EST EXCLU"
+      ],
+      "texte": "Tu es un assistant qui m'aide à préparer le brouillon d'un devis. Mon activité : [ACTIVITÉ]. Type de client : [TYPE DE CLIENT].\n\nDescription du chantier ou de la prestation :\n[DESCRIPTION DU CHANTIER OU DE LA PRESTATION]\n\nQuantités et dimensions que je connais : [QUANTITÉS ET DIMENSIONS CONNUES]\nDélai souhaité par le client : [DÉLAI SOUHAITÉ]\nCe qui est exclu : [CE QUI EST EXCLU]\n\nTa mission :\n1. Présente un tableau de devis avec les colonnes : désignation, unité, quantité, prix unitaire HT, total HT. Regroupe les lignes par grandes étapes.\n2. RÈGLE ABSOLUE : n'invente aucun prix, aucun taux de TVA, aucune remise. Écris « [PRIX À COMPLÉTER] » dans chaque case de prix.\n3. Si une quantité n'est pas donnée, écris « [QUANTITÉ À CONFIRMER] » au lieu de l'estimer.\n4. Ajoute une rubrique « Hypothèses » (ce que tu as supposé) et une rubrique « Exclusions ».\n5. Termine par la liste des informations manquantes sous forme de questions courtes.\n\nNe donne aucun conseil juridique. Je vérifie moi-même les mentions obligatoires."
+    },
+    {
+      "id": "lettre",
+      "titre": "Rédiger la lettre d'accompagnement",
+      "aide": "À coller dans la même conversation, une fois les lignes du devis validées.",
+      "champs": [
+        "ACTIVITÉ",
+        "RÉSUMÉ DE LA PRESTATION",
+        "DURÉE DE VALIDITÉ DE L'OFFRE"
+      ],
+      "texte": "Rédige un message d'accompagnement de 8 à 12 lignes pour joindre à mon devis. Ton : professionnel, simple, vouvoiement. Mon activité : [ACTIVITÉ].\n\nRésumé de la prestation : [RÉSUMÉ DE LA PRESTATION]\nDurée de validité de l'offre : [DURÉE DE VALIDITÉ DE L'OFFRE]\n\nRègles :\n- Ne cite aucun prix ni total.\n- N'invente aucun délai, garantie ou engagement : utilise [À COMPLÉTER] si une information manque.\n- Laisse [NOM DU CLIENT], [DATE] et [MES COORDONNÉES] entre crochets.\n- Termine en proposant un échange pour répondre aux questions."
+    }
+  ],
+  "exemples": [
+    {
+      "metier": "Maçon, rénovation",
+      "lieu": "Albi, Tarn",
+      "contexte": "Rénovation d'une salle de bain dans une maison ancienne. Le chef d'entreprise a fait la visite et pris des notes.",
+      "consigne": "structure",
+      "valeurs": {
+        "ACTIVITÉ": "maçonnerie et rénovation de l'habitat",
+        "TYPE DE CLIENT": "particulier, propriétaire d'une maison ancienne",
+        "DESCRIPTION DU CHANTIER OU DE LA PRESTATION": "dépose de l'ancienne douche et du carrelage mural, reprise des supports, pose d'un receveur extra-plat, carrelage mural et au sol, joints",
+        "QUANTITÉS ET DIMENSIONS CONNUES": "pièce de 6 m², murs carrelés sur 2 mètres de haut, carrelage choisi par le client",
+        "DÉLAI SOUHAITÉ": "travaux en septembre",
+        "CE QUI EST EXCLU": "plomberie, électricité, peinture du plafond"
+      },
+      "resultat": "1. Préparation : dépose de la douche et du carrelage mural | forfait | 1 | [PRIX À COMPLÉTER]\n2. Reprise des supports | m² | [QUANTITÉ À CONFIRMER] | [PRIX À COMPLÉTER]\n3. Pose du receveur extra-plat | unité | 1 | [PRIX À COMPLÉTER]\n4. Carrelage sol et murs | m² | [QUANTITÉ À CONFIRMER] | [PRIX À COMPLÉTER]\nHypothèses : carrelage fourni par le client. Exclusions : plomberie, électricité, peinture du plafond. Questions : la surface murale exacte ? Accès au chantier pour l'évacuation des gravats ?"
+    },
+    {
+      "metier": "Menuisier-ébéniste",
+      "lieu": "Rodez, Aveyron",
+      "contexte": "Fabrication et pose d'un escalier en bois sur mesure et d'un garde-corps pour un particulier.",
+      "consigne": "structure",
+      "valeurs": {
+        "ACTIVITÉ": "menuiserie et ébénisterie sur mesure",
+        "TYPE DE CLIENT": "particulier",
+        "DESCRIPTION DU CHANTIER OU DE LA PRESTATION": "fabrication et pose d'un escalier droit en chêne avec garde-corps, finition huilée",
+        "QUANTITÉS ET DIMENSIONS CONNUES": "hauteur à franchir 2,70 m, 14 marches, largeur 90 cm",
+        "DÉLAI SOUHAITÉ": "pose avant la fin de l'année",
+        "CE QUI EST EXCLU": "travaux de maçonnerie et de peinture, dépose de l'ancien escalier"
+      },
+      "resultat": "1. Étude et relevé de cotes | forfait | 1 | [PRIX À COMPLÉTER]\n2. Fabrication de l'escalier droit en chêne | unité | 1 | [PRIX À COMPLÉTER]\n3. Garde-corps | ml | [QUANTITÉ À CONFIRMER] | [PRIX À COMPLÉTER]\n4. Finition huilée | forfait | 1 | [PRIX À COMPLÉTER]\n5. Pose | forfait | 1 | [PRIX À COMPLÉTER]\nHypothèses : cotes à confirmer après relevé. Exclusions : maçonnerie, peinture, dépose de l'ancien escalier."
+    },
+    {
+      "metier": "Consultante ou consultant indépendant",
+      "lieu": "Toulouse, Haute-Garonne",
+      "contexte": "Mission d'accompagnement d'une PME pour réorganiser son suivi de commandes.",
+      "consigne": "structure",
+      "valeurs": {
+        "ACTIVITÉ": "conseil en organisation pour les PME",
+        "TYPE DE CLIENT": "PME industrielle de moins de 50 salariés",
+        "DESCRIPTION DU CHANTIER OU DE LA PRESTATION": "diagnostic du suivi des commandes, atelier avec l'équipe, plan d'actions écrit, suivi à un mois",
+        "QUANTITÉS ET DIMENSIONS CONNUES": "un atelier d'une demi-journée, un rapport de 10 pages environ, un point de suivi",
+        "DÉLAI SOUHAITÉ": "démarrage dans le mois, mission sur deux mois",
+        "CE QUI EST EXCLU": "mise en place d'un logiciel, formation des équipes"
+      },
+      "resultat": "1. Diagnostic du suivi des commandes | journée | [QUANTITÉ À CONFIRMER] | [PRIX À COMPLÉTER]\n2. Atelier avec l'équipe | demi-journée | 1 | [PRIX À COMPLÉTER]\n3. Rédaction du plan d'actions | forfait | 1 | [PRIX À COMPLÉTER]\n4. Point de suivi à un mois | séance | 1 | [PRIX À COMPLÉTER]\nHypothèses : accès aux données de commandes fourni par le client. Exclusions : logiciel, formation."
+    }
+  ],
+  "pieges": [
+    {
+      "piege": "Laisser l'assistant proposer des prix.",
+      "solution": "Interdisez-le (c'est déjà dans la consigne) et supprimez tout chiffre de prix apparu. Saisissez vos prix vous-même, à partir de vos tarifs."
+    },
+    {
+      "piege": "Coller le nom ou l'adresse du client, ou vos coûts d'achat.",
+      "solution": "Écrivez « le client » et laissez les coordonnées à ajouter à la main dans votre modèle. Gardez marges et coûts hors de l'assistant."
+    },
+    {
+      "piege": "Oublier une prestation ou une exclusion.",
+      "solution": "Relisez la rubrique « Hypothèses » et « Exclusions », et comparez ligne par ligne avec vos notes de chantier."
+    },
+    {
+      "piege": "Se fier aux quantités estimées par l'assistant.",
+      "solution": "Remplacez chaque « [QUANTITÉ À CONFIRMER] » par une mesure que vous avez vérifiée vous-même."
+    },
+    {
+      "piege": "Croire que la liste des mentions de la consigne est complète.",
+      "solution": "L'assistant n'est pas une source juridique. Vérifiez les mentions obligatoires de votre devis auprès de votre organisation professionnelle, de votre chambre consulaire ou de votre expert-comptable."
+    }
+  ],
+  "controleQualite": [
+    "Aucun nom, adresse ou coordonnée de client, ni aucun coût d'achat ou marge, n'a été collé dans l'assistant.",
+    "Tous les prix sont de moi : aucun ne vient de l'assistant.",
+    "Chaque ligne du devis correspond à un vrai travail ou à une vraie prestation, avec la bonne unité et une quantité vérifiée.",
+    "Les hypothèses et les exclusions sont écrites et correspondent à ce qui a été convenu avec le client.",
+    "Les mentions obligatoires de mon devis ont été vérifiées auprès d'une source fiable pour mon activité (organisation professionnelle, chambre consulaire ou expert-comptable).",
+    "Les totaux, la durée de validité de l'offre, les délais et les conditions de paiement ont été relus.",
+    "J'ai relu tout le devis et le message d'accompagnement avant de les envoyer."
+  ],
+  "autoevaluation": {
+    "question": "J'ai obtenu mon résultat : un brouillon de devis complet, dont j'ai saisi et vérifié moi-même les prix.",
+    "oui": "Oui, j'ai obtenu mon résultat",
+    "non": "Non, pas encore"
+  },
+  "aTester": [
+    "Consigne « structure » : l'assistant laisse-t-il bien « [PRIX À COMPLÉTER] » partout, sans jamais proposer de prix ni de TVA ? Tester avec ChatGPT, Claude, Copilot et Gemini, et avec un message qui l'y pousse (« mets des prix indicatifs »).",
+    "Consigne « structure » : les lignes sont-elles réalistes pour BTP, artisanat et conseil ? Faire relire par un professionnel de chaque secteur.",
+    "Consigne « lettre » : aucun prix, délai ou garantie inventé ; crochets laissés pour nom, date et coordonnées.",
+    "Étape 5 : faire valider par un professionnel (organisation professionnelle ou expert-comptable) que la formulation sur les mentions obligatoires ne prête pas à confusion.",
+    "Durées des étapes chronométrées avec une personne non technique (total 50 minutes annoncé)."
+  ],
+  "video": [
+    {
+      "secondes": 40,
+      "titre": "Accueil et promesse",
+      "texte": "Bonjour et bienvenue. Dans cette vidéo, nous allons préparer ensemble un brouillon de devis à partir de la description d'un chantier ou d'une prestation. L'assistant structure le devis, vous gardez la main sur les prix. En cinquante minutes environ, vous aurez un devis clair, vérifié par vos soins, et un message d'accompagnement. Rien n'est à installer : un assistant IA grand public dans votre navigateur et vos notes de chantier suffisent. Le choix de l'assistant vous appartient, la méthode reste la même.",
+      "ecran": "Présentateur face caméra, puis page d'accueil du module sur mobile."
+    },
+    {
+      "secondes": 55,
+      "titre": "Ce qu'on ne colle jamais",
+      "texte": "Avant tout, trois interdits. On ne colle jamais dans un assistant IA les données personnelles de vos clients : nom, adresse du chantier, téléphone. Ni vos secrets commerciaux, comme vos coûts d'achat, vos marges ou vos tarifs négociés. Ni vos mots de passe. Et dans ce module, les prix ne passent jamais par l'assistant : c'est vous qui les saisissez. Enfin, relisez toujours avant d'envoyer, car un devis accepté vous engage. Prenez ce réflexe dès maintenant : dans le doute sur une information, ne la collez pas. Il est toujours plus simple de l'ajouter à la main à la fin que de la retirer d'une conversation.",
+      "ecran": "Encadré orange du site, lu lentement. Mise en évidence de la phrase sur les prix."
+    },
+    {
+      "secondes": 45,
+      "titre": "Étape 1 : rassembler les faits",
+      "texte": "Première étape, dix minutes. Reprenez vos notes de visite ou d'échange avec le client. Listez ce qui est demandé, ce qui est inclus et ce qui est exclu. Notez les quantités et les dimensions que vous connaissez avec certitude, et aussi ce que vous ignorez encore. Retirez le nom du client et l'adresse. Surtout, n'écrivez aucun prix à cette étape. Ne cherchez pas des notes parfaites. Écrivez comme vous parleriez à un collègue : l'assistant se charge de mettre en forme, et vous complétez ensuite ce qui manque.",
+      "ecran": "Carnet de notes ou téléphone avec photos de chantier, puis document texte où l'on efface le nom et l'adresse."
+    },
+    {
+      "secondes": 60,
+      "titre": "Étape 2 : la structure du devis",
+      "texte": "Deuxième étape, douze minutes. Ouvrez votre assistant, au choix, et copiez la première consigne avec le bouton Copier. Complétez les champs entre crochets avec vos notes : votre activité, le chantier, les quantités, ce qui est exclu. L'assistant vous renvoie un tableau de devis. Regardez bien les cases de prix : elles contiennent « prix à compléter ». C'est voulu, la consigne lui interdit d'inventer un prix. Il vous pose aussi des questions sur ce qui manque. Répondez-y, puis demandez une version corrigée. Si une question vous paraît floue, répondez simplement : je ne sais pas encore. L'assistant gardera alors un crochet à confirmer plutôt que d'inventer une réponse, ce qui est exactement ce que nous voulons.",
+      "ecran": "Site sur mobile : bouton Copier. Assistant : collage, remplissage des crochets, tableau avec « [PRIX À COMPLÉTER] », questions de l'assistant et réponses."
+    },
+    {
+      "secondes": 45,
+      "titre": "Étape 3 : vos prix",
+      "texte": "Troisième étape, dix minutes. Copiez le tableau dans votre modèle de devis ou dans votre logiciel de facturation. Saisissez vos prix à partir de vos propres tarifs. Corrigez les quantités, supprimez les lignes inutiles, ajoutez ce qui a été oublié. Ne retournez pas dans l'assistant avec vos prix : ils restent chez vous. Vos tarifs sont le fruit de votre expérience et de vos coûts réels. Aucun assistant ne les connaît, et ils ne doivent pas lui être confiés. Cette étape est entièrement la vôtre.",
+      "ecran": "Tableau copié dans un tableur ou un logiciel de devis ; saisie des prix à l'écran, sans montrer de vrais tarifs."
+    },
+    {
+      "secondes": 40,
+      "titre": "Étape 4 : la lettre d'accompagnement",
+      "texte": "Quatrième étape, dix minutes. Avec la deuxième consigne, l'assistant rédige un court message à joindre au devis. Il ne cite aucun prix et laisse entre crochets le nom du client, la date et vos coordonnées, que vous ajoutez à la main. Relisez et supprimez toute promesse de délai ou de résultat que vous n'avez pas décidée. Ce message n'est pas un document contractuel. C'est un mot d'accompagnement, qui présente votre sérieux et propose un échange. Gardez-le court et sincère.",
+      "ecran": "Consigne 2 collée, message obtenu, ajout du nom et de la date dans un traitement de texte."
+    },
+    {
+      "secondes": 45,
+      "titre": "Étape 5 : mentions et relecture",
+      "texte": "Dernière étape, huit minutes. Passez la liste de contrôle du site. Pour les mentions obligatoires d'un devis, ne vous fiez pas à l'assistant : elles dépendent de votre activité et de votre statut. Vérifiez-les auprès de votre organisation professionnelle, de votre chambre consulaire ou de votre expert-comptable. Ce module n'est pas un avis juridique. Relisez ensuite quantités, totaux, durée de validité, délais et conditions de paiement. Prenez le temps de cette étape, elle est la plus importante. Un devis clair évite des malentendus avec vos clients, et vous protège autant qu'eux.",
+      "ecran": "Liste de contrôle qualité du site, cases cochées une à une ; plan large d'un professionnel qui relit un devis imprimé."
+    },
+    {
+      "secondes": 35,
+      "titre": "Bilan et suite",
+      "texte": "Pour finir, répondez à la question du bilan : avez-vous obtenu votre résultat ? Oui ou non, la réponse n'est enregistrée que dans votre navigateur. Si ce n'est pas le cas, relisez les erreurs fréquentes en bas de page. Merci de votre attention, et bon devis. Vous pouvez refaire l'exercice avec un autre chantier, pour prendre l'habitude. Chaque devis préparé de cette façon vous rendra plus à l'aise avec votre assistant.",
+      "ecran": "Section « Votre bilan », clic sur Oui, message de confirmation. Présentateur face caméra pour conclure."
+    }
+  ]
+}

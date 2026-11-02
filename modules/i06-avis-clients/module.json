@@ -1,0 +1,262 @@
+{
+  "id": "I06",
+  "titre": "Répondre aux avis clients, y compris en plusieurs langues",
+  "statut": "brouillon, consignes à tester",
+  "public": "Hôteliers, restaurateurs et commerçants qui répondent eux-mêmes aux avis en ligne",
+  "objectif": "Rédiger des réponses sobres et personnalisées à des avis positifs, mitigés et négatifs, puis les adapter dans la langue de vos clients.",
+  "resultat": "Une ligne de réponse écrite pour votre établissement, trois réponses relues à des avis réels (un positif, un mitigé, un négatif), une version dans une autre langue relue, et des modèles à réutiliser.",
+  "prerequis": [
+    "Un assistant IA grand public de votre choix, ouvert dans votre navigateur (ChatGPT, Claude, Copilot, Gemini ou un autre).",
+    "Trois avis récents déjà publiés sur votre fiche : un positif, un mitigé, un négatif.",
+    "Un éditeur de texte pour anonymiser les avis avant de les copier dans l'assistant.",
+    "Pour la version multilingue : si possible une personne qui lit la langue visée et peut relire."
+  ],
+  "avertissement": {
+    "titre": "Ce qu'on ne colle jamais dans un assistant IA",
+    "points": [
+      "Les données personnelles de vos clients : même si l'avis est public, retirez le nom, le pseudo, les dates de séjour ou de visite, les numéros de réservation ou de commande.",
+      "Les informations internes sur un client : fichier de réservation, historique d'achats, échanges privés, coordonnées.",
+      "Vos secrets commerciaux : chiffres, tarifs négociés, noms de fournisseurs, procédures internes.",
+      "Vos mots de passe et accès aux plateformes d'avis."
+    ],
+    "relecture": "Relisez chaque réponse avant de la publier : elle est publique, lue par tous vos futurs clients, et ne peut pas toujours être modifiée facilement."
+  },
+  "etapes": [
+    {
+      "titre": "Choisir et anonymiser trois avis",
+      "minutes": 8,
+      "description": "Vous préparez un avis positif, un avis mitigé et un avis négatif, débarrassés de toute information sur la personne.",
+      "actions": [
+        "Ouvrez votre fiche d'avis et choisissez trois avis récents de tonalités différentes.",
+        "Copiez chaque avis dans un éditeur de texte, pas encore dans l'assistant.",
+        "Remplacez le nom, le pseudo, les dates précises et tout détail identifiant par « le client » ou « [DATE] ».",
+        "Notez à part, pour chaque avis, ce que vous savez être vrai ou faux, et ce que vous pouvez proposer."
+      ],
+      "fiche": "Choisir 3 avis et les rendre anonymes."
+    },
+    {
+      "titre": "Fixer votre ligne de réponse",
+      "minutes": 8,
+      "description": "L'assistant écrit une règle de réponse à partir de votre ton et de vos limites, que vous corrigez.",
+      "actions": [
+        "Ouvrez une nouvelle conversation dans votre assistant.",
+        "Copiez la consigne ci-dessous, complétez les champs et collez-la.",
+        "Lisez la ligne de réponse obtenue et corrigez-la jusqu'à ce qu'elle vous ressemble.",
+        "Gardez cette conversation ouverte pour l'étape suivante."
+      ],
+      "consignes": [
+        "ligne"
+      ],
+      "fiche": "Faire écrire votre ligne de réponse (ton, limites)."
+    },
+    {
+      "titre": "Répondre aux trois avis",
+      "minutes": 12,
+      "description": "L'assistant rédige un brouillon de réponse pour chaque avis, à partir des faits que vous confirmez.",
+      "actions": [
+        "Pour chaque avis, copiez la consigne ci-dessous, collez l'avis anonymisé et indiquez ce que vous confirmez.",
+        "Lisez la réponse : retirez toute excuse excessive, toute promesse ou toute justification agressive.",
+        "Pour l'avis négatif, vérifiez que la réponse reste calme, factuelle et propose de poursuivre en privé.",
+        "Copiez les réponses définitives dans un document."
+      ],
+      "consignes": [
+        "reponses"
+      ],
+      "fiche": "Faire répondre aux 3 avis, retirer promesses et excès."
+    },
+    {
+      "titre": "Adapter dans une autre langue",
+      "minutes": 10,
+      "description": "L'assistant adapte une réponse validée dans la langue de l'avis, sur des phrases simples.",
+      "actions": [
+        "Choisissez la réponse validée de l'étape 3 qui correspond à un client étranger.",
+        "Copiez la consigne ci-dessous et complétez les champs.",
+        "Si vous ne lisez pas la langue, faites relire par une personne qui la maîtrise, ou gardez des phrases très simples.",
+        "Vérifiez que le sens est identique au texte français : aucune promesse ni excuse supplémentaire."
+      ],
+      "consignes": [
+        "langues"
+      ],
+      "fiche": "Adapter une réponse validée dans une autre langue, faire relire."
+    },
+    {
+      "titre": "Relire, publier et garder vos modèles",
+      "minutes": 10,
+      "description": "Vous contrôlez chaque réponse, vous la publiez, puis vous gardez une trame pour les prochains avis.",
+      "actions": [
+        "Passez la liste de contrôle qualité ci-dessous pour chaque réponse.",
+        "Publiez les réponses sur la plateforme concernée, en vous connectant vous-même.",
+        "Enregistrez les trois réponses comme modèles : « avis positif », « avis mitigé », « avis négatif ».",
+        "Prévoyez un créneau régulier, par exemple dix minutes par semaine, pour traiter les nouveaux avis."
+      ],
+      "fiche": "Contrôler, publier, garder 3 modèles et un créneau régulier."
+    }
+  ],
+  "consignes": [
+    {
+      "id": "ligne",
+      "titre": "Définir ma ligne de réponse aux avis",
+      "aide": "À coller en début de conversation. Ne donnez aucun nom de client.",
+      "fiche": true,
+      "champs": [
+        "ACTIVITÉ ET LIEU",
+        "TON SOUHAITÉ",
+        "SIGNATURE",
+        "CE QUE JE NE PROMETS JAMAIS"
+      ],
+      "texte": "Tu es mon assistant pour répondre aux avis clients publiés en ligne. Mon activité : [ACTIVITÉ ET LIEU].\n\nTon : [TON SOUHAITÉ], avec le vouvoiement. Signature : [SIGNATURE].\nCe que je ne promets jamais : [CE QUE JE NE PROMETS JAMAIS].\n\nÉcris ma « ligne de réponse » en 8 points maximum, qui s'appliquera à toutes mes réponses : longueur, façon de remercier, façon de répondre à une critique, ce qu'on ne dit jamais (accusation du client, détails privés, promesse de compensation, discussion de chiffres), et la façon d'inviter à poursuivre en privé.\n\nRègles : n'invente aucune information sur mon établissement ; reste factuel et courtois ; pas de polémique."
+    },
+    {
+      "id": "reponses",
+      "titre": "Répondre à un avis",
+      "aide": "À coller dans la même conversation, une fois pour chaque avis anonymisé.",
+      "champs": [
+        "AVIS REÇU ANONYMISÉ",
+        "FAITS CONFIRMÉS PAR MOI",
+        "SUITE QUE JE PROPOSE"
+      ],
+      "texte": "Rédige une réponse publique à cet avis, dans le respect de ma ligne de réponse.\n\nAvis (anonymisé) :\n---\n[AVIS REÇU ANONYMISÉ]\n---\n\nFaits que je confirme (tu ne peux t'appuyer que sur eux) : [FAITS CONFIRMÉS PAR MOI]\nSuite que je propose, le cas échéant : [SUITE QUE JE PROPOSE]\n\nRègles :\n- 4 à 7 lignes, avec le vouvoiement.\n- Remercie, reprends un point précis de l'avis, réponds sans te justifier longuement.\n- N'invente aucun fait : si un élément manque, écris « [À VÉRIFIER] ».\n- N'accuse pas le client, ne donne aucun détail privé sur son séjour, sa visite ou sa commande.\n- Ne promets aucun geste commercial, remboursement ou compensation, sauf s'il figure dans « Suite que je propose ».\n- Pour une critique, reconnais le ressenti sans admettre ce que je n'ai pas confirmé."
+    },
+    {
+      "id": "langues",
+      "titre": "Adapter la réponse dans une autre langue",
+      "aide": "À coller dans la même conversation, avec une réponse déjà validée en français.",
+      "champs": [
+        "LANGUE DE L'AVIS",
+        "RÉPONSE FRANÇAISE VALIDÉE"
+      ],
+      "texte": "Adapte la réponse ci-dessous en [LANGUE DE L'AVIS], pour un client qui a écrit son avis dans cette langue.\n\nRéponse française validée :\n---\n[RÉPONSE FRANÇAISE VALIDÉE]\n---\n\nRègles :\n- Garde exactement le même sens : n'ajoute ni excuse, ni promesse, ni information.\n- Phrases simples et naturelles, ton courtois.\n- Garde les noms de lieux et de plats en français, avec une explication brève si utile.\n- Ajoute, après la réponse, un petit tableau de 3 à 5 expressions clés avec leur sens en français, pour que je puisse vérifier le texte."
+    }
+  ],
+  "exemples": [
+    {
+      "metier": "Hôtel",
+      "lieu": "Carcassonne, Aude",
+      "contexte": "Un hôtel familial répond à un avis mitigé d'un client étranger : chambre appréciée, bruit dans la nuit.",
+      "consigne": "reponses",
+      "valeurs": {
+        "AVIS REÇU ANONYMISÉ": "Nice room, very friendly staff, great breakfast. But we could hear noise from the street until late. 3 stars.",
+        "FAITS CONFIRMÉS PAR MOI": "les chambres sur rue peuvent être bruyantes le week-end ; des chambres sur cour existent ; je peux le signaler à la réservation",
+        "SUITE QUE JE PROPOSE": "inviter à demander une chambre sur cour lors d'un prochain séjour"
+      },
+      "resultat": "Merci pour votre avis et pour vos mots sur l'accueil et le petit-déjeuner. Nous comprenons que le bruit de la rue ait gêné votre nuit : les chambres sur rue peuvent en effet être animées le week-end. Lors d'un prochain séjour, n'hésitez pas à demander une chambre sur cour au moment de la réservation. Nous serions heureux de vous accueillir de nouveau.\nL'équipe de l'hôtel\n(Variante en anglais à produire avec la consigne « Adapter dans une autre langue ».)"
+    },
+    {
+      "metier": "Restaurant",
+      "lieu": "Perpignan, Pyrénées-Orientales",
+      "contexte": "Un restaurant répond à un avis négatif sur l'attente en salle un soir de forte affluence.",
+      "consigne": "reponses",
+      "valeurs": {
+        "AVIS REÇU ANONYMISÉ": "Cuisine correcte mais une heure d'attente avant d'avoir notre plat. Personnel débordé. Déçus.",
+        "FAITS CONFIRMÉS PAR MOI": "le service était plein ce soir-là ; une absence imprévue en cuisine a ralenti le service ; nous ne pouvons pas détailler la table concernée dans une réponse publique",
+        "SUITE QUE JE PROPOSE": "inviter à nous écrire en privé pour échanger"
+      },
+      "resultat": "Merci d'avoir pris le temps de nous écrire. Nous regrettons que l'attente ait gâché votre soirée : le service était complet ce soir-là et notre cuisine a été ralentie par un imprévu. Ce n'est pas le niveau que nous souhaitons offrir. Nous serions heureux d'échanger avec vous directement : vous pouvez nous écrire en message privé.\nL'équipe du restaurant"
+    },
+    {
+      "metier": "Commerce de proximité",
+      "lieu": "Sète, Hérault",
+      "contexte": "Une épicerie fine répond à un avis très positif et propose une version en espagnol.",
+      "consigne": "reponses",
+      "valeurs": {
+        "AVIS REÇU ANONYMISÉ": "Una tienda preciosa, productos locales y una atención muy amable. Volveremos. 5 estrellas.",
+        "FAITS CONFIRMÉS PAR MOI": "épicerie avec produits de producteurs de la région ; ouverte toute l'année ; accueil de visiteurs en été",
+        "SUITE QUE JE PROPOSE": "dire que nous serions heureux de les revoir"
+      },
+      "resultat": "Merci beaucoup pour votre message et vos mots chaleureux ! Nous sommes ravis que les produits de nos producteurs de la région vous aient plu. Nous serions heureux de vous revoir lors de votre prochain passage.\nL'équipe de l'épicerie\n(Une version en espagnol sera produite avec la consigne « Adapter dans une autre langue » puis relue.)"
+    }
+  ],
+  "pieges": [
+    {
+      "piege": "Répondre trop vite et sur un ton agacé à un avis injuste.",
+      "solution": "Laissez passer un moment, faites écrire un brouillon calme, puis relisez-le. En cas d'avis qui vous paraît faux ou injurieux, signalez-le à la plateforme au lieu de polémiquer."
+    },
+    {
+      "piege": "Donner des détails sur le client ou sa venue dans une réponse publique.",
+      "solution": "Restez général et proposez de poursuivre en privé. Ne citez ni dates précises, ni composition de la table, ni historique du client."
+    },
+    {
+      "piege": "Promettre un remboursement ou un geste commercial sans l'avoir décidé.",
+      "solution": "Supprimez toute promesse que vous n'avez pas validée vous-même. Précisez-la dans « Suite que je propose » seulement si vous la confirmez."
+    },
+    {
+      "piege": "Publier une traduction que vous ne comprenez pas.",
+      "solution": "Faites relire par une personne qui lit la langue, ou gardez des phrases très simples et vérifiez le tableau d'expressions clés. En cas de doute, répondez en français."
+    },
+    {
+      "piege": "Répondre toujours avec la même formule.",
+      "solution": "Reprenez au moins un détail précis de chaque avis, pour montrer que vous l'avez lu."
+    }
+  ],
+  "controleQualite": [
+    "Aucun nom, pseudo, date précise ou information privée sur un client n'a été collé dans l'assistant.",
+    "La réponse reprend un point précis de l'avis et reste courtoise, même face à une critique.",
+    "Elle ne contient aucune accusation, aucun détail privé et aucune promesse que je n'ai pas décidée.",
+    "Tous les faits cités sont vrais ; aucun « [À VÉRIFIER] » ne reste.",
+    "Pour la version dans une autre langue : le sens est identique au français et elle a été relue par moi ou par une personne qui lit la langue.",
+    "Je publie moi-même, depuis mon propre compte, après relecture complète.",
+    "J'ai enregistré mes trois modèles et prévu un créneau régulier."
+  ],
+  "autoevaluation": {
+    "question": "J'ai obtenu mon résultat : trois réponses d'avis relues, une version dans une autre langue relue, et des modèles enregistrés.",
+    "oui": "Oui, j'ai obtenu mon résultat",
+    "non": "Non, pas encore"
+  },
+  "aTester": [
+    "Consigne « ligne » : l'assistant produit-il bien 8 points au maximum, sans inventer d'information sur l'établissement ? Tester avec ChatGPT, Claude, Copilot et Gemini.",
+    "Consigne « reponses » : 4 à 7 lignes, aucun geste commercial hors « Suite que je propose », aucun détail privé, y compris sur un avis négatif agressif.",
+    "Consigne « langues » : fidélité de l'adaptation (anglais, espagnol, allemand, au minimum) et tableau d'expressions clés présent. Faire relire par des locuteurs natifs.",
+    "Vérifier que les consignes d'anonymisation tiennent quand l'avis contient un prénom ou une date.",
+    "Durées des étapes chronométrées avec une personne non technique (total 48 minutes annoncé)."
+  ],
+  "video": [
+    {
+      "secondes": 45,
+      "titre": "Accueil et promesse",
+      "texte": "Bonjour et bienvenue. Dans cette vidéo, nous allons apprendre à répondre aux avis de vos clients, y compris dans une autre langue. Vous donnez les faits, l'assistant propose un brouillon, et c'est vous qui décidez de ce qui est publié. En trois quarts d'heure environ, vous aurez trois réponses relues, une version dans une autre langue, et des modèles pour la suite. Aucune compétence technique n'est nécessaire, et la méthode est la même quel que soit l'assistant que vous choisissez. Rien n'est à installer : un navigateur et quelques minutes suffisent.",
+      "ecran": "Présentateur face caméra, puis page d'accueil du module et exemples d'avis (hôtel, restaurant, commerce)."
+    },
+    {
+      "secondes": 50,
+      "titre": "Ce qu'on ne colle jamais",
+      "texte": "Avant de commencer, les règles. On ne colle jamais dans un assistant IA les données personnelles de vos clients, même si l'avis est public : retirez le nom, le pseudo, les dates de séjour ou de visite. Ni les informations internes d'une réservation ou d'une commande. Ni vos secrets commerciaux, ni vos mots de passe. Et relisez toujours avant de publier : une réponse est publique, et lue par tous vos futurs clients. Prenez ce réflexe dès maintenant : dans le doute sur une information, ne la collez pas. Il est toujours plus simple de l'ajouter à la main à la fin.",
+      "ecran": "Encadré orange du site, lu lentement. Exemple d'avis avant et après anonymisation."
+    },
+    {
+      "secondes": 45,
+      "titre": "Étape 1 : trois avis",
+      "texte": "Première étape, huit minutes. Choisissez trois avis récents : un positif, un mitigé, un négatif. Copiez-les dans un éditeur de texte, et remplacez le nom, le pseudo et les dates par « le client ». Notez à part ce que vous savez être vrai, et ce que vous pouvez proposer. Ces notes sont la matière de vos réponses. Ne cherchez pas des avis faciles. Un avis négatif, bien traité, est souvent le plus utile pour vous entraîner, et aussi celui que les futurs clients liront avec le plus d'attention.",
+      "ecran": "Fiche d'avis sur un navigateur (page de démonstration), copie dans un éditeur, remplacement du nom."
+    },
+    {
+      "secondes": 40,
+      "titre": "Étape 2 : votre ligne de réponse",
+      "texte": "Deuxième étape, huit minutes. Ouvrez votre assistant et copiez la première consigne avec le bouton Copier. Complétez les champs : votre activité, le ton, la signature, et surtout ce que vous ne promettez jamais. L'assistant écrit une ligne de réponse en huit points. Lisez-la et corrigez-la, jusqu'à ce qu'elle vous ressemble. Si l'assistant écrit une phrase qui ne vous ressemble pas, ne la gardez pas. Vous pouvez demander une version plus courte, plus sobre, ou la réécrire à la main.",
+      "ecran": "Bouton Copier sur mobile ; assistant : champs remplis, ligne de réponse affichée, correction demandée."
+    },
+    {
+      "secondes": 45,
+      "titre": "Étape 3 : répondre aux trois avis",
+      "texte": "Troisième étape, douze minutes. Pour chaque avis, collez la deuxième consigne avec l'avis anonymisé et les faits que vous confirmez. Lisez la réponse. Supprimez toute excuse excessive, toute justification agressive, toute promesse que vous n'avez pas décidée. Face à une critique, la bonne réponse est calme, factuelle, et propose de poursuivre en privé. Copiez ensuite les trois réponses dans un document. Même si l'avis vous semble injuste, gardez en tête que votre réponse s'adresse surtout aux personnes qui la liront plus tard. Un ton calme sert toujours votre image.",
+      "ecran": "Consigne 2 collée avec un avis négatif, réponse affichée, suppression d'une promesse de remboursement."
+    },
+    {
+      "secondes": 40,
+      "titre": "Étape 4 : une autre langue",
+      "texte": "Quatrième étape, dix minutes. Choisissez une réponse validée, et collez la troisième consigne avec la langue de l'avis. L'assistant adapte le texte sans rien ajouter, et fournit un petit tableau d'expressions clés. Si vous ne lisez pas la langue, faites relire par une personne qui la maîtrise, ou gardez des phrases très simples. En cas de doute, répondez en français. Un traducteur automatique ne remplace pas une relecture. Si vous avez un doute sur une expression, remplacez-la par une phrase plus simple.",
+      "ecran": "Consigne 3 collée, réponse en anglais et tableau d'expressions affichés ; mise en évidence du tableau."
+    },
+    {
+      "secondes": 35,
+      "titre": "Étape 5 : relire et publier",
+      "texte": "Dernière étape, dix minutes. Passez la liste de contrôle du site pour chaque réponse. Publiez vous-même sur la plateforme, en vous connectant avec votre propre compte. Enregistrez les trois réponses comme modèles, et prévoyez un créneau régulier, dix minutes par semaine par exemple, pour les nouveaux avis. Ces modèles ne sont pas des formules à recopier : changez toujours au moins un détail pour chaque avis, pour que votre réponse reste sincère.",
+      "ecran": "Liste de contrôle cochée, publication d'une réponse sur une page de démonstration, document de modèles."
+    },
+    {
+      "secondes": 30,
+      "titre": "Bilan et suite",
+      "texte": "Pour finir, répondez à la question du bilan : avez-vous obtenu votre résultat ? La réponse est enregistrée uniquement dans votre navigateur. Si ce n'est pas encore le cas, relisez les erreurs fréquentes en bas de page. Merci de votre attention, et bonnes réponses. Vous pouvez refaire l'exercice avec d'autres avis, quand vous voulez.",
+      "ecran": "Section « Votre bilan », clic sur Oui, message de confirmation. Présentateur face caméra."
+    }
+  ]
+}

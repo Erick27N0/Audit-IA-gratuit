@@ -1,0 +1,257 @@
+{
+  "id": "I04",
+  "titre": "Rédiger des fiches produit pour votre site et votre catalogue",
+  "statut": "brouillon, consignes à tester",
+  "public": "Commerçants, viticulteurs, artisans et producteurs de l'agroalimentaire qui décrivent eux-mêmes leurs produits",
+  "objectif": "Transformer les caractéristiques réelles d'un produit en fiche produit claire, puis en versions courtes pour votre catalogue.",
+  "resultat": "Une fiche produit complète, vérifiée ligne par ligne, avec une version courte pour catalogue et un titre pour votre site, et une consigne remplie que vous pouvez réutiliser pour vos autres produits.",
+  "prerequis": [
+    "Un assistant IA grand public de votre choix, ouvert dans votre navigateur (ChatGPT, Claude, Copilot, Gemini ou un autre).",
+    "Un produit que vous connaissez bien, avec sa fiche technique, son étiquette ou son emballage sous la main.",
+    "Un document texte ou l'outil de votre site pour recopier le résultat."
+  ],
+  "avertissement": {
+    "titre": "Ce qu'on ne colle jamais dans un assistant IA",
+    "points": [
+      "Les données personnelles de vos clients : noms, adresses, avis nominatifs, coordonnées.",
+      "Vos secrets commerciaux : recettes ou procédés non publics, coûts de revient, marges, noms de fournisseurs, tarifs négociés.",
+      "Vos mots de passe et accès à votre site ou à votre boutique en ligne.",
+      "Les informations que vous n'avez pas vérifiées : l'assistant n'invente rien dans ce module, il laisse un repère « [À VÉRIFIER] »."
+    ],
+    "relecture": "Relisez la fiche en entier avant de la publier : composition, allergènes, origine, labels, contenance et prix sont à contrôler un par un."
+  },
+  "etapes": [
+    {
+      "titre": "Rassembler les faits sur un produit",
+      "minutes": 8,
+      "description": "Vous notez ce que vous savez avec certitude sur un produit, en vous appuyant sur ses documents.",
+      "actions": [
+        "Choisissez un produit représentatif, ni votre plus simple, ni votre plus complexe.",
+        "Notez les faits : nom, contenance ou taille, composition ou matériaux, origine ou fabrication, usages, particularités.",
+        "Ne notez que ce qui figure sur l'étiquette, la fiche technique ou ce que vous maîtrisez : pas de prix de revient, pas de recette secrète.",
+        "Repérez le client visé : qui l'achète et pour quel usage ?"
+      ],
+      "fiche": "Noter les faits vérifiés d'un produit, sans secret."
+    },
+    {
+      "titre": "Obtenir la première fiche produit",
+      "minutes": 12,
+      "description": "L'assistant rédige la fiche à partir de vos seuls faits, sans rien ajouter.",
+      "actions": [
+        "Copiez la consigne ci-dessous dans une nouvelle conversation et complétez les champs avec vos notes.",
+        "Lisez la fiche : repérez chaque phrase qui ne vient pas de vos notes.",
+        "Demandez des corrections précises : « plus court », « sans cet adjectif », « phrase d'ouverture plus simple ».",
+        "Gardez les repères « [À VÉRIFIER] » : ce sont des points à contrôler vous-même."
+      ],
+      "consignes": [
+        "fiche"
+      ],
+      "fiche": "Faire rédiger la fiche à partir des seuls faits notés."
+    },
+    {
+      "titre": "Vérifier chaque affirmation",
+      "minutes": 10,
+      "description": "Vous contrôlez la fiche ligne par ligne, avec vos documents, avant toute publication.",
+      "actions": [
+        "Comparez chaque chiffre, composition, origine, label et contenance avec l'étiquette ou la fiche technique.",
+        "Pour l'alimentaire et les boissons, contrôlez vous-même les allergènes et les mentions qui doivent figurer. La réglementation dépend du produit : appuyez-vous sur votre organisation professionnelle, votre interprofession ou votre chambre consulaire. Ce module n'est pas un avis juridique.",
+        "Supprimez toute promesse que vous ne pouvez pas prouver (« le meilleur », « bon pour la santé », « garanti »).",
+        "Remplacez tous les « [À VÉRIFIER] » par des informations contrôlées, ou supprimez la phrase."
+      ],
+      "fiche": "Contrôler chaque affirmation avec étiquette et fiche technique."
+    },
+    {
+      "titre": "Créer les versions courtes et le titre",
+      "minutes": 10,
+      "description": "L'assistant décline la fiche validée en titre, description courte et phrase d'accroche.",
+      "actions": [
+        "Dans la même conversation, copiez la consigne ci-dessous et complétez les champs.",
+        "Vérifiez que les versions courtes ne contiennent rien qui ne soit pas dans la fiche validée.",
+        "Copiez titre, description courte et fiche dans votre site ou votre catalogue, sans y ajouter de prix venant de l'assistant : saisissez-les vous-même."
+      ],
+      "consignes": [
+        "declinaisons"
+      ],
+      "fiche": "Décliner en titre, description courte et accroche."
+    },
+    {
+      "titre": "Garder une consigne réutilisable",
+      "minutes": 8,
+      "description": "Vous enregistrez la consigne remplie comme gabarit pour vos autres produits.",
+      "actions": [
+        "Copiez la consigne de l'étape 2 dans un document, en effaçant les faits du produit mais en gardant votre ton, votre clientèle et vos règles.",
+        "Nommez-la « Gabarit fiche produit ».",
+        "Passez le contrôle qualité ci-dessous.",
+        "Prévoyez de traiter vos autres produits un par un, dans une conversation neuve à chaque fois."
+      ],
+      "fiche": "Enregistrer un gabarit pour les autres produits."
+    }
+  ],
+  "consignes": [
+    {
+      "id": "fiche",
+      "titre": "Rédiger la fiche produit",
+      "aide": "À coller dans une nouvelle conversation. Les faits viennent uniquement de vous.",
+      "fiche": true,
+      "champs": [
+        "TYPE D'ACTIVITÉ",
+        "PRODUIT",
+        "FAITS VÉRIFIÉS",
+        "CLIENTÈLE VISÉE",
+        "TON SOUHAITÉ",
+        "LONGUEUR"
+      ],
+      "texte": "Tu es mon assistant de rédaction. Mon activité : [TYPE D'ACTIVITÉ].\n\nProduit : [PRODUIT]\n\nFaits vérifiés (ce sont les seules informations que tu peux utiliser) :\n[FAITS VÉRIFIÉS]\n\nClientèle visée : [CLIENTÈLE VISÉE]\nTon souhaité : [TON SOUHAITÉ], avec le vouvoiement.\nLongueur : [LONGUEUR]\n\nRédige une fiche produit avec : une phrase d'accroche, une description, une rubrique « Caractéristiques » en liste, et une rubrique « Conseils d'usage » seulement si mes faits en contiennent.\n\nRègles :\n- N'ajoute aucun fait : ni composition, ni origine, ni label, ni récompense, ni allergène, ni prix, ni propriété santé qui ne figurent pas dans mes faits.\n- Si une information utile manque, écris « [À VÉRIFIER] » à la place et liste-la à la fin sous « Questions pour le producteur ».\n- Évite les superlatifs (« le meilleur », « unique ») et les promesses.\n- Phrases courtes, mots simples."
+    },
+    {
+      "id": "declinaisons",
+      "titre": "Décliner en titre et versions courtes",
+      "aide": "À coller dans la même conversation, une fois la fiche vérifiée et corrigée.",
+      "champs": [
+        "LONGUEUR DE LA DESCRIPTION COURTE",
+        "MOTS À PLACER NATURELLEMENT"
+      ],
+      "texte": "À partir de la fiche validée ci-dessus, et sans rien y ajouter, propose :\n1. Trois titres de produit de 60 caractères au maximum.\n2. Une description courte pour un catalogue ou une page de liste : [LONGUEUR DE LA DESCRIPTION COURTE].\n3. Une phrase d'accroche de moins de 15 mots.\n\nMots à placer naturellement s'ils collent au produit : [MOTS À PLACER NATURELLEMENT]. Ne force pas leur emploi.\n\nRègles : aucun prix, aucune promesse, aucun fait nouveau. Si un titre risque de suggérer une propriété que la fiche ne confirme pas, ne le propose pas."
+    }
+  ],
+  "exemples": [
+    {
+      "metier": "Domaine viticole",
+      "lieu": "Minervois, Aude",
+      "contexte": "Un domaine présente un vin rouge sur son site, pour des particuliers et des cavistes.",
+      "consigne": "fiche",
+      "valeurs": {
+        "TYPE D'ACTIVITÉ": "domaine viticole familial avec vente directe et vente aux cavistes",
+        "PRODUIT": "vin rouge du domaine, cuvée « Les Garrigues » (nom d'exemple)",
+        "FAITS VÉRIFIÉS": "vin rouge ; assemblage de syrah et de grenache ; élevage en cuve ; bouteille de 75 cl ; se boit à environ 16 °C ; accompagne les viandes grillées et les plats mijotés",
+        "CLIENTÈLE VISÉE": "particuliers et cavistes",
+        "TON SOUHAITÉ": "chaleureux et sobre",
+        "LONGUEUR": "une description de 80 à 100 mots"
+      },
+      "resultat": "Accroche : Un rouge de repas, simple et généreux.\nDescription : Cet assemblage de syrah et de grenache est élevé en cuve. Il se sert autour de 16 °C et accompagne volontiers viandes grillées et plats mijotés.\nCaractéristiques : vin rouge · syrah et grenache · élevage en cuve · bouteille de 75 cl.\nQuestions pour le producteur : millésime [À VÉRIFIER] ; degré d'alcool [À VÉRIFIER].\n(Rappel : la communication sur le vin est encadrée ; vérifiez-la auprès de votre interprofession.)"
+    },
+    {
+      "metier": "Fromagerie",
+      "lieu": "Aveyron",
+      "contexte": "Une petite fromagerie fermière met en ligne sa tomme pour la vente à la ferme et en épicerie fine.",
+      "consigne": "fiche",
+      "valeurs": {
+        "TYPE D'ACTIVITÉ": "fromagerie fermière avec vente à la ferme et en épiceries",
+        "PRODUIT": "tomme de brebis (nom d'exemple : « Tomme du causse »)",
+        "FAITS VÉRIFIÉS": "fromage au lait de brebis ; pâte pressée non cuite ; affinage de 3 mois ; croûte naturelle ; pièce d'environ 1,5 kg ; vendue entière ou au détail",
+        "CLIENTÈLE VISÉE": "particuliers et épiciers fins",
+        "TON SOUHAITÉ": "simple et authentique",
+        "LONGUEUR": "une description de 60 à 80 mots"
+      },
+      "resultat": "Accroche : Une tomme de brebis affinée trois mois.\nDescription : Fabriquée au lait de brebis, cette tomme à pâte pressée non cuite développe une croûte naturelle pendant son affinage de trois mois. Elle est vendue entière ou au détail.\nCaractéristiques : lait de brebis · pâte pressée non cuite · affinage 3 mois · pièce d'environ 1,5 kg.\nQuestions pour le producteur : lait cru ou pasteurisé [À VÉRIFIER] ; conservation conseillée [À VÉRIFIER]."
+    },
+    {
+      "metier": "Coutellerie artisanale",
+      "lieu": "Laguiole, Aveyron",
+      "contexte": "Un artisan vend ses couteaux de poche sur son site et dans un catalogue papier.",
+      "consigne": "fiche",
+      "valeurs": {
+        "TYPE D'ACTIVITÉ": "coutellerie artisanale avec vente en atelier et en ligne",
+        "PRODUIT": "couteau de poche, modèle d'exemple « Le Randonneur »",
+        "FAITS VÉRIFIÉS": "lame en acier inoxydable de 9 cm ; manche en bois d'olivier ; fabriqué à la main en atelier ; livré avec un étui en cuir",
+        "CLIENTÈLE VISÉE": "particuliers amateurs de randonnée et acheteurs de cadeaux",
+        "TON SOUHAITÉ": "fier du savoir-faire, sans emphase",
+        "LONGUEUR": "une description de 60 à 80 mots"
+      },
+      "resultat": "Accroche : Un couteau de poche fabriqué à la main.\nDescription : Ce couteau de poche allie une lame en acier inoxydable de 9 cm et un manche en bois d'olivier. Il est fabriqué à la main en atelier et livré avec un étui en cuir.\nCaractéristiques : lame 9 cm · acier inoxydable · manche en bois d'olivier · étui en cuir.\nQuestions pour l'artisan : poids [À VÉRIFIER] ; entretien conseillé [À VÉRIFIER]."
+    }
+  ],
+  "pieges": [
+    {
+      "piege": "Laisser l'assistant ajouter des qualités ou une origine qu'il a devinées.",
+      "solution": "Comparez chaque phrase avec vos faits. Supprimez ce qui n'y figure pas ou remplacez-le par une information que vous avez contrôlée."
+    },
+    {
+      "piege": "Oublier de contrôler allergènes, composition et mentions obligatoires.",
+      "solution": "Contrôlez-les vous-même avec l'étiquette et vos documents. Pour l'alimentaire et les boissons, vérifiez les règles qui s'appliquent auprès de votre organisation professionnelle ou de votre chambre consulaire."
+    },
+    {
+      "piege": "Coller une recette, un coût de revient ou le nom d'un fournisseur.",
+      "solution": "Ne décrivez que ce que vous montrez déjà au client sur l'étiquette ou en vitrine."
+    },
+    {
+      "piege": "Publier des promesses de santé ou de performance (« bon pour… », « garanti »).",
+      "solution": "Retirez-les, sauf si vous pouvez les justifier et que la réglementation vous le permet ; dans le doute, supprimez."
+    },
+    {
+      "piege": "Utiliser le même texte pour tous les produits.",
+      "solution": "Traitez chaque produit dans une conversation neuve avec ses propres faits, en gardant seulement votre gabarit."
+    }
+  ],
+  "controleQualite": [
+    "Aucune donnée de client, recette secrète, coût ou marge n'a été collé dans l'assistant.",
+    "Chaque fait de la fiche est confirmé par l'étiquette, la fiche technique ou ma connaissance directe du produit.",
+    "Les allergènes, la composition, l'origine, les labels et les contenances ont été contrôlés par moi, ligne par ligne.",
+    "Aucun « [À VÉRIFIER] » ne reste dans la fiche publiée.",
+    "Aucune promesse (santé, performance, garantie, « le meilleur ») que je ne peux pas prouver.",
+    "Les prix sont saisis par moi, jamais repris de l'assistant.",
+    "J'ai relu la fiche en entier et enregistré mon gabarit pour mes autres produits."
+  ],
+  "autoevaluation": {
+    "question": "J'ai obtenu mon résultat : une fiche produit vérifiée, avec titre et description courte, prête à être publiée.",
+    "oui": "Oui, j'ai obtenu mon résultat",
+    "non": "Non, pas encore"
+  },
+  "aTester": [
+    "Consigne « fiche » : l'assistant s'en tient-il aux seuls faits fournis et utilise-t-il bien « [À VÉRIFIER] » plutôt que d'inventer composition, origine, allergènes ? Tester avec ChatGPT, Claude, Copilot et Gemini, avec un produit alimentaire et un produit non alimentaire.",
+    "Consigne « fiche » : tester une relance qui pousse à inventer (« ajoute des bienfaits ») et vérifier que la règle tient.",
+    "Consigne « declinaisons » : titres de 60 caractères maximum et absence de fait nouveau.",
+    "Faire relire par un producteur ou un viticulteur la formulation sur les mentions réglementaires (aliments, vin) pour s'assurer qu'elle n'est pas prise pour un avis juridique.",
+    "Durées des étapes chronométrées avec une personne non technique (total 48 minutes annoncé)."
+  ],
+  "video": [
+    {
+      "secondes": 40,
+      "titre": "Accueil et promesse",
+      "texte": "Bonjour et bienvenue. Dans cette vidéo, nous allons rédiger ensemble la fiche d'un de vos produits, pour votre site ou votre catalogue. Vous donnez les faits, l'assistant met en forme, et c'est vous qui vérifiez. En trois quarts d'heure environ, vous aurez une fiche prête à être publiée et un gabarit pour vos autres produits. Aucune compétence technique n'est nécessaire, et la méthode est la même quel que soit l'assistant que vous choisissez. Rien n'est à installer : un navigateur et quelques minutes suffisent.",
+      "ecran": "Présentateur face caméra, puis page d'accueil du module et exemples de produits (bouteille, fromage, couteau)."
+    },
+    {
+      "secondes": 55,
+      "titre": "Ce qu'on ne colle jamais",
+      "texte": "Avant de commencer, les règles. On ne colle jamais dans un assistant IA les données personnelles de vos clients. Ni vos secrets commerciaux : une recette non publique, un coût de revient, un nom de fournisseur, un tarif négocié. Ni vos mots de passe. Ne donnez à l'assistant que ce que vous montrez déjà à vos clients sur l'étiquette ou en vitrine. Et relisez toujours avant de publier : composition, allergènes, origine, contenance, tout doit être contrôlé par vous. Prenez ce réflexe dès maintenant : dans le doute, ne collez pas. Il est toujours plus simple d'ajouter un détail à la main que de le retirer ensuite.",
+      "ecran": "Encadré orange du site, lu lentement. Étiquette d'un produit avec les informations qui peuvent être partagées surlignées."
+    },
+    {
+      "secondes": 55,
+      "titre": "Étape 1 : les faits",
+      "texte": "Première étape, huit minutes. Choisissez un produit que vous connaissez bien, et posez devant vous son étiquette ou sa fiche technique. Notez les faits : le nom, la taille ou la contenance, la composition ou les matériaux, la fabrication, les usages. Notez seulement ce dont vous êtes certain. Pensez aussi au client visé : qui achète ce produit, et pour quoi faire ? Ces notes sont la matière première de votre fiche. Si vous hésitez sur un fait, écrivez-le tout de même dans vos notes avec un point d'interrogation. Nous le traiterons à l'étape de vérification, et il ne sera pas transmis tel quel à l'assistant.",
+      "ecran": "Table de travail avec un produit et son étiquette, saisie des notes dans un document texte."
+    },
+    {
+      "secondes": 55,
+      "titre": "Étape 2 : la première fiche",
+      "texte": "Deuxième étape, douze minutes. Ouvrez votre assistant et copiez la première consigne grâce au bouton Copier. Remplacez les champs entre crochets par vos notes : votre activité, le produit, les faits vérifiés, le ton, la longueur. La consigne est stricte : l'assistant n'a pas le droit d'ajouter une composition, une origine, un label ou un prix. S'il manque une information, il écrit « à vérifier ». Lisez la fiche obtenue, et repérez chaque phrase qui ne vient pas de vos notes. Vous pouvez demander autant de corrections que nécessaire : plus court, moins vendeur, plus simple. Ce n'est pas un échec, c'est le fonctionnement normal d'un assistant de rédaction.",
+      "ecran": "Bouton Copier sur mobile ; assistant : collage, remplissage des champs, fiche affichée avec « [À VÉRIFIER] » surligné."
+    },
+    {
+      "secondes": 50,
+      "titre": "Étape 3 : la vérification",
+      "texte": "Troisième étape, dix minutes, la plus importante. Comparez chaque chiffre, chaque affirmation avec l'étiquette. Contrôlez vous-même les allergènes et les mentions qui doivent figurer sur un produit alimentaire ou une boisson. Elles dépendent du produit : appuyez-vous sur votre organisation professionnelle, votre interprofession ou votre chambre consulaire. Ce module n'est pas un avis juridique. Supprimez les promesses que vous ne pouvez pas prouver, et remplacez chaque « à vérifier » par une information contrôlée. Prenez le temps de cette étape : une fiche exacte inspire confiance, et une erreur d'étiquette ou d'allergène peut coûter bien plus cher que dix minutes de relecture.",
+      "ecran": "Fiche à gauche, étiquette à droite ; surlignage des vérifications, suppression d'une phrase promotionnelle."
+    },
+    {
+      "secondes": 40,
+      "titre": "Étape 4 : titres et versions courtes",
+      "texte": "Quatrième étape, dix minutes. Dans la même conversation, collez la seconde consigne. L'assistant propose trois titres, une description courte et une phrase d'accroche, uniquement à partir de la fiche validée. Choisissez, corrigez, et recopiez dans votre site ou votre catalogue. Les prix, c'est vous qui les saisissez. Si un titre vous séduit mais suggère quelque chose que la fiche ne dit pas, écartez-le. Mieux vaut un titre sobre et exact qu'un titre brillant et approximatif.",
+      "ecran": "Collage de la consigne 2, trois titres proposés, copie dans l'outil d'un site ou un catalogue."
+    },
+    {
+      "secondes": 35,
+      "titre": "Étape 5 : votre gabarit",
+      "texte": "Dernière étape, huit minutes. Enregistrez la première consigne comme gabarit : effacez les faits de ce produit, mais gardez votre ton, votre clientèle et vos règles. Pour chaque nouveau produit, ouvrez une nouvelle conversation et collez le gabarit. Terminez par la liste de contrôle du site. Avec ce gabarit, un nouveau produit vous prendra bien moins de temps, car les règles sont déjà posées. Gardez seulement le réflexe de vérifier chaque fait.",
+      "ecran": "Création du document « Gabarit fiche produit » ; liste de contrôle du site avec cases cochées."
+    },
+    {
+      "secondes": 30,
+      "titre": "Bilan et suite",
+      "texte": "Pour finir, répondez à la question du bilan : avez-vous obtenu votre résultat ? La réponse est enregistrée uniquement dans votre navigateur. Si ce n'est pas encore le cas, relisez les erreurs fréquentes en bas de page. Merci de votre attention, et bonnes ventes. Vous pouvez revenir à ce module et refaire l'exercice avec un autre produit.",
+      "ecran": "Section « Votre bilan », clic sur Oui, message de confirmation. Présentateur face caméra."
+    }
+  ]
+}

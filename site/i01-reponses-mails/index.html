@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Répondre aux mails clients avec des modèles personnalisés – module I01</title>
+<meta name="description" content="Créer cinq modèles de réponse dans le ton de votre entreprise et les utiliser sur un vrai mail.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header>
+<p><a href="../index.html">← Tous les modules</a></p>
+<h1>Répondre aux mails clients avec des modèles personnalisés</h1>
+<p class="lead">Créer cinq modèles de réponse dans le ton de votre entreprise et les utiliser sur un vrai mail.</p>
+<ul class="meta"><li>Module I01</li><li>Durée : 45 min environ</li><li>5 étapes</li><li>Aucune compétence technique requise</li></ul>
+</header>
+<main id="contenu" data-module="I01">
+<section class="alerte" aria-labelledby="t-alerte">
+<h2 id="t-alerte">Ce qu'on ne colle jamais dans un assistant IA</h2>
+<ul><li>Les données personnelles de vos clients : noms, adresses, téléphones, adresses e-mail, numéros de commande. Remplacez-les par « Madame X », « Client A », « [ADRESSE] ».</li><li>Vos secrets commerciaux : marges, tarifs négociés, conditions réservées à un client, liste de clients.</li><li>Vos mots de passe, codes d'accès et coordonnées bancaires.</li></ul>
+<p><strong>Relisez toujours le texte produit avant tout envoi : l'assistant peut se tromper ou inventer.</strong></p>
+</section>
+<section aria-labelledby="t-resultat">
+<h2 id="t-resultat">Ce que vous aurez à la fin</h2>
+<p>Cinq modèles de mails prêts à réutiliser (demande de prix ou de disponibilité, réclamation, relance, remerciement, refus poli), écrits dans le ton de votre entreprise, enregistrés dans votre messagerie, et une première réponse réelle rédigée avec l'un d'eux.</p>
+<h3>Avant de commencer</h3>
+<ul><li>Un assistant IA grand public de votre choix, ouvert dans votre navigateur (ChatGPT, Claude, Copilot, Gemini ou un autre).</li><li>Deux ou trois anciens mails que vous avez écrits à des clients, dont vous êtes satisfait.</li><li>Un éditeur de texte ou le gestionnaire de modèles de votre messagerie.</li></ul>
+<p><a href="fiche.html">Version imprimable (fiche d'une à deux pages)</a> · <a href="consignes.md">Toutes les consignes (texte brut)</a></p>
+</section>
+<nav class="sommaire" aria-label="Sommaire"><h2>Les étapes</h2><ol><li><a href="#etape-1">Préparer vos exemples sans données personnelles</a> (7 min)</li><li><a href="#etape-2">Décrire le ton de votre entreprise</a> (8 min)</li><li><a href="#etape-3">Créer vos cinq modèles de mail</a> (12 min)</li><li><a href="#etape-4">Répondre à un vrai mail avec un modèle</a> (10 min)</li><li><a href="#etape-5">Enregistrer vos modèles pour la suite</a> (8 min)</li></ol>
+<p id="progression" role="status" aria-live="polite"></p></nav>
+<section class="etape" id="etape-1" aria-labelledby="t-etape-1">
+<h2 id="t-etape-1"><span class="num">Étape 1 sur 5</span>Préparer vos exemples sans données personnelles <span class="duree">7 min</span></h2>
+<p>Vous choisissez deux ou trois mails que vous avez déjà écrits et vous les rendez anonymes.</p>
+<ul><li>Ouvrez deux ou trois anciens mails envoyés à des clients, de préférence des mails dont le ton vous plaît.</li><li>Copiez chacun dans un éditeur de texte, pas encore dans l'assistant.</li><li>Effacez ou remplacez tout ce qui identifie une personne (nom, adresse, téléphone, e-mail, numéro de dossier) et tout chiffre confidentiel.</li><li>Gardez la façon d'écrire : début, fin, formules de politesse.</li></ul>
+
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="7">Démarrer le minuteur (7 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e1"> <span>J'ai terminé l'étape 1</span></label>
+</section>
+<section class="etape" id="etape-2" aria-labelledby="t-etape-2">
+<h2 id="t-etape-2"><span class="num">Étape 2 sur 5</span>Décrire le ton de votre entreprise <span class="duree">8 min</span></h2>
+<p>L'assistant résume votre façon d'écrire dans un profil de ton, que vous corrigez.</p>
+<ul><li>Ouvrez une nouvelle conversation dans votre assistant.</li><li>Copiez la consigne ci-dessous, remplacez les champs entre crochets, puis collez-la avec vos mails anonymisés à la fin.</li><li>Lisez le profil obtenu et corrigez-le : demandez de changer ce qui ne vous ressemble pas.</li><li>Gardez cette conversation ouverte pour l'étape suivante.</li></ul>
+<div class="consigne">
+<h3>Décrire le ton de mon entreprise</h3>
+<p>À coller en tout début de conversation, suivie de vos mails anonymisés.</p>
+<pre id="consigne-profil" tabindex="0">Tu es mon assistant de rédaction. Je dirige une entreprise : <span class="champ">[ACTIVITÉ]</span>. Mes clients sont : <span class="champ">[TYPE DE CLIENTS]</span>.
+
+Je veux des mails au ton <span class="champ">[TON SOUHAITÉ]</span>, avec le vouvoiement. Je commence habituellement par « <span class="champ">[FORMULE D'OUVERTURE]</span> » et je termine par « <span class="champ">[FORMULE DE FIN]</span> », signé « <span class="champ">[SIGNATURE]</span> ».
+
+Voici deux ou trois mails que j'ai écrits (les noms et coordonnées ont été retirés) :
+
+---
+<span class="champ">[COLLEZ ICI VOS MAILS ANONYMISÉS]</span>
+---
+
+Ta mission : décris en 8 lignes maximum le ton de mon entreprise (longueur des phrases, niveau de formalité, mots que j'utilise, mots à éviter). N'invente rien qui ne figure pas dans mes mails ou dans mes indications. Termine par deux questions si quelque chose n'est pas clair.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="consigne-profil">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="8">Démarrer le minuteur (8 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e2"> <span>J'ai terminé l'étape 2</span></label>
+</section>
+<section class="etape" id="etape-3" aria-labelledby="t-etape-3">
+<h2 id="t-etape-3"><span class="num">Étape 3 sur 5</span>Créer vos cinq modèles de mail <span class="duree">12 min</span></h2>
+<p>Dans la même conversation, l'assistant rédige les cinq modèles avec des champs à compléter.</p>
+<ul><li>Copiez la consigne ci-dessous dans la même conversation et complétez les deux champs.</li><li>Lisez chaque modèle : est-ce que vous l'enverriez tel quel à un client ? Sinon, demandez une correction précise (« plus court », « moins formel », « ajoutez une phrase d'excuse »).</li><li>Vérifiez que les champs à compléter sont bien indiqués entre crochets et qu'aucune information inventée n'y figure.</li><li>Copiez les cinq modèles définitifs dans un document.</li></ul>
+<div class="consigne">
+<h3>Rédiger mes cinq modèles de mail</h3>
+<p>À coller dans la même conversation, juste après le profil de ton validé.</p>
+<pre id="consigne-modeles" tabindex="0">Avec le ton que nous venons de définir, rédige cinq modèles de mails de réponse à un client :
+1. Réponse à une demande de prix ou de disponibilité
+2. Réponse à une réclamation
+3. Relance d'un client qui n'a pas répondu
+4. Remerciement après une commande ou une prestation
+5. Refus poli (demande que je ne peux pas satisfaire)
+
+Règles :
+- Chaque modèle fait 6 à 10 lignes, avec un objet de mail.
+- Les informations à compléter sont écrites entre crochets, par exemple <span class="champ">[PRÉNOM DU CLIENT]</span>, <span class="champ">[DATE]</span>, <span class="champ">[MONTANT]</span>, <span class="champ">[PRODUIT OU PRESTATION]</span>.
+- N'invente aucun prix, délai, date, garantie ni engagement : utilise un crochet à la place.
+- Mon délai de réponse habituel est : <span class="champ">[DÉLAI DE RÉPONSE HABITUEL]</span>.
+- Les coordonnées à indiquer en fin de mail sont : <span class="champ">[COORDONNÉES À INDIQUER]</span>.
+- Pour la réclamation : reconnais le problème sans admettre de faute précise et propose de revenir vers le client après vérification.
+
+Présente les cinq modèles les uns sous les autres, avec un titre pour chacun.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="consigne-modeles">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="12">Démarrer le minuteur (12 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e3"> <span>J'ai terminé l'étape 3</span></label>
+</section>
+<section class="etape" id="etape-4" aria-labelledby="t-etape-4">
+<h2 id="t-etape-4"><span class="num">Étape 4 sur 5</span>Répondre à un vrai mail avec un modèle <span class="duree">10 min</span></h2>
+<p>Vous testez un modèle sur un mail réel (rendu anonyme) pour juger du résultat concret.</p>
+<ul><li>Choisissez un mail client reçu récemment, sans enjeu important.</li><li>Rendez-le anonyme, puis complétez la consigne ci-dessous.</li><li>Relisez la réponse proposée, corrigez les faits, remettez les vrais noms et les vraies informations à la main.</li><li>Envoyez-la seulement si elle vous convient entièrement.</li></ul>
+<div class="consigne">
+<h3>Répondre à un mail reçu avec un modèle</h3>
+<p>À coller dans la même conversation. Le mail reçu doit être anonymisé.</p>
+<pre id="consigne-reponse" tabindex="0">Utilise le modèle numéro <span class="champ">[NUMÉRO DU MODÈLE]</span> pour répondre au mail ci-dessous, dans le même ton.
+
+Mail reçu (anonymisé) :
+---
+<span class="champ">[MAIL REÇU ANONYMISÉ]</span>
+---
+
+Informations que je confirme pour cette réponse : <span class="champ">[INFORMATIONS À CONFIRMER]</span>
+
+Règles : réponds uniquement à ce que le client demande. N'invente aucune information : si une donnée manque, laisse un crochet. Après la réponse, liste en trois points ce que je dois vérifier avant d'envoyer.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="consigne-reponse">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="10">Démarrer le minuteur (10 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e4"> <span>J'ai terminé l'étape 4</span></label>
+</section>
+<section class="etape" id="etape-5" aria-labelledby="t-etape-5">
+<h2 id="t-etape-5"><span class="num">Étape 5 sur 5</span>Enregistrer vos modèles pour la suite <span class="duree">8 min</span></h2>
+<p>Vous rangez les cinq modèles là où vous les retrouverez en deux clics.</p>
+<ul><li>Dans votre messagerie, créez des modèles ou des réponses rapides (selon votre logiciel) ou un document « Modèles de mails ».</li><li>Nommez-les clairement : « Réponse prix », « Réclamation », « Relance », « Remerciement », « Refus poli ».</li><li>Passez la liste du contrôle qualité ci-dessous.</li><li>Notez la date : revoyez vos modèles dans quelques mois.</li></ul>
+
+<div class="outils"><button type="button" class="minuteur secondaire" data-js hidden data-minutes="8">Démarrer le minuteur (8 min)</button><output aria-live="off"></output></div>
+<label class="case"><input type="checkbox" class="fait" data-id="e5"> <span>J'ai terminé l'étape 5</span></label>
+</section>
+<section aria-labelledby="t-exemples"><h2 id="t-exemples">Exemples par métier</h2>
+<p>Trois situations d'entreprises d'Occitanie pour vous inspirer. Ouvrez celle qui ressemble à la vôtre.</p>
+<details>
+<summary>Plombier chauffagiste (Toulouse, Haute-Garonne)</summary>
+<p>Entreprise de dépannage et d'entretien chez des particuliers, qui reçoit beaucoup de demandes de disponibilité.</p>
+<div class="consigne">
+<h4>Consigne remplie : Décrire le ton de mon entreprise</h4>
+<p>Exemple de consigne déjà personnalisée. Reprenez la structure, remplacez par vos propres informations.</p>
+<pre id="exemple-1" tabindex="0">Tu es mon assistant de rédaction. Je dirige une entreprise : plomberie et entretien de chaudières chez des particuliers, à Toulouse et alentours. Mes clients sont : des particuliers propriétaires, souvent pressés.
+
+Je veux des mails au ton direct, rassurant et simple, avec le vouvoiement. Je commence habituellement par « Bonjour Madame, Bonjour Monsieur » et je termine par « Cordialement », signé « L'équipe de l'entreprise ».
+
+Voici deux ou trois mails que j'ai écrits (les noms et coordonnées ont été retirés) :
+
+---
+<span class="champ">[COLLEZ ICI VOS MAILS ANONYMISÉS]</span>
+---
+
+Ta mission : décris en 8 lignes maximum le ton de mon entreprise (longueur des phrases, niveau de formalité, mots que j'utilise, mots à éviter). N'invente rien qui ne figure pas dans mes mails ou dans mes indications. Termine par deux questions si quelque chose n'est pas clair.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="exemple-1">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<h4>Résultat attendu (exemple illustratif)</h4>
+<pre tabindex="0">Ton : phrases courtes, vocabulaire du quotidien, pas de termes techniques sans explication. Formel mais chaleureux. Toujours une prochaine étape claire (appel, créneau). À éviter : promesses de délai ferme, jargon de chantier.</pre>
+</details>
+<details>
+<summary>Vigneronne ou vigneron (Gaillac, Tarn)</summary>
+<p>Domaine viticole qui répond à des particuliers, des cavistes et des restaurateurs pour les commandes et les visites.</p>
+<div class="consigne">
+<h4>Consigne remplie : Décrire le ton de mon entreprise</h4>
+<p>Exemple de consigne déjà personnalisée. Reprenez la structure, remplacez par vos propres informations.</p>
+<pre id="exemple-2" tabindex="0">Tu es mon assistant de rédaction. Je dirige une entreprise : domaine viticole avec vente directe et vente aux cavistes. Mes clients sont : des particuliers de passage, des cavistes et des restaurateurs.
+
+Je veux des mails au ton chaleureux, passionné mais sobre, avec le vouvoiement. Je commence habituellement par « Bonjour » et je termine par « Bien cordialement, et à bientôt au domaine », signé « Le domaine ».
+
+Voici deux ou trois mails que j'ai écrits (les noms et coordonnées ont été retirés) :
+
+---
+<span class="champ">[COLLEZ ICI VOS MAILS ANONYMISÉS]</span>
+---
+
+Ta mission : décris en 8 lignes maximum le ton de mon entreprise (longueur des phrases, niveau de formalité, mots que j'utilise, mots à éviter). N'invente rien qui ne figure pas dans mes mails ou dans mes indications. Termine par deux questions si quelque chose n'est pas clair.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="exemple-2">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<h4>Résultat attendu (exemple illustratif)</h4>
+<pre tabindex="0">Ton : accueillant et sincère, phrases de longueur moyenne, un mot sur le vin ou le domaine sans enthousiasme excessif. Vouvoiement constant. À éviter : superlatifs, formules commerciales appuyées.</pre>
+</details>
+<details>
+<summary>Gîte ou chambres d'hôtes (Aubrac, Aveyron)</summary>
+<p>Hébergement saisonnier qui reçoit des demandes de disponibilité, parfois en anglais, et quelques réclamations.</p>
+<div class="consigne">
+<h4>Consigne remplie : Décrire le ton de mon entreprise</h4>
+<p>Exemple de consigne déjà personnalisée. Reprenez la structure, remplacez par vos propres informations.</p>
+<pre id="exemple-3" tabindex="0">Tu es mon assistant de rédaction. Je dirige une entreprise : gîte et chambres d'hôtes en Aubrac. Mes clients sont : des familles et des randonneurs, français et étrangers.
+
+Je veux des mails au ton accueillant, précis et sans fioritures, avec le vouvoiement. Je commence habituellement par « Bonjour » et je termine par « Au plaisir de vous accueillir », signé « Votre hôte ».
+
+Voici deux ou trois mails que j'ai écrits (les noms et coordonnées ont été retirés) :
+
+---
+<span class="champ">[COLLEZ ICI VOS MAILS ANONYMISÉS]</span>
+---
+
+Ta mission : décris en 8 lignes maximum le ton de mon entreprise (longueur des phrases, niveau de formalité, mots que j'utilise, mots à éviter). N'invente rien qui ne figure pas dans mes mails ou dans mes indications. Termine par deux questions si quelque chose n'est pas clair.</pre>
+<div class="outils"><button type="button" class="copier" data-js hidden data-cible="exemple-3">Copier la consigne</button><span class="etat" role="status" aria-live="polite"></span></div>
+</div>
+<h4>Résultat attendu (exemple illustratif)</h4>
+<pre tabindex="0">Ton : accueil personnel, informations pratiques en premier (dates, capacité, conditions), phrases courtes. Excuses sobres en cas de souci. À éviter : promesses de météo ou d'équipements non confirmés.</pre>
+</details>
+</section>
+<section aria-labelledby="t-pieges"><h2 id="t-pieges">Erreurs fréquentes</h2>
+<div class="piege"><strong>Coller un vrai mail avec le nom et les coordonnées du client.</strong>Anonymisez toujours avant de coller : « Madame X », « [ADRESSE] ». Remettez les vraies informations à la main à la fin.</div>
+<div class="piege"><strong>Envoyer la réponse sans la relire.</strong>Relisez à voix haute. Vérifiez chaque date, chaque prix et chaque engagement : l'assistant peut en inventer.</div>
+<div class="piege"><strong>Obtenir un ton qui ne vous ressemble pas.</strong>Corrigez précisément : « moins formel », « phrases plus courtes », « sans cette formule ». Revenez à vos propres mails comme référence.</div>
+<div class="piege"><strong>Laisser l'assistant promettre un remboursement, un délai ou une garantie.</strong>Dans la consigne, interdisez-le (c'est déjà prévu) et supprimez toute promesse que vous n'avez pas décidée.</div>
+<div class="piege"><strong>Mélanger plusieurs demandes dans une seule conversation.</strong>Ouvrez une nouvelle conversation pour chaque mail client, en gardant vos modèles sous la main.</div>
+</section>
+<section aria-labelledby="t-qc"><h2 id="t-qc">Contrôle qualité avant tout envoi</h2>
+<label class="case"><input type="checkbox" class="controle" data-id="q1"> <span>Aucun nom, adresse, téléphone ou information confidentielle de client n'a été collé dans l'assistant.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q2"> <span>Le ton ressemble à celui de mes propres mails.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q3"> <span>Chaque modèle contient des champs entre crochets plutôt que des informations inventées.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q4"> <span>Aucune promesse (prix, délai, remboursement, garantie) que je n'ai pas décidée moi-même.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q5"> <span>J'ai relu les cinq modèles en entier et corrigé les fautes ou les tournures étranges.</span></label>
+<label class="case"><input type="checkbox" class="controle" data-id="q6"> <span>Les cinq modèles sont enregistrés dans ma messagerie ou dans un document que je retrouve facilement.</span></label>
+</section>
+<section aria-labelledby="t-eval"><h2 id="t-eval">Votre bilan</h2>
+<form id="autoeval">
+<fieldset><legend>J'ai obtenu mon résultat : cinq modèles de mails utilisables, enregistrés, et une première réponse rédigée.</legend>
+<label><input type="radio" name="resultat" value="oui"> <span>Oui, j'ai obtenu mon résultat</span></label>
+<label><input type="radio" name="resultat" value="non"> <span>Non, pas encore</span></label>
+</fieldset>
+<button type="submit">Enregistrer ma réponse</button>
+<p id="autoeval-retour" role="status" aria-live="polite">Votre réponse est mémorisée uniquement dans ce navigateur.</p>
+</form>
+</section>
+<section id="aller-plus-loin" hidden aria-labelledby="t-plus"><h2 id="t-plus">Aller plus loin</h2>
+<p><a id="lien-offre" class="bouton" href="#">Découvrir l'offre de formation</a></p></section>
+</main>
+<footer><p>Contenu gratuit fourni à titre pédagogique. Les consignes sont des brouillons à adapter ; vous restez responsable des documents que vous envoyez. Votre progression est enregistrée uniquement dans votre navigateur ; ce site n'utilise ni cookie ni traqueur.</p></footer>
+<script src="../assets/app.js" defer></script>
+</body>
+</html>
