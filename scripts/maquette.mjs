@@ -18,7 +18,8 @@ const COURT = {
   },
 }[dossier] || { promesse: m.objectif, livrable: "Votre résultat", couleur: "#1d4ed8" };
 
-const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c])
+  .replace(/« /g, "«\u00a0").replace(/ ([»:;?!])/g, "\u00a0$1"); // espaces insécables à la française
 const slug = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
 const [principale, suite, ...autres] = m.consignes;
@@ -111,6 +112,10 @@ details{background:var(--carte);border:1px solid var(--bord);border-radius:.8rem
 summary{cursor:pointer;padding:.8rem 1rem;font-weight:600}
 details>div{padding:0 1rem 1rem;font-size:.95rem}
 details dl{margin:0}details dt{font-weight:600;margin-top:.6rem}details dd{margin:0;color:var(--discret)}
+.erreurs{border-left:4px solid #b91c1c}.erreurs summary{color:#b91c1c}
+.erreurs ul{list-style:none;margin:0;padding:0 1rem 1rem}.erreurs li{padding:.7rem 0;border-top:1px solid var(--bord)}
+.erreurs p{margin:.15rem 0;font-size:.93rem}.erreurs span{display:inline-block;min-width:5.2rem;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+.erreurs .non span{color:#b91c1c}.erreurs .oui span{color:var(--ok)}
 h2.section{font-size:1.1rem;margin:2rem 0 .5rem}
 footer{margin-top:2.5rem;color:var(--discret);font-size:.85rem;text-align:center}
 @media (max-width:30rem){.etape{padding:1.1rem}.consigne>div:first-child{flex-direction:column;align-items:flex-start}}
@@ -157,6 +162,9 @@ footer{margin-top:2.5rem;color:var(--discret);font-size:.85rem;text-align:center
     <div><div><h3>${"AB"[i]}. ${esc(c.titre)}</h3><p class="aide">${esc(c.aide)}</p></div><button type="button" class="bouton" data-copier="${i}">${icone.copier}<span>Copier</span></button></div>
     <pre class="texte" id="consigne-${i}" tabindex="0"></pre>
   </div>`).join("\n  ")}
+  <details class="erreurs"><summary>Les ${m.pieges.length} erreurs à éviter</summary><ul>
+    ${m.pieges.map((p) => `<li><p class="non"><span>À éviter</span>${esc(p.piege)}</p><p class="oui"><span>À faire</span>${esc(p.solution)}</p></li>`).join("\n    ")}
+  </ul></details>
   <div class="exemple" id="exemple" hidden><strong>Exemple de profil obtenu</strong><span></span></div>
 </section>
 
@@ -173,9 +181,6 @@ footer{margin-top:2.5rem;color:var(--discret);font-size:.85rem;text-align:center
 </section>
 
 <h2 class="section">Pour aller plus loin</h2>
-<details><summary>Ça ne marche pas comme prévu ?</summary><div><dl>
-  ${m.pieges.map((p) => `<dt>${esc(p.piege)}</dt><dd>${esc(p.solution)}</dd>`).join("\n  ")}
-</dl></div></details>
 ${autres.map((c) => `<details><summary>Bonus : ${esc(c.titre.charAt(0).toLowerCase() + c.titre.slice(1))}</summary><div><p>${esc(c.aide)}</p><pre class="texte">${esc(c.texte)}</pre></div></details>`).join("\n")}
 <details><summary>Où ranger vos modèles</summary><div><ul>${m.etapes.at(-1).actions.slice(0, 2).map((a) => `<li>${esc(a)}</li>`).join("")}</ul></div></details>
 </main>

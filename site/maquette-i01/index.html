@@ -66,6 +66,10 @@ details{background:var(--carte);border:1px solid var(--bord);border-radius:.8rem
 summary{cursor:pointer;padding:.8rem 1rem;font-weight:600}
 details>div{padding:0 1rem 1rem;font-size:.95rem}
 details dl{margin:0}details dt{font-weight:600;margin-top:.6rem}details dd{margin:0;color:var(--discret)}
+.erreurs{border-left:4px solid #b91c1c}.erreurs summary{color:#b91c1c}
+.erreurs ul{list-style:none;margin:0;padding:0 1rem 1rem}.erreurs li{padding:.7rem 0;border-top:1px solid var(--bord)}
+.erreurs p{margin:.15rem 0;font-size:.93rem}.erreurs span{display:inline-block;min-width:5.2rem;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+.erreurs .non span{color:#b91c1c}.erreurs .oui span{color:var(--ok)}
 h2.section{font-size:1.1rem;margin:2rem 0 .5rem}
 footer{margin-top:2.5rem;color:var(--discret);font-size:.85rem;text-align:center}
 @media (max-width:30rem){.etape{padding:1.1rem}.consigne>div:first-child{flex-direction:column;align-items:flex-start}}
@@ -88,7 +92,7 @@ footer{margin-top:2.5rem;color:var(--discret);font-size:.85rem;text-align:center
 </header>
 
 <main id="contenu">
-<aside class="alerte" aria-label="Précaution"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg><p><strong>Ne collez jamais dans un assistant IA :</strong> les données personnelles de vos clients, vos secrets commerciaux, vos mots de passe, codes d'accès et coordonnées bancaires. Relisez toujours le texte produit avant tout envoi : l'assistant peut se tromper ou inventer.</p></aside>
+<aside class="alerte" aria-label="Précaution"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg><p><strong>Ne collez jamais dans un assistant IA :</strong> les données personnelles de vos clients, vos secrets commerciaux, vos mots de passe, codes d'accès et coordonnées bancaires. Relisez toujours le texte produit avant tout envoi : l'assistant peut se tromper ou inventer.</p></aside>
 
 <div class="progression" aria-hidden="true"><div class="barre"><span id="barre"></span></div><small id="etat">Étape 1 sur 3</small></div>
 
@@ -125,6 +129,13 @@ footer{margin-top:2.5rem;color:var(--discret);font-size:.85rem;text-align:center
     <div><div><h3>B. Rédiger mes cinq modèles de mail</h3><p class="aide">À coller dans la même conversation, juste après le profil de ton validé.</p></div><button type="button" class="bouton" data-copier="1"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a1 1 0 011-1h10"/></svg><span>Copier</span></button></div>
     <pre class="texte" id="consigne-1" tabindex="0"></pre>
   </div>
+  <details class="erreurs"><summary>Les 5 erreurs à éviter</summary><ul>
+    <li><p class="non"><span>À éviter</span>Coller un vrai mail avec le nom et les coordonnées du client.</p><p class="oui"><span>À faire</span>Anonymisez toujours avant de coller : « Madame X », « [ADRESSE] ». Remettez les vraies informations à la main à la fin.</p></li>
+    <li><p class="non"><span>À éviter</span>Envoyer la réponse sans la relire.</p><p class="oui"><span>À faire</span>Relisez à voix haute. Vérifiez chaque date, chaque prix et chaque engagement : l'assistant peut en inventer.</p></li>
+    <li><p class="non"><span>À éviter</span>Obtenir un ton qui ne vous ressemble pas.</p><p class="oui"><span>À faire</span>Corrigez précisément : « moins formel », « phrases plus courtes », « sans cette formule ». Revenez à vos propres mails comme référence.</p></li>
+    <li><p class="non"><span>À éviter</span>Laisser l'assistant promettre un remboursement, un délai ou une garantie.</p><p class="oui"><span>À faire</span>Dans la consigne, interdisez-le (c'est déjà prévu) et supprimez toute promesse que vous n'avez pas décidée.</p></li>
+    <li><p class="non"><span>À éviter</span>Mélanger plusieurs demandes dans une seule conversation.</p><p class="oui"><span>À faire</span>Ouvrez une nouvelle conversation pour chaque mail client, en gardant vos modèles sous la main.</p></li>
+  </ul></details>
   <div class="exemple" id="exemple" hidden><strong>Exemple de profil obtenu</strong><span></span></div>
 </section>
 
@@ -146,24 +157,17 @@ footer{margin-top:2.5rem;color:var(--discret);font-size:.85rem;text-align:center
 </section>
 
 <h2 class="section">Pour aller plus loin</h2>
-<details><summary>Ça ne marche pas comme prévu ?</summary><div><dl>
-  <dt>Coller un vrai mail avec le nom et les coordonnées du client.</dt><dd>Anonymisez toujours avant de coller : « Madame X », « [ADRESSE] ». Remettez les vraies informations à la main à la fin.</dd>
-  <dt>Envoyer la réponse sans la relire.</dt><dd>Relisez à voix haute. Vérifiez chaque date, chaque prix et chaque engagement : l'assistant peut en inventer.</dd>
-  <dt>Obtenir un ton qui ne vous ressemble pas.</dt><dd>Corrigez précisément : « moins formel », « phrases plus courtes », « sans cette formule ». Revenez à vos propres mails comme référence.</dd>
-  <dt>Laisser l'assistant promettre un remboursement, un délai ou une garantie.</dt><dd>Dans la consigne, interdisez-le (c'est déjà prévu) et supprimez toute promesse que vous n'avez pas décidée.</dd>
-  <dt>Mélanger plusieurs demandes dans une seule conversation.</dt><dd>Ouvrez une nouvelle conversation pour chaque mail client, en gardant vos modèles sous la main.</dd>
-</dl></div></details>
 <details><summary>Bonus : répondre à un mail reçu avec un modèle</summary><div><p>À coller dans la même conversation. Le mail reçu doit être anonymisé.</p><pre class="texte">Utilise le modèle numéro [NUMÉRO DU MODÈLE] pour répondre au mail ci-dessous, dans le même ton.
 
-Mail reçu (anonymisé) :
+Mail reçu (anonymisé) :
 ---
 [MAIL REÇU ANONYMISÉ]
 ---
 
-Informations que je confirme pour cette réponse : [INFORMATIONS À CONFIRMER]
+Informations que je confirme pour cette réponse : [INFORMATIONS À CONFIRMER]
 
-Règles : réponds uniquement à ce que le client demande. N'invente aucune information : si une donnée manque, laisse un crochet. Après la réponse, liste en trois points ce que je dois vérifier avant d'envoyer.</pre></div></details>
-<details><summary>Où ranger vos modèles</summary><div><ul><li>Dans votre messagerie, créez des modèles ou des réponses rapides (selon votre logiciel) ou un document « Modèles de mails ».</li><li>Nommez-les clairement : « Réponse prix », « Réclamation », « Relance », « Remerciement », « Refus poli ».</li></ul></div></details>
+Règles : réponds uniquement à ce que le client demande. N'invente aucune information : si une donnée manque, laisse un crochet. Après la réponse, liste en trois points ce que je dois vérifier avant d'envoyer.</pre></div></details>
+<details><summary>Où ranger vos modèles</summary><div><ul><li>Dans votre messagerie, créez des modèles ou des réponses rapides (selon votre logiciel) ou un document « Modèles de mails ».</li><li>Nommez-les clairement : « Réponse prix », « Réclamation », « Relance », « Remerciement », « Refus poli ».</li></ul></div></details>
 </main>
 <footer>MadeInFormation.fr · Modules gratuits d'intégration simple de l'IA · Maquette de présentation</footer>
 </div>
